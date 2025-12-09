@@ -1300,17 +1300,30 @@ Copier
 }
 
 
-/* Fix for fixed navbar spacing */
+/* Remove Bootstrap's default padding for fixed navbar */
 body {
   padding-top: 0 !important;
 }
 
-.hero-section {
-  margin-top: 56px; /* Match navbar height */
+/* Remove all spacing from hero section's container/row */
+.hero-section .container,
+.hero-section .row {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
 }
 
+/* Adjust hero section to start right below fixed navbar */
+.hero-section {
+  margin-top: 56px !important;
+  padding-top: 0 !important;
+}
+
+/* Remove all bottom spacing from navbar */
 .navbar-custom {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
 
