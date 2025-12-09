@@ -20,11 +20,10 @@ author: Some Person
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  Capsule 1: "aboutme"
+  capsule 2: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Github Repro: "https://SeedTrail.github.io"
 
 ################
 # --- Logo --- #
@@ -50,21 +49,21 @@ navbar-links:
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: paradaise@gmail.com
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+# facebook: yourname
+  github: SeedTrail
+# twitter: yourname
+# patreon: yourname
+# youtube: yourname
+# whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
 #  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
+#  stackoverflow: name
+#  snapchat: name
+#  instagram: name
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -137,15 +136,15 @@ navbar-var-length: false
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 page-col: "#04090F"
-text-col: "#404040"
-link-col: "#008AFF"
+text-col: "#0CF2DB"
+link-col: "#0CF2DB"
 hover-col: "#0085A1"
 navbar-col: "#04090F"
 navbar-text-col: "#404040"
 navbar-border-col: "#0E1A2B"
 footer-col: "#04090F"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
+footer-text-col: "#0CF2DB"
+footer-link-col: "#0CF2DB"
 footer-hover-col: "#0085A1"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
