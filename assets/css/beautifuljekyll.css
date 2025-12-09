@@ -1237,3 +1237,25 @@ pre {
     display: inline-block;
   }
 }
+
+
+/* --- Fixing other stuffs for padding ---*/
+/* Remove spacing between navbar and hero on home page */
+body.home .navbar-custom {
+  padding-bottom: 0 !important;
+}
+
+body.home :target:before {
+  height: 0 !important;
+  margin: 0 !important;
+}
+
+body.home .hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+body.home > main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
