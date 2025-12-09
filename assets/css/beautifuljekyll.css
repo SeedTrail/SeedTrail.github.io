@@ -198,7 +198,28 @@ img {
 .main-subtitle {
   font-size: 1.5rem;
 }
-
+.hero-content .page-heading {
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+}
+.hero-content .page-heading h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content .page-heading .page-subheading {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+.hero-content .page-heading hr.small {
+  max-width: 6.25rem;
+  margin: 1rem auto;
+  border-width: 0.25rem;
+  border-color: inherit;
+  border-radius: 0.1875rem;
+}
 /* --- Navbar --- */
 
 .navbar-custom {
