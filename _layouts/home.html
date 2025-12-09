@@ -11,10 +11,13 @@ layout: base
     </video>
   </div>
   <div class="hero-content">
-    <h1 class="main-title">{{ page.title }}</h1>
-    {% if page.subtitle %}
-      <p class="main-subtitle">{{ page.subtitle }}</p>
-    {% endif %}
+    <div class="page-heading">
+      <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
+      {% if page.subtitle %}
+        <hr class="small">
+        <span class="page-subheading">{{ page.subtitle | strip_html }}</span>
+      {% endif %}
+    </div>
   </div>
 </div>
 
