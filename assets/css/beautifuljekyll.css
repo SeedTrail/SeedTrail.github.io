@@ -1259,3 +1259,8 @@ body.home > main {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+/* Remove Bootstrap's default padding for fixed navbar */
+body {
+  padding-top: 0 !important;
+}
