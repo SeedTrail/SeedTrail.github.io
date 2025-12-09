@@ -149,14 +149,18 @@ img {
   }
 }
 
-/* --- Video --- */
+/* --- Hero Section --- */
 .hero-section {
   position: relative;
   height: 100vh;
+  width: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video-background {
+.hero-section .video-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -166,7 +170,11 @@ img {
   overflow: hidden;
 }
 
-.video-background video {
+.hero-section .video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -176,13 +184,9 @@ img {
 
 .hero-content {
   position: relative;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  z-index: 1;
   color: white;
+  text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   padding: 0 20px;
 }
