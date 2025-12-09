@@ -150,16 +150,20 @@ img {
 }
 
 /* --- Hero Section --- */
+
 .hero-section {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
 }
-
 .hero-section .video-background {
   position: absolute;
   top: 0;
@@ -169,19 +173,14 @@ img {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero-section .video-background video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
