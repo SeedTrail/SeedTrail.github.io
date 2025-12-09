@@ -1,18 +1,6 @@
 ---
 layout: page
 ---
-<div class="position-relative overflow-hidden text-center vh-100 d-flex align-items-center justify-content-center">
-
-  <!-- Background VIDEO -->
-  <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" autoplay muted loop playsinline>
-    <source src="{{ '/assets/videos/IntroVideo.mp4' | relative_url }}" type="video/mp4">
-  </video>
-
-  <!-- DARK OVERLAY (optional, remove if unwanted) -->
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.3);"></div>
-
-</div>
-
 {{ content }}
 
 {% assign posts = paginator.posts | default: site.posts %}
