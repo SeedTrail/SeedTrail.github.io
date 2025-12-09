@@ -1,6 +1,9 @@
 ---
 layout: page
 ---
+---
+layout: page
+---
 <div class="hero-section">
   <div class="video-background">
     <video autoplay muted loop id="heroVideo">
@@ -9,14 +12,14 @@ layout: page
     </video>
   </div>
   <div class="hero-content">
-    <h1 class="main-title">When the world shakes</h1>
-    {% if site.tagline %}
-      <p class="main-subtitle">{{ site.tagline }}</p>
+    <h1 class="main-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="main-subtitle">{{ page.subtitle }}</p>
     {% endif %}
   </div>
 </div>
 
 {{ content }}
+
 {% assign posts = paginator.posts | default: site.posts %}
 <!-- Rest of your existing posts list code -->
-
