@@ -223,6 +223,15 @@ img {
   border-color: inherit;
   border-radius: 0.1875rem;
 }
+
+/* Force no spacing for the hero section's row/container */
+.hero-section .row,
+.hero-section .container,
+.hero-section .container-md {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 /* --- Navbar --- */
 
 .navbar-custom {
