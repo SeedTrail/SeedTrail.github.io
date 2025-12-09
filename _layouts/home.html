@@ -1,16 +1,22 @@
 ---
 layout: page
 ---
-<!-- HERO VIDEO SECTION -->
-<div class="video-container">
-  <video autoplay muted loop playsinline id="bg-video">
-    <source src="{{ '/assets/video/IntroVideo.mp4' | relative_url }}" type="video/mp4">
+<div class="position-relative overflow-hidden text-center vh-100 d-flex align-items-center justify-content-center">
+
+  <!-- Background VIDEO -->
+  <video class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" autoplay muted loop playsinline>
+    <source src="{{ '/assets/videos/IntroVideo.mp4' | relative_url }}" type="video/mp4">
   </video>
 
-  <div class="overlay-text">
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.subtitle }}</h2>
+  <!-- DARK OVERLAY (optional, remove if unwanted) -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.3);"></div>
+
+  <!-- TEXT OVER VIDEO -->
+  <div class="position-relative col-md-8 p-lg-5 text-white">
+      <h1 class="display-3 fw-bold">{{ page.title }}</h1>
+      <h3 class="fw-normal mb-3">{{ page.subtitle }}</h3>
   </div>
+
 </div>
 
 {{ content }}
