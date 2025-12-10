@@ -167,139 +167,8 @@ img {
   top: 0;
 }
 
-/* Video background */
-.hero-section .video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.hero-section .video-background video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Matrix-style container for text */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-/* Matrix text styling */
-.hero-content .matrix-title {
-  color: #0f0;
-  font-size: 4rem;
-  font-family: monospace;
-  position: relative;
-  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
-  margin-bottom: 1rem;
-  z-index: 2;
-}
-
-.hero-content .matrix-title::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: glitch 2s infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  transform: translate(-2px, -2px);
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0;
-}
-
-.hero-content .matrix-subtitle {
-  color: #0f0;
-  font-size: 1.5rem;
-  font-family: monospace;
-  position: relative;
-  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
-  z-index: 2;
-}
-
-.hero-content .matrix-subtitle::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  animation: glitch 3s infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
-  transform: translate(-1px, -1px);
-  color: #0f0;
-  text-shadow: 0 0 3px #0f0, 0 0 8px #0f0;
-}
-
-/* Rain effect */
-.rain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 255, 0, 0.1) 0,
-    rgba(0, 255, 0, 0.2) 2px,
-    transparent 4px
-  );
-  animation: rain 10s linear infinite;
-  z-index: 1;
-}
-
-/* Animation for the rain effect */
-@keyframes rain {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
-
-/* Glitch effect for the text */
-@keyframes glitch {
-  0%, 100% {
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-    transform: translate(0);
-  }
-  33% {
-    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
-    transform: translate(-5px, -5px);
-  }
-  66% {
-    clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
-    transform: translate(5px, 5px);
-  }
-}
 
 
-/* Force no spacing for the hero section's row/container */
-.hero-section .row,
-.hero-section .container,
-.hero-section .container-md {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
 /* --- Main --- */
 
@@ -1440,10 +1309,6 @@ body {
   padding-top: 0 !important;
 }
 
-2. Adjust the Hero Section for Fixed Navbar
-Since your navbar is fixed, your hero section should start right below it. Add this CSS:
-css
-Copier
 
 /* Adjust hero section to start right below fixed navbar */
 /*.hero-section { */
@@ -1467,5 +1332,153 @@ body {
   padding-top: 0 !important;
 }
 
+/* Hero section container */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Video background */
+.hero-section .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.hero-section .video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Rain effect */
+.hero-section .rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 0.1) 0,
+    rgba(0, 255, 0, 0.2) 2px,
+    transparent 4px
+  );
+  animation: rain 2s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Hero content container */
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+/* Matrix title styling */
+.hero-section .matrix-title {
+  font-size: 4rem;
+  font-family: monospace;
+  position: relative;
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+  margin-bottom: 1rem;
+}
+
+.hero-section .matrix-title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: glitch 2s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-2px, -2px);
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0;
+}
+
+/* Matrix subtitle styling */
+.hero-section .matrix-subtitle {
+  font-size: 1.5rem;
+  font-family: monospace;
+  position: relative;
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0;
+}
+
+.hero-section .matrix-subtitle::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: glitch 3s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+  transform: translate(-1px, -1px);
+  color: #0f0;
+  text-shadow: 0 0 3px #0f0;
+}
+
+/* Animation for the rain effect */
+@keyframes rain {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Glitch effect for the text */
+@keyframes glitch {
+  0%, 100% {
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(0);
+  }
+  33% {
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
+    transform: translate(-5px, -5px);
+  }
+  66% {
+    clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+    transform: translate(5px, 5px);
+  }
+}
+
+
+/* Force no spacing for the hero section's row/container */
+.hero-section .row,
+.hero-section .container,
+.hero-section .container-md {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 
