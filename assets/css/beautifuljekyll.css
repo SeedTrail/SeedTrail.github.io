@@ -1402,7 +1402,7 @@ body {
   font-size: 4rem;
   font-family: monospace;
   position: relative;
-  color: #27DEF2 !important;
+  color: #0CF2DB !important;
   text-shadow: 0 0 10px #27DEF2, 0 0 20px #27DEF2 !important;
   margin-bottom: 1rem;
 }
@@ -1417,7 +1417,7 @@ body {
   animation: glitch 2s infinite;
   clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
   transform: translate(-2px, -2px);
-  color: #27DEF2 !important;
+  color: #0CF2DB !important;
   text-shadow: 0 0 5px #27DEF2 !important;
 }
 
@@ -1426,7 +1426,7 @@ body {
   font-size: 1.5rem;
   font-family: monospace;
   position: relative;
-  color: #27DEF2 !important;
+  color: #0CF2DB !important;
   text-shadow: 0 0 5px #27DEF2 !important;
 }
 
@@ -1440,7 +1440,7 @@ body {
   animation: glitch 3s infinite;
   clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
   transform: translate(-1px, -1px);
-  color: #27DEF2 !important;
+  color: #0CF2DB !important;
   text-shadow: 0 0 3px #27DEF2 !important;
 }
 
