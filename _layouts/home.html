@@ -44,6 +44,8 @@ layout: base
   </div>
 </main>
 
+{% assign posts = paginator.posts | default: site.posts %}
+
 <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
 <ul class="posts-list list-unstyled" role="list">
   {% for post in posts %}
@@ -137,8 +139,6 @@ layout: base
   </li>
   {% endfor %}
 </ul>
-
-{% assign posts = paginator.posts | default: site.posts %}
 
 {% if paginator.total_pages > 1 %}
 <ul class="pagination main-pager">
