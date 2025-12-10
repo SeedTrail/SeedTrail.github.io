@@ -150,7 +150,7 @@ img {
 }
 
 /* --- Hero Section --- */
-
+/* Hero section container */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -164,6 +164,8 @@ img {
   left: 0;
   top: 0;
 }
+
+/* Video background */
 .hero-section .video-background {
   position: absolute;
   top: 0;
@@ -173,6 +175,7 @@ img {
   z-index: -1;
   overflow: hidden;
 }
+
 .hero-section .video-background video {
   position: absolute;
   top: 0;
@@ -181,48 +184,39 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+/* Hero content container */
 .hero-content {
   position: relative;
   z-index: 1;
-  color: cyan;
   text-align: center;
-  text-shadow: 1px 2px 2px #0D90B0 ;
   padding: 0 20px;
+  width: 100%;
 }
 
-.main-title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  font-family: verdana;
-  color: cyan;
-}
-
-.main-subtitle {
-  font-size: 1.5rem;
-}
-
-.hero-content .page-heading {
-  text-align: center;
-  text-shadow: 1px 2px 5px #0CF2DB ;
-  padding: 0 20px;
-}
-
+/* Main title styling */
+.hero-content .main-title,
 .hero-content .page-heading h1 {
-  font-size: 4.5rem;
-  margin-bottom: 1rem;
-  font-family: var(--header-font);
+  font-size: 4.5rem !important;
+  margin-bottom: 1rem !important;
+  font-family: var(--header-font) !important;
   color: #0CF2DB !important;
-  text-shadow: 1px 2px 5px #0D90B0 !important; 
+  text-shadow: 2px 2px 6px #0D90B0 !important;
+  line-height: 1.2;
 }
 
+/* Subtitle styling */
+.hero-content .main-subtitle,
 .hero-content .page-heading .page-subheading {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
   display: block;
-  margin-top: 0.5rem;
-  color: #0CF2DB;
-  font-family: var(--header-font);
-  text-shadow: 1px 2px 5px #0D90B0 !important;
+  margin-top: 0.5rem !important;
+  color: #0CF2DB !important;
+  font-family: var(--header-font) !important;
+  text-shadow: 1px 1px 4px #0D90B0 !important;
 }
+
+/* Horizontal rule styling */
 .hero-content .page-heading hr.small {
   max-width: 6.25rem;
   margin: 1rem auto;
@@ -230,6 +224,20 @@ img {
   border-color: #27DEF2 !important;
   border-radius: 0.1875rem;
 }
+
+/* Background overlay for better text readability */
+.hero-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 0.5rem;
+}
+
 
 /* Force no spacing for the hero section's row/container */
 .hero-section .row,
