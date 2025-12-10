@@ -248,6 +248,97 @@ img {
   padding: 0;
   width: 100%;
 }
+
+/* --- Main --- */
+
+/* Main content container (similar to post preview container) */
+.main-content {
+  margin: 0 auto;
+  max-width: 800px; /* Adjust as needed */
+  padding: 2.1875rem 0;
+  font-family: var(--body-font);
+  color: var(--text-col);
+}
+
+/* Section styling (similar to post preview sections) */
+.main-content-section {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.main-content-section:last-child {
+  border-bottom: 0;
+}
+
+/* Title styling (similar to post title) */
+.main-content-title {
+  font-size: 1.875rem;
+  margin-top: 0;
+  font-family: var(--header-font);
+  color: var(--text-col);
+}
+
+@media (min-width: 768px) {
+  .main-content-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Subtitle styling (similar to post subtitle) */
+.main-content-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+  font-family: var(--header-font);
+  color: var(--mid-col);
+}
+
+/* Text styling (similar to post entry) */
+.main-content-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Image styling (similar to post image) */
+.main-content-image {
+  width: 100%;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.main-content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Graph container styling */
+.main-content-graph {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+/* Button/link styling (similar to post read more) */
+.main-content-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 800;
+  color: var(--hover-col);
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .main-content {
+    padding: 1.25rem 0;
+  }
+
+  .main-content-title {
+    font-size: 1.5rem;
+  }
+}
 /* --- Navbar --- */
 
 .navbar-custom {
