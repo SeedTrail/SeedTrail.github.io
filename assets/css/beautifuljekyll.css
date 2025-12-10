@@ -203,7 +203,7 @@ img {
 
 .hero-content .page-heading {
   text-align: center;
-  text-shadow: 1px 2px 2px #0D90B0 ;
+  text-shadow: 1px 2px 5px #0CF2DB ;
   padding: 0 20px;
 }
 
@@ -211,23 +211,23 @@ img {
   font-size: 4.5rem;
   margin-bottom: 1rem;
   font-family: var(--header-font);
-  color: #27DEF2 !important;
-  text-shadow: 1px 2px 2px #0D90B0 !important; 
+  color: #0CF2DB !important;
+  text-shadow: 1px 2px 5px #0D90B0 !important; 
 }
 
 .hero-content .page-heading .page-subheading {
   font-size: 1.5rem;
   display: block;
   margin-top: 0.5rem;
-  color: #27DEF2;
+  color: #0CF2DB;
   font-family: var(--header-font);
-  text-shadow: 1px 2px 2px #0D90B0 !important;
+  text-shadow: 1px 2px 5px #0D90B0 !important;
 }
 .hero-content .page-heading hr.small {
   max-width: 6.25rem;
   margin: 1rem auto;
   border-width: 0.25rem;
-  border-color: #27DEF2;
+  border-color: #27DEF2 !important;
   border-radius: 0.1875rem;
 }
 
