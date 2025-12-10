@@ -217,8 +217,9 @@ img {
   font-size: 1.5rem;
   display: block;
   margin-top: 0.5rem;
-  color: #27def2;
+  color: #27DEF2;
   font-family: var(--header-font);
+  text-shadow: 1px 2px 2px #0D90B0;
 }
 .hero-content .page-heading hr.small {
   max-width: 6.25rem;
