@@ -1403,8 +1403,8 @@ body {
   font-size: 4rem;
   font-family: monospace;
   position: relative;
-  color: #0f0;
-  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+  color: #27DEF2;
+  text-shadow: 0 0 10px #27DEF2, 0 0 20px #27DEF2;
   margin-bottom: 1rem;
 }
 
@@ -1418,8 +1418,8 @@ body {
   animation: glitch 2s infinite;
   clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
   transform: translate(-2px, -2px);
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0;
+  color: #27DEF2;
+  text-shadow: 0 0 5px #27DEF2;
 }
 
 /* Matrix subtitle styling */
@@ -1427,8 +1427,8 @@ body {
   font-size: 1.5rem;
   font-family: monospace;
   position: relative;
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0;
+  color: #27DEF2;
+  text-shadow: 0 0 5px #27DEF2;
 }
 
 .hero-section .matrix-subtitle::before {
@@ -1442,7 +1442,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
   transform: translate(-1px, -1px);
   color: #0f0;
-  text-shadow: 0 0 3px #0f0;
+  text-shadow: 0 0 3px #27DEF2;
 }
 
 /* Animation for the rain effect */
