@@ -1284,9 +1284,9 @@ css
 Copier
 
 /* Adjust hero section to start right below fixed navbar */
-.hero-section {
-  margin-top: 56px; /* Match the navbar height */
-}
+/*.hero-section { */
+/*  margin-top: 56px; /* Match the navbar height */
+/* }*/
 
 3. Remove Extra Spacing from Navbar
 Your navbar has some bottom padding/margin. Remove it:
