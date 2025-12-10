@@ -349,14 +349,10 @@ img {
 }
 
 .transition{
-  border: 5px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
   width: 50%;
   display: block;
   margin: auto;
   padding: 1.25rem 0;
-  border-bottom: 1px solid #eee;
 }
 
 /* --- Navbar --- */
