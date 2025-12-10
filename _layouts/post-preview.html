@@ -1,0 +1,87 @@
+<!-- Padded container for post previews -->
+<main class="container-md">
+  <div class="row">
+    <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      {{ content }}
+
+      <!-- Post previews with side padding -->
+      {% assign posts = paginator.posts | default: site.posts %}
+      <ul class="posts-list list-unstyled" role="list">
+        {% for post in posts %}
+        <li class="post-preview">
+          <article>
+            <!-- Full-width post images -->
+            {%- capture thumbnail -%}
+              {% if post.thumbnail-img %}
+                {{ post.thumbnail-img }}
+              {% elsif post.cover-img %}
+                {% if post.cover-img.first %}
+                  {{ post.cover-img[0].first.first }}
+                {% else %}
+                  {{ post.cover-img }}
+                {% endif %}
+              {% endif %}
+            {% endcapture %}
+            {% assign thumbnail = thumbnail | strip %}
+
+            <!-- Full-width image container -->
+            {% if thumbnail != "" %}
+            <div class="post-image post-image-normal" style="margin-left: -1rem; margin-right: -1rem; width: calc(100% + 2rem);">
+              <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
+                <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail" style="width: 100%; height: auto;">
+              </a>
+            </div>
+            {% endif %}
+
+            <!-- Padded post text -->
+            <div style="padding-left: 1rem; padding-right: 1rem;">
+              <a href="{{ post.url | absolute_url }}">
+                <h2 class="post-title">{{ post.title | strip_html }}</h2>
+                {% if post.subtitle %}
+                  <h3 class="post-subtitle">{{ post.subtitle | strip_html }}</h3>
+                {% endif %}
+              </a>
+              {% if post.author %}
+                <span>By <strong>{{ post.author | strip_html }}</strong></span>
+              {% endif %}
+              <p class="post-meta">
+                {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+                Posted on {{ post.date | date: date_format }}
+              </p>
+              <div class="post-entry">
+                {% assign excerpt_length = site.excerpt_length | default: 50 %}
+                {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
+                {% if post.content != post.excerpt %}
+                  <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read More]</a>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <!-- Pagination -->
+      {% if paginator.total_pages > 1 %}
+      <ul class="pagination main-pager">
+        {% if paginator.previous_page %}
+        <li class="page-item previous">
+          <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">
+            <i class="fas fa-arrow-left" alt="Newer Posts"></i>
+            <span class="d-none d-sm-inline-block">Newer Posts</span>
+          </a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="page-item next">
+          <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">
+            <span class="d-none d-sm-inline-block">Older Posts</span>
+            <i class="fas fa-arrow-right" alt="Older Posts"></i>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</main>
