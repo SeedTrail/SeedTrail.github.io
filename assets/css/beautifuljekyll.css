@@ -263,17 +263,15 @@ img {
 
 /* --- Image Transition --- */
 
-/*img {/*
-/*  margin: 0 auto;/*
-/*  max-width: 800px; /* Adjust as needed *//*
-/*  padding: 2.1875rem 0;/*
-/*}/*
+/*img {*/
+/*  margin: 0 auto;*/
+/*  max-width: 800px; /* Adjust as needed */
+/*  padding: 2.1875rem 0;*/
+/*}*/
 
 .transition{
-  width: 50%;
-  display: block;
-  margin: auto;
-  padding: 1.25rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* --- Navbar --- */
