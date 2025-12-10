@@ -200,24 +200,25 @@ img {
 .main-subtitle {
   font-size: 1.5rem;
 }
-/*-----------*/
+
 .hero-content .page-heading {
   text-align: center;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  padding: 0 0px;
+  padding: 0 20px;
 }
 
-/*-----------*/
 .hero-content .page-heading h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   margin-bottom: 1rem;
   font-family: var(--header-font);
-  color: #FF5722 !important;
+  color: #27def2 !important;
 }
 .hero-content .page-heading .page-subheading {
   font-size: 1.5rem;
   display: block;
   margin-top: 0.5rem;
+  color: #27def2;
+  font-family: var(--header-font);
 }
 .hero-content .page-heading hr.small {
   max-width: 6.25rem;
