@@ -149,7 +149,9 @@ img {
   }
 }
 
-/* --- Hero Section --- */
+
+/* --- New hero section --- */
+
 /* Hero section container */
 .hero-section {
   position: relative;
@@ -185,58 +187,108 @@ img {
   object-fit: cover;
 }
 
-/* Hero content container */
+/* Matrix-style container for text */
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 40px;
   width: 100%;
+  height: 100%;
 }
 
-/* Main title styling */
-.hero-content .main-title,
-.hero-content .page-heading h1 {
-  font-size: 4.5rem !important;
-  margin-bottom: 1rem !important;
-  font-family: Franklin Gothic Medium !important;
-  color: #0CF2DB !important;
-  text-shadow: 2px 2px 4px #4e5a65 !important;
-  line-height: 1.2;
+/* Matrix text styling */
+.hero-content .matrix-title {
+  color: #0f0;
+  font-size: 4rem;
+  font-family: monospace;
+  position: relative;
+  text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+  margin-bottom: 1rem;
+  z-index: 2;
 }
 
-/* Subtitle styling */
-.hero-content .main-subtitle,
-.hero-content .page-heading .page-subheading {
-  font-size: 1.5rem !important;
-  display: block;
-  margin-top: 0.5rem !important;
-  color: #0CF2DB !important;
-  font-family: Franklin Gothic Medium !important;
-  text-shadow: 1px 1px 4px #4e5a65 !important;
-}
-
-/* Horizontal rule styling */
-.hero-content .page-heading hr.small {
-  max-width: 6.25rem;
-  margin: 1rem auto;
-  border-width: 0.25rem;
-  border-color: #ffffff !important;
-  border-radius: 0.1875rem;
-  color: #ffffff !important;
-}
-
-/* Background overlay for better text readability */
-.hero-content::before {
-  content: "";
+.hero-content .matrix-title::before {
+  content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
-  border-radius: 0.5rem;
+  animation: glitch 2s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-2px, -2px);
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 15px #0f0;
+}
+
+.hero-content .matrix-subtitle {
+  color: #0f0;
+  font-size: 1.5rem;
+  font-family: monospace;
+  position: relative;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0;
+  z-index: 2;
+}
+
+.hero-content .matrix-subtitle::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: glitch 3s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+  transform: translate(-1px, -1px);
+  color: #0f0;
+  text-shadow: 0 0 3px #0f0, 0 0 8px #0f0;
+}
+
+/* Rain effect */
+.rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 0, 0.1) 0,
+    rgba(0, 255, 0, 0.2) 2px,
+    transparent 4px
+  );
+  animation: rain 10s linear infinite;
+  z-index: 1;
+}
+
+/* Animation for the rain effect */
+@keyframes rain {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* Glitch effect for the text */
+@keyframes glitch {
+  0%, 100% {
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(0);
+  }
+  33% {
+    clip-path: polygon(0 0, 100% 0, 100% 15%, 0 15%);
+    transform: translate(-5px, -5px);
+  }
+  66% {
+    clip-path: polygon(0 85%, 100% 85%, 100% 100%, 0 100%);
+    transform: translate(5px, 5px);
+  }
 }
 
 
