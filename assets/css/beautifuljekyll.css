@@ -263,30 +263,25 @@ img {
 
 /* --- Image Transition --- */
 
-/*img {*/
-/*  margin: 0 auto;*/
-/*  max-width: 800px; /* Adjust as needed */
-/*  padding: 2.1875rem 0;*/
-/*}*/
-
-/*.transition{*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
-
-/* Image styling (similar to post image) */
-.transition-image {
+/* Container for centered content */
+.transition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  margin: 1.25rem 0;
-  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 0;
 }
 
-.transition-image img {
-  max-width: 100%;
+/* Image styling */
+.transition img {
+  max-width: 800px;
+  width: 100%;
   height: auto;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
 }
+
 
 /* --- Navbar --- */
 
