@@ -1245,33 +1245,20 @@ body.home .navbar-custom {
   padding-bottom: 0 !important;
 }
 
-body.home :target:before {
-  height: 0 !important;
-  margin: 0 !important;
-}
+*/body.home :target:before {*/
+*/  height: 0 !important;*/
+*/  margin: 0 !important;*/
+*/}
 
 body.home .hero-section {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
 
-body.home > main {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-After inspecting your site (SeedTrail), the spacing between the navbar and the video hero section is caused by:
-
-Root Cause
-
-The navbar is fixed-top, so Bootstrap automatically adds a padding-top: 56px to the <body> to prevent content from being hidden behind the navbar.
-Your hero section is not accounting for this padding, so it starts below the navbar, leaving a gap.
-
-How to Fix It
-1. Remove Bootstrap’s Default Padding for Fixed Navbar
-Add this CSS to override the default padding:
-css
-Copier
+/*body.home > main {*/
+/*  margin-top: 0 !important;*/
+/*  padding-top: 0 !important;*/
+/*}*/
 
 /* Remove Bootstrap's default padding for fixed navbar */
 body {
