@@ -1182,6 +1182,17 @@ pre {
 /* --- PERSONNAL ADDITIONS TO EXISTING TEMPLATE --- */
 /* ------------------------------------------------ */
 
+/* --- Containers for the story writting --- */
+.container{
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  background-color: #fafaf9;
+}
+
+.bg-container{
+  background-color: #fafaf9;
+}
 
 /* --- Story writting styles --- */
 .story{
