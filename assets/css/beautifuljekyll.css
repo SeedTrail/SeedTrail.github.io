@@ -1186,13 +1186,13 @@ pre {
 /* Container for the story */
 .container{
   width: 100%;
-  margin: 0;
+  /*margin: auto;*/
   overflow: hidden;
   /*background-color: #fafaf9;*/
 }
-.bg-container{
-  background-color: #fafaf9;
-}
+/*.bg-container{*/
+/*  background-color: #fafaf9;*/
+/*}*/
 /* --- Story writting styles --- */
 .story{
   text-align: justify;
@@ -1216,6 +1216,7 @@ pre {
   opacity: 0.3; /* Adjust opacity for better text readability */
   background-size: cover;
   background-position: center;
+  background-image: url("/assets/img/crepe.jpg") !important;
 }
 
 .story h2{
