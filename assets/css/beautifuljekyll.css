@@ -1184,7 +1184,7 @@ pre {
 
 /* --- Containers for the story writting --- */
 .container{
-  width: 70%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
   /*background-color: #fafaf9;*/
@@ -1192,7 +1192,6 @@ pre {
 
 .bg-container{
   background-color: #fafaf9;
-  background-image: url("/img/crepe.jpg")
 }
 
 /* --- Story writting styles --- */
@@ -1204,7 +1203,7 @@ pre {
   font-family: var(--body-font);
   color: var(--text-col);
   padding: /*2.1875rem 0;*/
-  background-image: 
+  background-image: url("/img/crepe.jpg");
 }
 
 /*.main-content {*/
@@ -1264,7 +1263,7 @@ pre {
   /* text-indent: 2em */
   font-size: 1.125rem;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  /*margin-bottom: 1.25rem;*/
 }
 
 /*.main-content-text {*/
@@ -1272,6 +1271,15 @@ pre {
   /*line-height: 1.6;*/
   /*margin-bottom: 1.25rem;*/
 }*/
+
+/*.main-content-section {*/
+  /*padding: 1.25rem 0;*/
+/* border-bottom: 1px solid #eee;*/
+/*}*/
+
+/*.main-content-section:last-child {*/
+  /*border-bottom: 0;*/
+/*}*/
 
 .gradient-text {
   /* background: linear-gradient(to right, #3458d6, #34d634); */
