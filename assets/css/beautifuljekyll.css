@@ -1182,69 +1182,7 @@ pre {
 /* --- PERSONNAL ADDITIONS TO EXISTING TEMPLATE --- */
 /* ------------------------------------------------ */
 
-/* --- Containers for the story writting --- */
-/* Container for the story */
-.container{
-  width: 100%;
-  margin: 25px;
-  overflow: hidden;
-  /*background-color: #fafaf9;*/
-}
-/*.bg-container{*/
-/*  background-color: #fafaf9;*/
-/*}*/
-/* --- Story writting styles --- */
-.story{
-  text-align: justify;
-  font-size: 16px;
-  font-family: var(--body-font);
-  color: var(--text-col);
-  /*padding: /*2.1875rem 0;*/
-  z-index: -1;
-  position: relative;
-}
 
-.story-img {
-  position: absolute; /* Positions the image behind the text */
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); /* Centers the image horizontally */
-  width: 120%; /* Makes the image larger than the text container */
-  max-width: none; /* Allows the image to exceed the container width */
-  height: auto;
-  z-index: -2; /* Places the image below the text */
-  opacity: 0.3; /* Adjust opacity for better text readability */
-  background-size: cover;
-  background-position: center;
-}
-
-.story h2{
-  font-size: 1.875rem;
-  margin-top: 0;
-  font-family: var(--header-font);
-  color: var(--text-col);
-}
-
-.story h3{
-  margin: 0;
-  font-weight: 300;
-  margin-bottom: 0.625rem;
-  font-family: LinLibCap;
-  color: var(--mid-col);
-}
-
-.story p{
-  font-size: 1.125rem;
-  line-height: 1.6;
-}
-
-.gradient-text {
-  /* background: linear-gradient(to right, #3458d6, #34d634); */
-  background: linear-gradient(to right, #28649C, #1dc2b1);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
 /* --- Main --- */
 
 /* Main content container (similar to post preview container) */
@@ -1489,4 +1427,67 @@ body {
   width: 100%;
 }
 
+/* --- Containers for the story writting --- */
+/* Container for the story */
+.container{
+  width: 100%;
+  margin: 25px;
+  overflow: hidden;
+  /*background-color: #fafaf9;*/
+}
+/*.bg-container{*/
+/*  background-color: #fafaf9;*/
+/*}*/
+/* --- Story writting styles --- */
+.story{
+  text-align: justify;
+  font-size: 16px;
+  font-family: var(--body-font);
+  color: var(--text-col);
+  /*padding: /*2.1875rem 0;*/
+  z-index: -1;
+  position: relative;
+}
+
+.story-img {
+  position: absolute; /* Positions the image behind the text */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the image horizontally */
+  width: 120%; /* Makes the image larger than the text container */
+  max-width: none; /* Allows the image to exceed the container width */
+  height: auto;
+  z-index: -2; /* Places the image below the text */
+  opacity: 0.3; /* Adjust opacity for better text readability */
+  background-size: cover;
+  background-position: center;
+}
+
+.story h2{
+  font-size: 1.875rem;
+  margin-top: 0;
+  font-family: var(--header-font);
+  color: var(--text-col);
+}
+
+.story h3{
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+  font-family: LinLibCap;
+  color: var(--mid-col);
+}
+
+.story p{
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.gradient-text {
+  /* background: linear-gradient(to right, #3458d6, #34d634); */
+  background: linear-gradient(to right, #28649C, #1dc2b1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
