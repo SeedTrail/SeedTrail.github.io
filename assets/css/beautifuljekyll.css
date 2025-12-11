@@ -1244,7 +1244,7 @@ pre {
   margin: 0;
   font-weight: 300;
   margin-bottom: 0.625rem;
-  font-family: var(--header-font);
+  font-family: LinLibCap;
   color: var(--mid-col);
 }
 
