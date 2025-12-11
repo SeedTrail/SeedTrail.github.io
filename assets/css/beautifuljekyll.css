@@ -1183,65 +1183,54 @@ pre {
 /* ------------------------------------------------ */
 
 /* --- Containers for the story writting --- */
-.container{
+/* Container for the story */
+.container {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  /*background-color: #fafaf9;*/
+  position: relative; /* Required for absolute positioning of the image */
 }
 
-.bg-container{
+/* Background container */
+.bg-container {
   background-color: #fafaf9;
 }
 
-/* --- Story writting styles --- */
-.story{
-  /*padding-top: 80px;*/
-  /*background-color: #fafaf9; */
+/* Story text styling */
+.story {
+  position: relative; /* Ensures text stays above the image */
+  z-index: 2; /* Places text above the image */
   text-align: justify;
   font-size: 16px;
   font-family: var(--body-font);
   color: var(--text-col);
-  padding: /*2.1875rem 0;*/
+  padding: 2.1875rem 0;
 }
 
-.story-img{
-  background-image: url("./img/crepe.jpg");
+/* Story image styling */
+.story-img {
+  position: absolute; /* Positions the image behind the text */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the image horizontally */
+  width: 120%; /* Makes the image larger than the text container */
+  max-width: none; /* Allows the image to exceed the container width */
+  height: auto;
+  z-index: 1; /* Places the image below the text */
+  opacity: 0.3; /* Adjust opacity for better text readability */
+  background-size: cover;
+  background-position: center;
 }
-/*.main-content {*/
-/*  margin: 0 auto;/*
-  /*max-width: 800px; /* Adjust as needed */*/
-  /*padding: 2.1875rem 0;*/
-  /*font-family: var(--body-font);*/
-  /*color: var(--text-col);*/
-/*}*/
 
-.story h2{
-  /*text-align: center;*/
-  /*font-size: 45px;*/
-  /*font-family: 'LinLibCap';*/
-  /*padding-bottom: 10px;*/
-  /*font-weight: normal;*/
+/* Story headings */
+.story h2 {
   font-size: 1.875rem;
   margin-top: 0;
   font-family: var(--header-font);
   color: var(--text-col);
 }
 
-/*.main-content-title {*/
-  /*font-size: 1.875rem;*/
-  /*margin-top: 0;*/
-  /*font-family: var(--header-font);*/
-  /*color: var(--text-col);*/
-/*}*/
-
-.story h3{
-  /*font-size: 35px;*/
-  /*font-family: 'LinLibCap';*/
-  /*padding-bottom: 15px;*/
-  /*font-weight: normal;*/
-  /*margin-top: 25px;*/
-  /*text-align: left;*/
+.story h3 {
   margin: 0;
   font-weight: 300;
   margin-bottom: 0.625rem;
@@ -1249,42 +1238,13 @@ pre {
   color: var(--mid-col);
 }
 
-/*.main-content-subtitle {*/
-  /*margin: 0;*/
-  /*font-weight: 300;*/
-  /*margin-bottom: 0.625rem;*/
-  /*font-family: var(--header-font);*/
-  /*color: var(--mid-col);*/
-/*}*/
-
-.story p{
-  /*font-family: "OpenSansReg";*/
-  /*text-align: justify;*/
-  /*font-size: 16px;*/
-  /*padding-bottom: 16px;*/
-  /* text-indent: 2em */
+.story p {
   font-size: 1.125rem;
   line-height: 1.6;
-  /*margin-bottom: 1.25rem;*/
 }
 
-/*.main-content-text {*/
-  /*font-size: 1.125rem;*/
-  /*line-height: 1.6;*/
-  /*margin-bottom: 1.25rem;*/
-}*/
-
-/*.main-content-section {*/
-  /*padding: 1.25rem 0;*/
-/* border-bottom: 1px solid #eee;*/
-/*}*/
-
-/*.main-content-section:last-child {*/
-  /*border-bottom: 0;*/
-/*}*/
-
+/* Gradient text */
 .gradient-text {
-  /* background: linear-gradient(to right, #3458d6, #34d634); */
   background: linear-gradient(to right, #28649C, #1dc2b1);
   -webkit-background-clip: text;
   background-clip: text;
