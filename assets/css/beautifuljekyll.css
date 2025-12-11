@@ -1184,30 +1184,26 @@ pre {
 
 /* --- Containers for the story writting --- */
 /* Container for the story */
-.container {
+.container{
   width: 100%;
-  margin: auto;
+  margin: 0;
   overflow: hidden;
-  position: relative; /* Required for absolute positioning of the image */
+  /*background-color: #fafaf9;*/
 }
-
-/* Background container */
-.bg-container {
+.bg-container{
   background-color: #fafaf9;
 }
-
-/* Story text styling */
-.story {
-  position: relative; /* Ensures text stays above the image */
-  z-index: 2; /* Places text above the image */
+/* --- Story writting styles --- */
+.story{
   text-align: justify;
   font-size: 16px;
   font-family: var(--body-font);
   color: var(--text-col);
-  /*padding: 2.1875rem 0;*/
+  /*padding: /*2.1875rem 0;*/
+  z-index: 2;
+  position: relative;
 }
 
-/* Story image styling */
 .story-img {
   position: absolute; /* Positions the image behind the text */
   top: 0;
@@ -1222,15 +1218,14 @@ pre {
   background-position: center;
 }
 
-/* Story headings */
-.story h2 {
+.story h2{
   font-size: 1.875rem;
   margin-top: 0;
   font-family: var(--header-font);
   color: var(--text-col);
 }
 
-.story h3 {
+.story h3{
   margin: 0;
   font-weight: 300;
   margin-bottom: 0.625rem;
@@ -1238,19 +1233,18 @@ pre {
   color: var(--mid-col);
 }
 
-.story p {
+.story p{
   font-size: 1.125rem;
   line-height: 1.6;
 }
 
-/* Gradient text */
 .gradient-text {
+  /* background: linear-gradient(to right, #3458d6, #34d634); */
   background: linear-gradient(to right, #28649C, #1dc2b1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-
 /* --- Main --- */
 
 /* Main content container (similar to post preview container) */
