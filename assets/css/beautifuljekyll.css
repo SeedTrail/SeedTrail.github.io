@@ -1186,7 +1186,7 @@ pre {
 /* Container for the story */
 .container {
   width: 100%;
-  margin: 0;
+  margin: auto;
   overflow: hidden;
   position: relative; /* Required for absolute positioning of the image */
 }
