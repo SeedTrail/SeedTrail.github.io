@@ -1454,13 +1454,14 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%); /* Centers the image horizontally */
-  width: 120%; /* Makes the image larger than the text container */
+  width: 110%; /* Makes the image larger than the text container */
   max-width: none; /* Allows the image to exceed the container width */
   height: auto;
   z-index: -2; /* Places the image below the text */
   opacity: 0.3; /* Adjust opacity for better text readability */
   background-size: cover;
   background-position: center;
+  background-image: url("/assets/img/avatar-icon.png");
 }
 
 .story h2{
