@@ -149,27 +149,6 @@ img {
   }
 }
 
-/* --- Image Transition --- */
-
-/* Container for centered content */
-.transition {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 2rem auto;
-  padding: 1rem 0;
-}
-
-/* Image styling */
-.transition img {
-  max-width: 800px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 
 /* --- Navbar --- */
 
@@ -1495,3 +1474,23 @@ body {
   color: transparent;
 }
 
+/* --- Image Transition --- */
+
+/* Container for centered content */
+.transition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem 0;
+}
+
+/* Image styling */
+/*.transition img {*/
+/*  max-width: 800px;*/
+/*  width: 100%;*/
+/*  height: auto;*/
+/*  display: block;*/
+/*  margin: 0 auto;*/
+/*}*/
