@@ -1457,6 +1457,16 @@ body {
   position: relative;
 }
 
+.story-frame {
+  position: relative;
+  padding: 10%; /* Makes the frame 10% bigger than the text */
+  background-image: url('/assets/img/frame.png');
+  background-size: 100% 100%; /* stretch to container */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block; /* Shrinks tightly to content */
+}
+
 .story-img {
   position: absolute; /* Positions the image behind the text */
   top: 0;
