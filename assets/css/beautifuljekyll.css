@@ -1431,13 +1431,21 @@ body {
 /* Container for the story */
 .container{
   width: 100%;
-  margin: 25px;
+  margin: 0px;
   overflow: hidden;
   /*background-color: #fafaf9;*/
 }
-/*.bg-container{*/
-/*  background-color: #fafaf9;*/
-/*}*/
+
+.img-container{
+  width: 120%;
+  margin: 0px;
+  overflow: hidden;
+  /*background-color: #fafaf9;*/
+}
+
+.img-container img {
+  object-fit: fill;
+}
 /* --- Story writting styles --- */
 .story{
   text-align: justify;
@@ -1452,7 +1460,7 @@ body {
 .story-img {
   position: absolute; /* Positions the image behind the text */
   top: 0;
-  left: 75%;
+  left: 25%;
   transform: translateX(-50%); /* Centers the image horizontally */
   width: 110%; /* Makes the image larger than the text container */
   max-width: none; /* Allows the image to exceed the container width */
