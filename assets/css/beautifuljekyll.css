@@ -1186,7 +1186,7 @@ pre {
 /* Container for the story */
 .container{
   width: 100%;
-  /*margin: auto;*/
+  margin: 25px;
   overflow: hidden;
   /*background-color: #fafaf9;*/
 }
@@ -1200,7 +1200,7 @@ pre {
   font-family: var(--body-font);
   color: var(--text-col);
   /*padding: /*2.1875rem 0;*/
-  z-index: 2;
+  z-index: -1;
   position: relative;
 }
 
@@ -1212,11 +1212,10 @@ pre {
   width: 120%; /* Makes the image larger than the text container */
   max-width: none; /* Allows the image to exceed the container width */
   height: auto;
-  z-index: 1; /* Places the image below the text */
+  z-index: -2; /* Places the image below the text */
   opacity: 0.3; /* Adjust opacity for better text readability */
   background-size: cover;
   background-position: center;
-  background-image: url("/assets/img/crepe.jpg") !important;
 }
 
 .story h2{
