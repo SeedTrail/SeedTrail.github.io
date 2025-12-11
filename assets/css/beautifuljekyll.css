@@ -1203,9 +1203,11 @@ pre {
   font-family: var(--body-font);
   color: var(--text-col);
   padding: /*2.1875rem 0;*/
-  background-image: url("./img/crepe.jpg");
 }
 
+.story-img{
+  background-image: url("./img/crepe.jpg");
+}
 /*.main-content {*/
 /*  margin: 0 auto;/*
   /*max-width: 800px; /* Adjust as needed */*/
