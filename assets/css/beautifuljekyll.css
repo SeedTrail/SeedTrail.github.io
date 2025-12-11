@@ -1204,7 +1204,7 @@ pre {
   font-size: 16px;
   font-family: var(--body-font);
   color: var(--text-col);
-  padding: 2.1875rem 0;
+  /*padding: 2.1875rem 0;*/
 }
 
 /* Story image styling */
