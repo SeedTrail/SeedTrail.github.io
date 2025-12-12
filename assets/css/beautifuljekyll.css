@@ -18,11 +18,51 @@ layout: null
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
 
+  /* ----------- ADDED STUFFS --------------------------------------- */
+  --fontOrigin: 1rem;     /* 16px */
+  --fontSmall: 0.625em;   /* 10px */
+  --fontMedium: 0.875em;  /* 14px */
+  --fontNormal: 1em;      /* 16px */
+  --fontLarge:  1.375em;  /* 22px */
+  --fontLight: 100;
+  --fontRegular: 400;
+  --speed: 0.65s;
+  /* ----------- ADDED STUFFS --------------------------------------- */
+                       
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
 }
+
+/* ----------- ADDED STUFFS --------------------------------------- */
+@keyframes zoom {
+  from {
+    object-position: 0 50%;
+  }
+  to {
+    object-position: 100% 50%;
+  }
+}
+
+@keyframes blur {
+  from {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(2, 2);
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ----------- ADDED STUFFS --------------------------------------- */
 
 /* --- General --- */
 
@@ -44,7 +84,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+/* ----------- ADDED STUFFS --------------------------------------- */
+  letter-spacing: 0.005rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  font-weight: var(--fontOrigin);
+/* ----------- ADDED STUFFS --------------------------------------- */
 }
+
+
 body > main {
   flex: 1;
 }
