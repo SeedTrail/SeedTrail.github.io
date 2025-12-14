@@ -1382,11 +1382,8 @@ body {
 /* Matrix title styling */
 .hero-section .matrix-title {
   font-size: 4rem;
-  font-family: "Orbitron", "SF Pro Display", system-ui, sans-serif;
+  font-family: 'JetBrains Mono', sans-serif;
   position: relative;
-  white-space: nowrap;
-    white-space-collapse: collapse;
-    text-wrap-mode: nowrap;
   color: #0CF2DB !important;
   text-shadow: 0 0 10px #27DEF2, 0 0 20px #27DEF2 !important;
   margin-bottom: 1rem;
