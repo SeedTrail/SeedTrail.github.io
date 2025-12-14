@@ -1556,17 +1556,45 @@ body {
   align-self: center;
   justify-self: center;
   overflow: hidden;
-  display: inline-block;
+
   width: 100%;
   max-width: 550px;
-  
+
   font-size: var(--fontOrigin);
-  border-radius: 8px;
-  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  -webkit-transition: all var(--speed) ease;
+
+  /* FRAME BORDER */
+  border: 28px solid transparent; /* controls frame thickness */
+  border-image-source: url("/assets/img/frame.jpg");
+  border-image-slice: 60; /* VERY IMPORTANT – tweak this */
+  border-image-width: 28px;
+  border-image-repeat: stretch;
+
   transition: all var(--speed) ease;
 }
+  
+  /*font-size: var(--fontOrigin);*/
+  /*border-radius: 8px;*/
+  /*box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);*/
+  /*cursor: pointer;*/
+  /*-webkit-transition: all var(--speed) ease;*/
+  /*transition: all var(--speed) ease;*/
+/*}*/
+/* ---- ADDED VIA CHAT GPT ---- */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.card:hover::after {
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
+}
+
+/* ---- ADDED VIA CHAT GPT ---- */
 
 .card:hover {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
@@ -1823,3 +1851,12 @@ body {
   filter: grayscale(50%) contrast(80%) brightness(1.6);
   mix-blend-mode: normal;
 }
+
+/* ---- ADDED VIA CHAT GPT ---- */
+.card__body,
+.card__header,
+.card__footer {
+  padding: 20px;
+}
+/* ---- ADDED VIA CHAT GPT ---- */
+
