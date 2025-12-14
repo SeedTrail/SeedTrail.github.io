@@ -1546,7 +1546,7 @@ body {
   border: 30px solid transparent;
   border-image-source: url("/assets/img/frame.jpg");
   border-image-slice: 90;
-  border-image-width: 28px;
+  /*border-image-width: 28px;*/
   border-image-repeat: stretch;
   z-index: 0; /* creates stacking context */
 }
