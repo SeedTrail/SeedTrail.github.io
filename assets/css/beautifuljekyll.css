@@ -1538,17 +1538,17 @@ body {
 /* --- Fraame effect --- */
 /* --- ADDED STUFFS --- */
 /* https://codepen.io/lamchang/pen/PQGQyR */
-.wrapper {
+/*.wrapper {*/
    /*display: grid;*/
    /*grid-template-columns: repeat( auto-fit, 1fr );*/
    /*grid-template-rows: auto;*/
    /*grid-template-areas:*/
    /*  ". card .";*/
-  width: 100vw;
-  min-height: 100vh;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  /*width: 100vw;*/
+  /*min-height: 100vh;*/
+  /*padding-top: 40px;*/
+  /*padding-bottom: 40px;*/
+/*}*/
 
 .card {
   position: relative;
