@@ -1543,56 +1543,11 @@ body {
   grid-template-columns: repeat( auto-fit, 1fr );
   grid-template-rows: auto;
   grid-template-areas:
-    "menu menu menu"
     ". card .";
   width: 100vw;
   min-height: 100vh;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.menu {
-  grid-area: menu;
-  align-self: end;
-}
-
-.menu__list {
-  text-align: center;
-}
-
-.menu__item {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: var(--fontMedium);
-  font-weight: var(--fontRegular);
-  text-transform: uppercase;
-  color: #a9a9a9;
-  cursor: pointer;
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu__item::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  margin-top: 6px;
-  background: rgba(100, 100, 250, 1);
-  -webkit-transition: all var(--speed) ease;
-  transition: all var(--speed) ease;
-}
-
-.menu__item:hover {
-  color: rgba(150, 150, 255, 1);
-}
-.menu__item.active {
-  color: rgba(100, 100, 250, 1);
-}
-
-.menu__item.active::after {
-  width: 100%;
+  /*padding-top: 40px;*/
+  /*padding-bottom: 40px;*/
 }
 
 .card {
