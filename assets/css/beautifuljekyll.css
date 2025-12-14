@@ -1574,12 +1574,14 @@ body {
 .card:hover::after {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
   /*transition: all var(--speed) ease;*/
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .card:hover {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+  /*  -webkit-transform: scale(1.1, 1.1);*/
+  /*transform: scale(1.1, 1.1);*/
 }
 
 /* ---- ADDED VIA CHAT GPT ---- */
