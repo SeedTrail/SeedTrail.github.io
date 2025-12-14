@@ -1570,17 +1570,18 @@ body {
   z-index: -1;
 }
 
-.card:hover::after {
-  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-}
-
-/* ---- ADDED VIA CHAT GPT ---- */
-
 .card:hover {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
+
+.card:hover::after {
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
+  transition: all var(--speed) ease;
+}
+
+/* ---- ADDED VIA CHAT GPT ---- */
 
 .card__save {
   position: absolute;
@@ -1643,8 +1644,8 @@ body {
 }
 
 .card__image img {
-  -webkit-transform: scale(1.3, 1.3);
-  transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1, 1);  /*1.3,1.3*/
+  transform: scale(1, 1);  /*1.3,1.3*/
   display: block;
   width: 100%;
   height: 100%;
