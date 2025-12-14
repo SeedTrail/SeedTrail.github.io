@@ -1558,13 +1558,14 @@ body {
   overflow: hidden;
 
   width: 100%;
-  max-width: 550px;
+  max-width: 650px;
 
   font-size: var(--fontOrigin);
   cursor: pointer;
 
   /* FRAME BORDER */
-  border: 28px solid transparent; /* controls frame thickness */
+  border: 30px; /*solid transparent; /* controls frame thickness */
+  border-color: black;
   border-image-source: url("/assets/img/frame.jpg");
   border-image-slice: 90; /* VERY IMPORTANT – tweak this */
   border-image-width: 28px;
