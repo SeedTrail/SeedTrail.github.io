@@ -1548,6 +1548,7 @@ body {
   border-image-slice: 90;
   border-image-width: 28px;
   border-image-repeat: stretch;
+  z-index: 0; /* creates stacking context */
 }
 
 .card__inner {
@@ -1577,8 +1578,8 @@ body {
 
 .card:hover {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
+  /*-webkit-transform: scale(1.1, 1.1);*/
+  /*transform: scale(1.1, 1.1);*/
 }
 
 .card__save {
