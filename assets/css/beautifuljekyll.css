@@ -1565,7 +1565,6 @@ body {
 
   /* FRAME BORDER */
   border: 30px; /*solid transparent; /* controls frame thickness */
-  border-color: black;
   border-image-source: url("/assets/img/frame.jpg");
   border-image-slice: 90; /* VERY IMPORTANT – tweak this */
   border-image-width: 28px;
@@ -1660,6 +1659,7 @@ body {
   height: 100%;
   pointer-events: none;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  border-color: black;
 }
 
 .card__image img {
