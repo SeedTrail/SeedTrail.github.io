@@ -1566,7 +1566,7 @@ body {
   /* FRAME BORDER */
   border: 28px solid transparent; /* controls frame thickness */
   border-image-source: url("/assets/img/frame.jpg");
-  border-image-slice: 60; /* VERY IMPORTANT – tweak this */
+  border-image-slice: 70; /* VERY IMPORTANT – tweak this */
   border-image-width: 28px;
   border-image-repeat: stretch;
 
