@@ -1537,49 +1537,28 @@ body {
 
 /* --- Fraame effect --- */
 /* --- ADDED STUFFS --- */
-/* https://codepen.io/lamchang/pen/PQGQyR */
-/*.wrapper {*/
-   /*display: grid;*/
-   /*grid-template-columns: repeat( auto-fit, 1fr );*/
-   /*grid-template-rows: auto;*/
-   /*grid-template-areas:*/
-   /*  ". card .";*/
-  /*width: 100vw;*/
-  /*min-height: 100vh;*/
-  /*padding-top: 40px;*/
-  /*padding-bottom: 40px;*/
-/*}*/
+
 
 .card {
   position: relative;
-  grid-area: card;
-  align-self: center;
-  justify-self: center;
-  overflow: hidden;
+  overflow: visible; /* MUST be visible */
 
-  width: 100%;
-  max-width: 550px;
-
-  font-size: var(--fontOrigin);
-  cursor: pointer;
-
-  /* FRAME BORDER */
-  border: 30px; /*solid transparent; /* controls frame thickness */
+  border: 30px solid transparent;
   border-image-source: url("/assets/img/frame.jpg");
-  border-image-slice: 90; /* VERY IMPORTANT – tweak this */
+  border-image-slice: 90;
   border-image-width: 28px;
   border-image-repeat: stretch;
-
-  transition: all var(--speed) ease;
 }
-  
-  /*font-size: var(--fontOrigin);*/
-  /*border-radius: 8px;*/
-  /*box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);*/
-  /*cursor: pointer;*/
-  /*-webkit-transition: all var(--speed) ease;*/
-  /*transition: all var(--speed) ease;*/
-/*}*/
+
+.card__inner {
+  position: relative;
+  transition: transform var(--speed) ease;
+}
+
+.card:hover .card__inner {
+  transform: scale(1.1);
+}
+
 /* ---- ADDED VIA CHAT GPT ---- */
 .card::after {
   content: "";
