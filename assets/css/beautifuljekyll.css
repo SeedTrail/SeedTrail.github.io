@@ -1578,8 +1578,8 @@ body {
 
 .card:hover {
   box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-  /*-webkit-transform: scale(1.1, 1.1);*/
-  /*transform: scale(1.1, 1.1);*/
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .card__save {
@@ -1756,7 +1756,7 @@ body {
   -webkit-transform: translateY(30%);
   transform: translateY(30%);
   display: block;
-  margin: 22px 0 16px 0;
+  margin: 22px 0 0px 0;
   font-size: var(--fontMedium);
   font-weight: var(--fontLight);
   /*text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.35);*/
