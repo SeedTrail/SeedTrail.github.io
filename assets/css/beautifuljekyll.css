@@ -1872,3 +1872,13 @@ body {
   display: table-cell;
   padding: 16px;
 }
+
+
+/ hide audio player on mobile //
+@media only screen and (max-width: 640px) {   
+player { display: none !important; }}
+
+// hide audio player on desktop //
+.audio-block.sqs-block-audio {
+ display: none;
+}
