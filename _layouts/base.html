@@ -24,6 +24,50 @@ common-js:
 <!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
 {% include head.html %}
 
+  
+<!-- INCLUDING AUDIO --->  
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("heroAudio");
+  const hero = document.getElementById("hero");
+
+  if (!audio || !hero) {
+    console.warn("Hero audio or hero section not found");
+    return;
+  }
+
+  let started = false;
+
+  const startAudio = () => {
+    if (!started) {
+      audio.volume = 1;
+      audio.play().then(() => {
+        started = true;
+      }).catch(err => {
+        console.warn("Audio play blocked:", err);
+      });
+    }
+  };
+
+  document.addEventListener("click", startAudio, { once: true });
+  document.addEventListener("scroll", startAudio, { once: true });
+  document.addEventListener("keydown", startAudio, { once: true });
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting && started) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    },
+    { threshold: 0.25 }
+  );
+
+  observer.observe(hero);
+});
+</script>
+
+<!-- INCLUDING AUDIO --->  
 <body>
   {% include gtm_body.html %}
 
