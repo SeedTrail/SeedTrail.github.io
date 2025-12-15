@@ -8,11 +8,13 @@ layout: base
 
 <div class="hero-section">
   <div class="video-background">
-    <video autoplay muted loop id="heroVideo">
+    <video autoplay muted loop playsinline id="heroVideo">   <!--autoplay muted loop id="heroVideo">-->
       <source src="/assets/video/IntroVideo.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <audio src="/assets/audio/audio-intro.mp3" type="audio/mp3"></audio>
+     <audio id="heroAudio" preload="auto">
+      <source src="/assets/audio/audio-intro.mp3" type="audio/mp3">
+    </audio>
   </div>
   <div class="rain"></div>
   <div class="hero-content">
