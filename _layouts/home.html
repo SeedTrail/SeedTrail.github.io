@@ -6,6 +6,29 @@ layout: base
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("heroAudio");
+  if (!audio) return;
+
+  let started = false;
+
+  const startAudio = () => {
+    if (!started) {
+      audio.volume = 1;
+      audio.play()
+        .then(() => started = true)
+        .catch(() => {});
+    }
+  };
+
+  ["click", "wheel", "keydown", "touchstart"].forEach(e =>
+    document.addEventListener(e, startAudio, { once: true })
+  );
+});
+</script>
+
+
 <div class="hero-section" id="hero">
   <div class="video-background">
     <video autoplay muted loop playsinline id="heroVideo">   <!--autoplay muted loop id="heroVideo">-->
