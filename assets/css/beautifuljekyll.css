@@ -1863,3 +1863,12 @@ body {
 }
 /* ---- ADDED VIA CHAT GPT ---- */
 
+/* --- Intro Columns --- */
+.intro.col-container {
+  display: table;
+  width: 100%;
+}
+.intro-col {
+  display: table-cell;
+  padding: 16px;
+}
