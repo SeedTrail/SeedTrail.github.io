@@ -1382,7 +1382,13 @@ body {
 /* Matrix title styling */
 .hero-section .matrix-title {
   font-size: 4rem;
-  font-family: 'JetBrains Mono', sans-serif;
+  /*font-family: 'JetBrains Mono', sans-serif;*/
+  /*--- GOOGLE API ---*/
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  /*--- GOOGLE API ---*/
   position: relative;
   color: #0CF2DB !important;
   text-shadow: 0 0 10px #27DEF2, 0 0 20px #27DEF2 !important;
