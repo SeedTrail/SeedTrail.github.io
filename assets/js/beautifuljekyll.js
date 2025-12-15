@@ -178,3 +178,39 @@ function toggleActive () {
 
 // Invoke "start ()" function
 window.addEventListener ('load', start);
+
+// AUDIO 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const audio = document.getElementById("heroAudio");
+  const hero = document.getElementById("hero");
+
+  let audioStarted = false;
+
+  // Start audio on first user interaction
+  const startAudio = () => {
+    if (!audioStarted) {
+      audio.play().catch(() => {});
+      audioStarted = true;
+    }
+    document.removeEventListener("click", startAudio);
+    document.removeEventListener("scroll", startAudio);
+  };
+
+  document.addEventListener("click", startAudio);
+  document.addEventListener("scroll", startAudio);
+
+  // Stop audio when hero is out of view
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!entry.isIntersecting) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(hero);
+});
+</script>
