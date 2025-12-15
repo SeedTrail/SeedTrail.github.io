@@ -185,20 +185,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const audio = document.getElementById("heroAudio");
   const hero = document.getElementById("hero");
 
-  let audioStarted = false;
+  let started = false;
 
-  // Start audio on first user interaction
-  const startAudio = () => {
-    if (!audioStarted) {
-      audio.play().catch(() => {});
-      audioStarted = true;
-    }
-    document.removeEventListener("click", startAudio);
-    document.removeEventListener("scroll", startAudio);
-  };
+const startAudio = () => {
+  if (!started) {
+    audio.volume = 1;
+    audio.play().then(() => {
+      started = true;
+      console.log("Audio started");
+    }).catch(err => {
+      console.warn("Blocked:", err);
+    });
+  }
+};
 
-  document.addEventListener("click", startAudio);
-  document.addEventListener("scroll", startAudio);
+["click", "wheel", "keydown", "touchstart"].forEach(event => {
+  document.addEventListener(event, startAudio, { once: true });
+});
 
   // Stop audio when hero is out of view
   const observer = new IntersectionObserver(
