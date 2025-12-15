@@ -100,6 +100,8 @@ body > main {
 p {
   line-height: 1.5;
   margin: 1.875rem 0;
+  color: white;
+  font-family: arial;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--header-font);
@@ -111,13 +113,15 @@ h1 {
   font-weight: 600;
 /*ADDED STUFFS*/
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  background: -webkit-linear-gradient(white, #ffffff);
+  background: -webkit-linear-gradient(white, #0cf2db)
   -webkit-background-clip: text;
   -webkit-text-fill-color: #6df4ff0f; /*transparent*/
 /*ADDED STUFFS*/
 }
 h2 {
   font-size: 1.875rem;
+  font-size: var(--fontLarge);
+  font-weight: var(--fontLight);
 }
 h3 {
   font-size: 1.5rem;
@@ -1731,17 +1735,17 @@ body {
   align-self: center;
   justify-self: center;
   margin-bottom: 2px;
-  color: white;
+  color: #0cf2db; /*white;*/
   font-size: var(--fontLarge);
-  font-weight: var(--fontLight);
+  /*font-weight: var(--fontLight);*/
   letter-spacing: 0.1rem;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  background: -webkit-linear-gradient(white, #a1a1a1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: all var(--speed) ease;
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);*/
+  /*background: -webkit-linear-gradient(white, #a1a1a1);*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*-webkit-transition: all var(--speed) ease;*/
   transition: all var(--speed) ease;
 }
 
@@ -1777,10 +1781,11 @@ body {
   font-size: var(--fontMedium);
   font-weight: var(--fontLight);
   /*text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.35);*/
-  color: rgba(255, 255, 255, 0.65);
+  color: rgb(255 255 255);
   opacity: 0;
   -webkit-transition: all var(--speed) ease;
   transition: all var(--speed) ease;
+  text-align: justify
 }
 
 .card:hover .card__bio {
