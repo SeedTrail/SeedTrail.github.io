@@ -10,15 +10,25 @@ subtitle: CLICK TO START AUDIO
 </div>
 </div>
 
-<div class="intro-col-container">
-  <div class="intro-col" 
- <video autoplay muted loop playsinline id="heroVideo">   <!--autoplay muted loop id="heroVideo">-->
-      <source src="/assets/video/Lyra.mp4" type="video/mp4">
+<div class="video-border-card">
+
+  <!-- BORDER VIDEO (always muted) -->
+  <video class="video-border" autoplay muted loop playsinline>
+    <source src="/assets/video/Lyra.mp4" type="video/mp4">
   </video>
-  <!-- <audio id="heroAudio" preload="auto">-->
-    <!--   <source src="/assets/audio/audio-intro.mp3" type="audio/mp3">-->
-  <!-- </audio>-->
-</div>
+
+  <!-- INNER VIDEO WITH AUDIO -->
+  <div class="video-border-inner">
+    <video
+      id="capsuleVideo"
+      preload="auto"
+      playsinline
+      muted
+    >
+      <source src="/assets/video/Lyra.mp4" type="video/mp4">
+    </video>
+  </div>
+
 </div>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
