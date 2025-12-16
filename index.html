@@ -12,23 +12,22 @@ subtitle: CLICK TO START AUDIO
 
 <div class="video-border-card">
 
-  <!-- BORDER VIDEO (always muted) -->
+  <!-- BORDER VIDEO -->
   <video class="video-border" autoplay muted loop playsinline>
     <source src="/assets/video/Border_Video.mp4" type="video/mp4">
   </video>
-  <!-- INNER VIDEO WITH AUDIO -->
+
+  <!-- INNER VIDEO (SANS AUDIO) -->
   <div class="video-border-inner">
-  <video  id="capsuleVideo" autoplay muted loop playsinline>   <!--autoplay muted loop id="heroVideo">-->
-      <source src="/assets/video/Lyra.mp4" type="video/mp4">    
-  </video>
-     <audio id="capsuleVideo" preload="auto">
-      <source src="/assets/audio/Lyra_audio.mp3" type="audio/mp3">
-    </audio>
-  <!-- <div class="video-border-inner">-->
-    <!-- <video id="capsuleVideo" preload="auto" playsinline muted>-->
-      <!-- <source src="/assets/video/Lyra.mp4" type="video/mp4">-->
-    <!-- </video>-->
-</div>
+    <video id="capsuleVideo" autoplay muted loop playsinline>
+      <source src="/assets/video/Lyra.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- AUDIO SÉPARÉ -->
+  <audio id="capsuleAudio" preload="auto">
+    <source src="/assets/audio/Lyra_audio.mp3" type="audio/mp3">
+  </audio>
 
 </div>
 
