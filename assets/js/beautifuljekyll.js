@@ -143,102 +143,116 @@ document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
 
 var demoButtons;
 
+/* =========================
+   UI / CARD LOGIC (UNCHANGED)
+========================= */
+
 function start () {
-  
-  // Add event "click" to "demo buttons"
-  demoButtons = document.querySelectorAll ('.js-modify');
+
+  demoButtons = document.querySelectorAll('.js-modify');
   for (var i = 0; i < demoButtons.length; i++) {
-    demoButtons[i].addEventListener ('click', toggleEffect);
+    demoButtons[i].addEventListener('click', toggleEffect);
   }
-  
-  // Add event "click" to "save buttons"
-  var saveButtons = document.querySelectorAll ('.js-save');
+
+  var saveButtons = document.querySelectorAll('.js-save');
   for (var i = 0; i < saveButtons.length; i++) {
-    saveButtons[i].addEventListener ('click', toggleActive);
+    saveButtons[i].addEventListener('click', toggleActive);
   }
-  
 }
 
-// Toggle "effect" classes
 function toggleEffect () {
-  var target = document.querySelector (this.dataset.target);
-      target.dataset.effect = this.dataset.effect;
-  
-  for (var i= 0; i < demoButtons.length; i++) {
-    demoButtons[i].classList.remove ('active');
+  var target = document.querySelector(this.dataset.target);
+  target.dataset.effect = this.dataset.effect;
+
+  for (var i = 0; i < demoButtons.length; i++) {
+    demoButtons[i].classList.remove('active');
   }
-  
-  toggleActive.call (this);
+
+  toggleActive.call(this);
 }
 
-// Toggle "active" class
 function toggleActive () {
-  this.classList.toggle ('active');
+  this.classList.toggle('active');
 }
 
-// Invoke "start ()" function
-window.addEventListener ('load', start);
+window.addEventListener('load', start);
 
-// AUDIO 
-<script>
+/* =========================
+   HERO + CAPSULE AUDIO LOGIC
+========================= */
+
 document.addEventListener("DOMContentLoaded", () => {
-  const audio = document.getElementById("heroAudio");
-  const hero = document.getElementById("hero");
 
-  let started = false;
+  const heroAudio    = document.getElementById("heroAudio");
+  const heroSection  = document.getElementById("hero");
 
-const startAudio = () => {
-  if (!started) {
-    audio.volume = 1;
-    audio.play().then(() => {
-      started = true;
-      console.log("Audio started");
-    }).catch(err => {
-      console.warn("Blocked:", err);
+  const capsuleAudio = document.getElementById("capsuleAudio");
+  const capsule      = document.getElementById("capsule");
+
+  let unlocked = false;
+
+  /* ---- UNLOCK AUDIO ON FIRST USER INTERACTION ---- */
+  const unlockAudio = () => {
+    if (unlocked) return;
+
+    const promises = [];
+
+    if (heroAudio) {
+      heroAudio.volume = 1;
+      promises.push(heroAudio.play().catch(() => {}));
+    }
+
+    if (capsuleAudio) {
+      capsuleAudio.volume = 1;
+      promises.push(capsuleAudio.play().catch(() => {}));
+    }
+
+    Promise.all(promises).then(() => {
+      unlocked = true;
+      console.log("Audio unlocked");
     });
-  }
-};
+  };
 
-["click", "wheel", "keydown", "touchstart"].forEach(event => {
-  document.addEventListener(event, startAudio, { once: true });
-});
-
-  // Stop audio when hero is out of view
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (!entry.isIntersecting) {
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    },
-    { threshold: 0.2 }
-  );
-
-  observer.observe(hero);
-});
-</script>
-
-<script>
-const video = document.getElementById("capsuleVideo");
-const audio = document.getElementById("capsuleAudio");
-
-let unlocked = false;
-
-const unlockAudio = () => {
-  if (unlocked) return;
-
-  audio.volume = 1;
-  audio.play().then(() => {
-    unlocked = true;
-    console.log("Audio unlocked");
-  }).catch(err => {
-    console.warn("Blocked:", err);
+  ["click", "wheel", "keydown", "touchstart"].forEach(evt => {
+    document.addEventListener(evt, unlockAudio, { once: true });
   });
-};
 
-["click", "wheel", "keydown", "touchstart"].forEach(event => {
-  document.addEventListener(event, unlockAudio, { once: true });
+  /* ---- HERO VISIBILITY ---- */
+  if (heroAudio && heroSection) {
+    const heroObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!unlocked) return;
+
+        if (entry.isIntersecting) {
+          heroAudio.play();
+        } else {
+          heroAudio.pause();
+          heroAudio.currentTime = 0;
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    heroObserver.observe(heroSection);
+  }
+
+  /* ---- CAPSULE VISIBILITY ---- */
+  if (capsuleAudio && capsule) {
+    const capsuleObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!unlocked) return;
+
+        if (entry.isIntersecting) {
+          capsuleAudio.play();
+        } else {
+          capsuleAudio.pause();
+          capsuleAudio.currentTime = 0;
+        }
+      },
+      { threshold: 0.6 }
+    );
+
+    capsuleObserver.observe(capsule);
+  }
+
 });
-
-observer.observe(video);
-</script>
