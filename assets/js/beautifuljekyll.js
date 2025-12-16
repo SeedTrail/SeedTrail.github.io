@@ -217,3 +217,42 @@ const startAudio = () => {
   observer.observe(hero);
 });
 </script>
+
+<script>
+const video = document.getElementById("capsuleVideo");
+let unlocked = false;
+
+/* ---- USER INTERACTION UNLOCK ---- */
+const unlockAudio = () => {
+  if (unlocked) return;
+
+  video.muted = false;
+  video.volume = 1;
+
+  video.play().then(() => {
+    unlocked = true;
+    console.log("Capsule audio unlocked");
+  }).catch(err => {
+    console.warn("Autoplay blocked:", err);
+  });
+};
+
+["click", "wheel", "keydown", "touchstart"].forEach(event => {
+  document.addEventListener(event, unlockAudio, { once: true });
+});
+
+/* ---- PLAY / PAUSE ON VISIBILITY ---- */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!unlocked) return;
+
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.5 });
+
+observer.observe(video);
+</script>
