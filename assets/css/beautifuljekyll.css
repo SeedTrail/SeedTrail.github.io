@@ -1888,9 +1888,7 @@ body {
 .video-border-card {
   position: relative;
   width: 100%;
-  max-width: 320px;
-  aspect-ratio: 3 / 4;
-  border-radius: 18px;
+  max-width: 450px;
   overflow: hidden;
 }
 
@@ -1910,7 +1908,6 @@ body {
   z-index: 1;
   margin: 14px; /* ← BORDER THICKNESS */
   height: calc(100% - 28px);
-  border-radius: 12px;
   overflow: hidden;
   background: black;
 }
