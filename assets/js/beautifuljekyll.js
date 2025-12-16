@@ -220,20 +220,19 @@ const startAudio = () => {
 
 <script>
 const video = document.getElementById("capsuleVideo");
+const audio = document.getElementById("capsuleAudio");
+
 let unlocked = false;
 
-/* ---- USER INTERACTION UNLOCK ---- */
 const unlockAudio = () => {
   if (unlocked) return;
 
-  video.muted = false;
-  video.volume = 1;
-
-  video.play().then(() => {
+  audio.volume = 1;
+  audio.play().then(() => {
     unlocked = true;
-    console.log("Capsule audio unlocked");
+    console.log("Audio unlocked");
   }).catch(err => {
-    console.warn("Autoplay blocked:", err);
+    console.warn("Blocked:", err);
   });
 };
 
@@ -241,18 +240,20 @@ const unlockAudio = () => {
   document.addEventListener(event, unlockAudio, { once: true });
 });
 
-/* ---- PLAY / PAUSE ON VISIBILITY ---- */
+/* ---- SYNC PLAY / PAUSE ---- */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (!unlocked) return;
 
     if (entry.isIntersecting) {
       video.play();
+      audio.play();
     } else {
       video.pause();
+      audio.pause();
     }
   });
-}, { threshold: 0.5 });
+}, { threshold: 0.6 });
 
 observer.observe(video);
 </script>
