@@ -240,20 +240,5 @@ const unlockAudio = () => {
   document.addEventListener(event, unlockAudio, { once: true });
 });
 
-/* ---- SYNC PLAY / PAUSE ---- */
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (!unlocked) return;
-
-    if (entry.isIntersecting) {
-      video.play();
-      audio.play();
-    } else {
-      video.pause();
-      audio.pause();
-    }
-  });
-}, { threshold: 0.6 });
-
 observer.observe(video);
 </script>
