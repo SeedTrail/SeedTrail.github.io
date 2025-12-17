@@ -1933,14 +1933,14 @@ body {
   overflow: visible;
 
   /* FRAME */
-  border: 30px solid transparent;
+  border: 50px solid transparent;
   border-image-source: url("/assets/img/video_recording_test.jpg");
   border-image-slice: 90;
-  border-image-width: 30px;
+  border-image-width: 70px;
   border-image-repeat: stretch;
 
   width: 100%;
-  max-width: 550px;
+  max-width: 800px;
 
   /* keep border stable */
   transform-origin: center;
