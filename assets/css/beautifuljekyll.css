@@ -1934,7 +1934,7 @@ body {
 
   /* FRAME */
   border: 50px solid transparent;
-  border-image-source: url("/assets/img/video_recording_test.jpg");
+  border-image-source: url("/assets/img/video_recording.gif");
   border-image-slice: 90;
   border-image-width: 70px;
   border-image-repeat: stretch;
