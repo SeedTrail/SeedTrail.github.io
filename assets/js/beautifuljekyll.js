@@ -139,192 +139,67 @@ let BeautifulJekyllJS = {
 
 // 2fc73a3a967e97599c9763d05e564189
 
-document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
-
-var demoButtons;
-
-/* =========================
-   UI / CARD LOGIC (UNCHANGED)
-========================= */
-
-function start () {
-
-  demoButtons = document.querySelectorAll('.js-modify');
-  for (var i = 0; i < demoButtons.length; i++) {
-    demoButtons[i].addEventListener('click', toggleEffect);
-  }
-
-  var saveButtons = document.querySelectorAll('.js-save');
-  for (var i = 0; i < saveButtons.length; i++) {
-    saveButtons[i].addEventListener('click', toggleActive);
-  }
-}
-
-function toggleEffect () {
-  var target = document.querySelector(this.dataset.target);
-  target.dataset.effect = this.dataset.effect;
-
-  for (var i = 0; i < demoButtons.length; i++) {
-    demoButtons[i].classList.remove('active');
-  }
-
-  toggleActive.call(this);
-}
-
-function toggleActive () {
-  this.classList.toggle('active');
-}
-
-window.addEventListener('load', start);
-
-/* =========================
-   HERO + CAPSULE AUDIO LOGIC
-========================= */
-
 document.addEventListener("DOMContentLoaded", () => {
 
-  const heroAudio    = document.getElementById("heroAudio");
-  const heroSection  = document.getElementById("hero");
-
-  const capsuleAudio = document.getElementById("capsuleAudio");
-  const capsule      = document.getElementById("capsule");
-
-  let unlocked = false;
-
-  /* ---- UNLOCK AUDIO ON FIRST USER INTERACTION ---- */
-  const unlockAudio = () => {
-    if (unlocked) return;
-
-    const promises = [];
-
-    if (heroAudio) {
-      heroAudio.volume = 1;
-      promises.push(heroAudio.play().catch(() => {}));
+  const videos = [
+    {
+      el: document.getElementById("heroVideo"),
+      container: document.getElementById("hero"),
+      threshold: 0.3
+    },
+    {
+      el: document.getElementById("capsuleVideo"),
+      container: document.getElementById("capsule"),
+      threshold: 0.6
     }
-
-    if (capsuleAudio) {
-      capsuleAudio.volume = 1;
-      promises.push(capsuleAudio.play().catch(() => {}));
-    }
-
-    Promise.all(promises).then(() => {
-      unlocked = true;
-      console.log("Audio unlocked");
-    });
-  };
-
-  ["click", "wheel", "keydown", "touchstart"].forEach(evt => {
-    document.addEventListener(evt, unlockAudio, { once: true });
-  });
-
-  /* ---- HERO VISIBILITY ---- */
-  if (heroAudio && heroSection) {
-    const heroObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (!unlocked) return;
-
-        if (entry.isIntersecting) {
-          heroAudio.play();
-        } else {
-          heroAudio.pause();
-          heroAudio.currentTime = 0;
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    heroObserver.observe(heroSection);
-  }
-
-  /* ---- CAPSULE VISIBILITY ---- */
-  if (capsuleAudio && capsule) {
-    const capsuleObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (!unlocked) return;
-
-        if (entry.isIntersecting) {
-          capsuleAudio.play();
-        } else {
-          capsuleAudio.pause();
-          capsuleAudio.currentTime = 0;
-        }
-      },
-      { threshold: 0.6 }
-    );
-
-    capsuleObserver.observe(capsule);
-  }
-
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const video  = document.getElementById("capsuleVideo");
-  const audio  = document.getElementById("capsuleAudio");
-  const capsule = document.getElementById("capsule");
-
-  if (!video || !audio || !capsule) return;
+  ];
 
   let audioUnlocked = false;
 
-  /* ---------------------------
-     UNLOCK AUDIO (user gesture)
-  --------------------------- */
+  /* ============================
+     UNLOCK AUDIO (USER GESTURE)
+  ============================ */
   const unlockAudio = () => {
     if (audioUnlocked) return;
 
-    audio.muted = false;
-    audio.volume = 1;
+    videos.forEach(v => {
+      if (!v.el) return;
 
-    // 🔑 FORCE SYNC AT UNLOCK
-    audio.currentTime = video.currentTime;
+      v.el.muted = false;
 
-    audio.play().then(() => {
-      audioUnlocked = true;
-      console.log("Audio unlocked & synced");
-    }).catch(err => {
-      console.warn("Autoplay blocked:", err);
+      // Safari requires play() after unmute
+      v.el.play().catch(() => {});
     });
+
+    audioUnlocked = true;
+    console.log("🔓 Audio unlocked");
   };
 
   ["click", "wheel", "keydown", "touchstart"].forEach(evt => {
     document.addEventListener(evt, unlockAudio, { once: true });
   });
 
-  /* ---------------------------
-     KEEP AUDIO SYNCED
-  --------------------------- */
-  const syncAudio = () => {
-    if (!audioUnlocked) return;
-
-    // resync if drift > 50ms
-    if (Math.abs(audio.currentTime - video.currentTime) > 0.05) {
-      audio.currentTime = video.currentTime;
-    }
-  };
-
-  video.addEventListener("play", syncAudio);
-  video.addEventListener("seeking", syncAudio);
-  video.addEventListener("timeupdate", syncAudio);
-
-  /* ---------------------------
+  /* ============================
      VISIBILITY CONTROL
-  --------------------------- */
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (!audioUnlocked) return;
+  ============================ */
+  videos.forEach(({ el, container, threshold }) => {
+    if (!el || !container) return;
 
-      if (entry.isIntersecting) {
-        // 🔁 Always re-sync on re-entry
-        audio.currentTime = video.currentTime;
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    },
-    { threshold: 0.6 }
-  );
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!audioUnlocked) return;
 
-  observer.observe(capsule);
+        if (entry.isIntersecting) {
+          el.play().catch(() => {});
+        } else {
+          el.pause();
+        }
+      },
+      { threshold }
+    );
+
+    observer.observe(container);
+  });
 
 });
+
