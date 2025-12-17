@@ -1920,6 +1920,34 @@ body {
   object-fit: cover;
 }
 
+
+/* --- TRYING SOMETHING DIFFERENT --- */
+.test {
+  position: relative;
+  overflow: visible;
+
+  /* FRAME */
+  border: 10px solid transparent;
+  border-image-source: url("https://wallpapercave.com/wp/wp3271059.png");
+  border-image-slice: 90;
+  border-image-width: 10px;
+  border-image-repeat: stretch;
+
+  width: 100%;
+  max-width: 550px;
+
+  /* keep border stable */
+  transform-origin: center;
+}
+
+.test_inner video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- TRYING SOMETHING DIFFERENT --- */
 / hide audio player on mobile //
 @media only screen and (max-width: 640px) {   
 player { display: none !important; }}
