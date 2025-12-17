@@ -141,6 +141,10 @@ let BeautifulJekyllJS = {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+  /* ============================
+     VIDEO DEFINITIONS
+  ============================ */
+
   const videos = [
     {
       el: document.getElementById("heroVideo"),
@@ -157,31 +161,36 @@ document.addEventListener("DOMContentLoaded", () => {
   let audioUnlocked = false;
 
   /* ============================
-     UNLOCK AUDIO (USER GESTURE)
+     UNLOCK AUDIO (HERO ONLY)
   ============================ */
+
+  const hero = document.getElementById("hero");
+
   const unlockAudio = () => {
     if (audioUnlocked) return;
 
+    audioUnlocked = true;
+    console.log("🔓 Audio unlocked by HERO");
+
+    // Unmute & resync all videos
     videos.forEach(v => {
       if (!v.el) return;
 
       v.el.muted = false;
 
-      // Safari requires play() after unmute
+      // Safari / iOS requires play() after unmute
       v.el.play().catch(() => {});
     });
-
-    audioUnlocked = true;
-    console.log("🔓 Audio unlocked");
   };
 
-  ["click", "wheel", "keydown", "touchstart"].forEach(evt => {
-    document.addEventListener(evt, unlockAudio, { once: true });
-  });
+  if (hero) {
+    hero.addEventListener("click", unlockAudio, { once: true });
+  }
 
   /* ============================
      VISIBILITY CONTROL
   ============================ */
+
   videos.forEach(({ el, container, threshold }) => {
     if (!el || !container) return;
 
@@ -202,4 +211,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
 
