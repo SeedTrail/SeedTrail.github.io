@@ -139,11 +139,8 @@ let BeautifulJekyllJS = {
 
 // 2fc73a3a967e97599c9763d05e564189
 
-document.addEventListener("DOMContentLoaded", () => {
 
-  /* ============================
-     VIDEO DEFINITIONS
-  ============================ */
+document.addEventListener("DOMContentLoaded", () => {
 
   const videos = [
     {
@@ -172,14 +169,10 @@ document.addEventListener("DOMContentLoaded", () => {
     audioUnlocked = true;
     console.log("🔓 Audio unlocked by HERO");
 
-    // Unmute & resync all videos
+    // 🔑 ONLY unmute — DO NOT play
     videos.forEach(v => {
       if (!v.el) return;
-
       v.el.muted = false;
-
-      // Safari / iOS requires play() after unmute
-      v.el.play().catch(() => {});
     });
   };
 
