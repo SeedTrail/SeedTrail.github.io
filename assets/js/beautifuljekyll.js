@@ -256,3 +256,75 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const video  = document.getElementById("capsuleVideo");
+  const audio  = document.getElementById("capsuleAudio");
+  const capsule = document.getElementById("capsule");
+
+  if (!video || !audio || !capsule) return;
+
+  let audioUnlocked = false;
+
+  /* ---------------------------
+     UNLOCK AUDIO (user gesture)
+  --------------------------- */
+  const unlockAudio = () => {
+    if (audioUnlocked) return;
+
+    audio.muted = false;
+    audio.volume = 1;
+
+    // 🔑 FORCE SYNC AT UNLOCK
+    audio.currentTime = video.currentTime;
+
+    audio.play().then(() => {
+      audioUnlocked = true;
+      console.log("Audio unlocked & synced");
+    }).catch(err => {
+      console.warn("Autoplay blocked:", err);
+    });
+  };
+
+  ["click", "wheel", "keydown", "touchstart"].forEach(evt => {
+    document.addEventListener(evt, unlockAudio, { once: true });
+  });
+
+  /* ---------------------------
+     KEEP AUDIO SYNCED
+  --------------------------- */
+  const syncAudio = () => {
+    if (!audioUnlocked) return;
+
+    // resync if drift > 50ms
+    if (Math.abs(audio.currentTime - video.currentTime) > 0.05) {
+      audio.currentTime = video.currentTime;
+    }
+  };
+
+  video.addEventListener("play", syncAudio);
+  video.addEventListener("seeking", syncAudio);
+  video.addEventListener("timeupdate", syncAudio);
+
+  /* ---------------------------
+     VISIBILITY CONTROL
+  --------------------------- */
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (!audioUnlocked) return;
+
+      if (entry.isIntersecting) {
+        // 🔁 Always re-sync on re-entry
+        audio.currentTime = video.currentTime;
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    },
+    { threshold: 0.6 }
+  );
+
+  observer.observe(capsule);
+
+});
