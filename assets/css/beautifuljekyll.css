@@ -1922,15 +1922,21 @@ body {
 
 
 /* --- TRYING SOMETHING DIFFERENT --- */
+.test_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 .test {
   position: relative;
   overflow: visible;
 
   /* FRAME */
-  border: 10px solid transparent;
-  border-image-source: url("https://wallpapercave.com/wp/wp3271059.png");
+  border: 30px solid transparent;
+  border-image-source: url("/assets/img/video_recording_test.jpg");
   border-image-slice: 90;
-  border-image-width: 10px;
+  border-image-width: 30px;
   border-image-repeat: stretch;
 
   width: 100%;
