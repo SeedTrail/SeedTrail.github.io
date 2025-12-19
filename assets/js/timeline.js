@@ -22,18 +22,32 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="icon">${event.icon}</div>
     <div class="event-date">${event.date}</div>
   `;
-  iconDiv.addEventListener('click', () => showEventDetails(event));
+
+  // Track the currently open event
+  let isOpen = false;
+
+  // Toggle event details on click
+  iconDiv.addEventListener('click', () => toggleEventDetails(event));
+
   sliderContainer.appendChild(iconDiv);
 
-  // Show event details and plots
-  function showEventDetails(event) {
-    eventDetails.style.display = 'block';
-    eventDetails.innerHTML = `
-      <h2>${event.name} (${event.date})</h2>
-      <p>${event.description}</p>
-      <div class="event-plots">
-        ${event.plotPaths.map(path => `<img src="${path}" alt="Plot">`).join('')}
-      </div>
-    `;
+  // Toggle function to show/hide event details
+  function toggleEventDetails(event) {
+    if (isOpen) {
+      // If details are open, close them
+      eventDetails.style.display = 'none';
+      isOpen = false;
+    } else {
+      // If details are closed, open them
+      eventDetails.style.display = 'block';
+      eventDetails.innerHTML = `
+        <h2>${event.name} (${event.date})</h2>
+        <p>${event.description}</p>
+        <div class="event-plots">
+          ${event.plotPaths.map(path => `<img src="${path}" alt="Plot">`).join('')}
+        </div>
+      `;
+      isOpen = true;
+    }
   }
 });
