@@ -1,12 +1,11 @@
-
 /* Timeline slider background */
 .timeline-slider {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background: black; /* Black background for the entire slider */
-  color: white; /* Default text color for contrast */
+  background: black;
+  color: white;
 }
 
 /* Slider container */
@@ -25,12 +24,12 @@
   align-items: center;
   cursor: pointer;
   min-width: 120px;
-  background: #111; /* Dark gray for the card */
+  background: #111;
   border-radius: 8px;
   padding: 10px;
   margin: 0 10px;
   transition: transform 0.2s;
-  color: white; /* Text color for the card */
+  color: white;
 }
 
 .event-card:hover {
@@ -43,12 +42,12 @@
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 8px;
-  border: 1px solid #333; /* Border for the card image */
+  border: 1px solid #333;
 }
 
 .event-date {
   font-size: 12px;
-  color: #aaa; /* Light gray for the date */
+  color: #aaa;
   text-align: center;
 }
 
@@ -57,20 +56,20 @@
   margin-top: 20px;
   width: 100%;
   display: none;
-  background: #111; /* Dark gray for the details background */
+  background: #111;
   padding: 20px;
   border-radius: 8px;
-  color: white; /* Text color for the details */
+  color: white;
 }
 
 .event-details h2 {
   margin-top: 0;
-  color: white; /* Title color */
+  color: white;
 }
 
 .event-details p {
   margin-bottom: 20px;
-  color: #ccc; /* Light gray for the description */
+  color: #ccc;
 }
 
 /* Event plots container */
@@ -86,20 +85,12 @@
 .event-plots img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #333; /* Border for the plots */
+  border: 1px solid #333;
   border-radius: 4px;
   padding: 5px;
-  background: #222; /* Dark background for the plots */
+  background: #222;
 }
 
-
-
-
-
-.plot {
-  flex: 1;
-  height: 300px;
-}
 
 .slider-container::-webkit-scrollbar {
   height: 8px;
