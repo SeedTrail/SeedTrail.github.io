@@ -37,13 +37,25 @@
   display: none; /* Hidden by default */
 }
 
-.event-plots {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
+.event-plots img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
+
 
 .plot {
   flex: 1;
   height: 300px;
 }
+
+.slider-container::-webkit-scrollbar {
+  height: 8px;
+}
+.slider-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
