@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     icon: "🗳️",
     description: "The 2016 US Presidential Election was a historic event with significant global impact.",
     plotPaths: [
-      "/assets/images/us_election_2016/plot1.png",
-      "/assets/images/us_election_2016/plot2.png",
-      "/assets/images/us_election_2016/plot3.png"
+      "/assets/img/plot1.png",
+      "/assets/img/plot2.png",
+      "/assets/img/plot3.png"
     ]
   };
 
