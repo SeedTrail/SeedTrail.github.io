@@ -1,12 +1,13 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   const sliderContainer = document.querySelector('.slider-container');
   const eventDetails = document.getElementById('eventDetails');
 
-  // Define your event
+  // Define your event with an image
   const event = {
     name: "US Election 2016",
     date: "2016-11-08",
-    icon: "🗳️",
+    image: "/assets/img/icon1.avif", // Add an icon image for the card
     description: "The 2016 US Presidential Election was a historic event with significant global impact.",
     plotPaths: [
       "/assets/img/plot1.png",
@@ -15,39 +16,29 @@ document.addEventListener('DOMContentLoaded', function() {
     ]
   };
 
-  // Create icon for the event
-  const iconDiv = document.createElement('div');
-  iconDiv.className = 'event-icon';
-  iconDiv.innerHTML = `
-    <div class="icon">${event.icon}</div>
+  // Create a card for the event
+  const cardDiv = document.createElement('div');
+  cardDiv.className = 'event-card';
+  cardDiv.innerHTML = `
+    <img src="${event.image}" alt="${event.name}">
     <div class="event-date">${event.date}</div>
   `;
 
-  // Track the currently open event
-  let isOpen = false;
-
   // Toggle event details on click
-  iconDiv.addEventListener('click', () => toggleEventDetails(event));
-
-  sliderContainer.appendChild(iconDiv);
-
-  // Toggle function to show/hide event details
-  function toggleEventDetails(event) {
-    if (isOpen) {
-      // If details are open, close them
+  cardDiv.addEventListener('click', () => {
+    if (eventDetails.style.display === 'block') {
       eventDetails.style.display = 'none';
-      isOpen = false;
     } else {
-      // If details are closed, open them
       eventDetails.style.display = 'block';
       eventDetails.innerHTML = `
-        <h2>${event.name} (${event.date})</h2>
+        <h2>${event.name} <span style="font-size: 16px; color: #666;">(${event.date})</span></h2>
         <p>${event.description}</p>
         <div class="event-plots">
-          ${event.plotPaths.map(path => `<img src="${path}" alt="Plot">`).join('')}
+          ${event.plotPaths.map(path => `<img src="${event.plotPaths[0]}" alt="Plot">`).join('')}
         </div>
       `;
-      isOpen = true;
     }
-  }
+  });
+
+  sliderContainer.appendChild(cardDiv);
 });
