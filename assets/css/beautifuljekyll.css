@@ -1505,11 +1505,11 @@ body {
 .story-frame {
   position: relative;
   padding: 10%; /* Makes the frame 10% bigger than the text */
-  background-image: url("{{ '/assets/img/frame.jpg' | relative_url }}");
-  background-size: 100% 100%; /* stretch to container */
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block; /* Shrinks tightly to content */
+  background-image: url("{{ '/assets/img/frame.jpg' | relative_url }}");;
+  /*background-size: 100% 100%;  stretch to container */
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*display: inline-block; /* Shrinks tightly to content */
 }
 
 .story h2{
