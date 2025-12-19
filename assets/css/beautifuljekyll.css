@@ -1562,7 +1562,7 @@ body {
   overflow: visible; /* MUST be visible */
 
   border: 30px solid transparent;
-  /*border-image-source: url("/assets/img/frame.jpg");*/
+  border-image-source: var(--border-image);
   border-image-slice: 90;
   /*border-image-width: 28px;*/
   border-image-repeat: stretch;
