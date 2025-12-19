@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       name: "US Election 2012",
       date: "2012-11-06",
-      image: "/assets/images/us_election_2012/icon.jpg",
+      image: "/assets/img/2012.jpg",
       description: "The 2012 US Presidential Election saw Barack Obama win a second term as President of the United States.",
       plotPaths: [
         "/assets/img/plot1.png",
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       name: "#MeToo",
       date: "2017-10-01",
-      image: "/assets/img/2012.jpg",
+      image: "/assets/img/MeToo.jpg",
       description: "The #MeToo movement went viral in 2017 as a hashtag used on social media to help demonstrate the widespread prevalence of sexual assault and harassment.",
       plotPaths: [
         "/assets/img/plot1.png",
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       name: "FIFA 17 Launch",
       date: "2016-09-27",
-      image: "/assets/img/fifa.wepb",
+      image: "/assets/img/fifa.webp",
       description: "FIFA 17 is a football simulation video game released in 2016, featuring improved gameplay and the introduction of a story mode called 'The Journey'.",
       plotPaths: [
         "/assets/img/plot1.png",
