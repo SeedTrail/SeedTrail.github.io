@@ -1,0 +1,49 @@
+.timeline-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.event-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.event-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.event-date {
+  font-size: 12px;
+  text-align: center;
+}
+
+.event-details {
+  margin-top: 20px;
+  width: 100%;
+  display: none; /* Hidden by default */
+}
+
+.event-plots {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.plot {
+  flex: 1;
+  height: 300px;
+}
