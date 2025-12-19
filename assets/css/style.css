@@ -1,3 +1,23 @@
+
+/* Timeline slider background */
+.timeline-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: black; /* Black background for the entire slider */
+  color: white; /* Default text color for contrast */
+}
+
+/* Slider container */
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
 /* Event card styling */
 .event-card {
   display: flex;
@@ -5,12 +25,12 @@
   align-items: center;
   cursor: pointer;
   min-width: 120px;
-  background: white;
+  background: #111; /* Dark gray for the card */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin: 0 10px;
   transition: transform 0.2s;
+  color: white; /* Text color for the card */
 }
 
 .event-card:hover {
@@ -23,11 +43,12 @@
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 8px;
+  border: 1px solid #333; /* Border for the card image */
 }
 
 .event-date {
   font-size: 12px;
-  color: #666;
+  color: #aaa; /* Light gray for the date */
   text-align: center;
 }
 
@@ -36,22 +57,23 @@
   margin-top: 20px;
   width: 100%;
   display: none;
-  background: white;
+  background: #111; /* Dark gray for the details background */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Text color for the details */
 }
 
 .event-details h2 {
   margin-top: 0;
-  color: #333;
+  color: white; /* Title color */
 }
 
 .event-details p {
   margin-bottom: 20px;
-  color: #555;
+  color: #ccc; /* Light gray for the description */
 }
 
+/* Event plots container */
 .event-plots {
   display: flex;
   gap: 20px;
@@ -60,14 +82,17 @@
   justify-content: center;
 }
 
+/* Plot images */
 .event-plots img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #ddd;
+  border: 1px solid #333; /* Border for the plots */
   border-radius: 4px;
   padding: 5px;
-  background: white;
+  background: #222; /* Dark background for the plots */
 }
+
+
 
 
 
