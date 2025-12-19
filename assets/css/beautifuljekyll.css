@@ -17,6 +17,7 @@ layout: null
   --footer-text-col: {{ site.footer-text-col | default: "#777777" }};
   --footer-link-col: {{ site.footer-link-col | default: "#404040" }};
   --footer-hover-col: {{ site.footer-hover-col | default: "#0085A1" }};
+  /*--frame: {{ site.frame | default: url("/assets/img/frame.jpg")}};*/
 
   /* ----------- ADDED STUFFS --------------------------------------- */
   --fontOrigin: 1rem;     /* 16px */
@@ -1561,7 +1562,7 @@ body {
   overflow: visible; /* MUST be visible */
 
   border: 30px solid transparent;
-  border-image-source: url("/assets/img/frame.jpg");
+  /*border-image-source: url("/assets/img/frame.jpg");*/
   border-image-slice: 90;
   /*border-image-width: 28px;*/
   border-image-repeat: stretch;
@@ -1574,7 +1575,7 @@ body {
 }
 
 .card:hover .card__inner {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 /* ---- ADDED VIA CHAT GPT ---- */
