@@ -1567,6 +1567,7 @@ body {
   /*border-image-width: 28px;*/
   border-image-repeat: stretch;
   z-index: 0; /* creates stacking context */
+  padding-bottom: 40px;
 }
 
 .card__inner {
