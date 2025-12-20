@@ -10,15 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
       image: "/assets/img/icon1.avif",
       description: "Together, the three analyses identify the 2012 US presidential election as a highly salient but transient event in YouTube activity. The strong DiD divergence, the ITS discontinuity, and the extreme placebo result consistently point to a short-lived surge in attention tied closely to the election date.",
       plotJson: "/assets/js/us_election_2016.json", // Plotly JSON for the first plot
-      plotlyDescription: "I observe a clear and well-timed spike in the treated topic at the event date, standing out from the control category. Prior to the election, both series display similar cyclical behavior, suggesting that the parallel trends assumption is reasonably satisfied. The divergence at the event date is sharp but short-lived, with the treated series quickly reverting toward pre-event levels.
-",
+      plotlyDescription: "I observe a clear and well-timed spike in the treated topic at the event date, standing out from the control category. Prior to the election, both series display similar cyclical behavior, suggesting that the parallel trends assumption is reasonably satisfied. The divergence at the event date is sharp but short-lived, with the treated series quickly reverting toward pre-event levels.",
       plotPaths: [
         "/assets/plots/us_election_2016_ITS.png", // Static image for the second plot
         "/assets/plots/us_election_2016_Placebo.png"  // Static image for the third plot
       ]
       plotDescriptions: [
-      "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. This pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.
-",
+      "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. This pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.",
       "The placebo test places the estimated effect for the actual election date far in the extreme right tail of the distribution. Effects of comparable magnitude are virtually absent under random-date assignments, strongly suggesting that the observed spike is not attributable to background variability."
       ]
     },
