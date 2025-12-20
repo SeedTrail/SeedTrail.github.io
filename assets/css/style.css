@@ -1,15 +1,30 @@
-
 /* Plotly plot container */
+.plotly-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  background: #222;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+/* Plotly plot styling */
 #plotly-plot {
-  width: 100%;
+  width: 70%;
   height: 500px;
   background: #222;
   border-radius: 4px;
-  margin-top: 20px;
 }
 
-
-
+/* Plotly description text */
+.plotly-description {
+  width: 30%;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
 
 /* Timeline slider background */
 .timeline-slider {
@@ -94,43 +109,67 @@
   justify-content: center;
 }
 
+/* Individual plot with description container */
+.plot-with-description {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 48%;
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
 /* Plot images */
-.event-plots img {
-  max-width: 100%;
+.plot-with-description img {
+  max-width: 250px;
   height: auto;
   border: 1px solid #333;
   border-radius: 4px;
-  padding: 5px;
   background: #222;
 }
 
+/* Plot description text */
+.plot-description {
+  flex: 1;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
 
+/* Scrollbar styling */
 .slider-container::-webkit-scrollbar {
   height: 8px;
 }
+
 .slider-container::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .plotly-container,
+  .plot-with-description {
+    flex-direction: column;
+  }
+
+  .plotly-description,
+  .plot-description {
+    width: 100%;
+  }
+
+  #plotly-plot {
+    width: 100%;
+  }
+
+  .plot-with-description img {
+    max-width: 100%;
+  }
+}
 
 /* --- Adding stuffs to center ---*/
-/* --.events-spill {--*/
-/* --  display: flex;--*/
-/* --  flex-grow: 1;--*/
-/* --  margin-top: auto;--*/
-/* --  margin-bottom: auto;--*/
-/* --  flex-direction: column;--*/
-/* --  box-sizing: border-box;--*/
-/* --  overflow: hidden;--*/
-/* --  color: rgb(255, 255, 255);--*/
-  /*max-width: 1000px !important;*/
-/* --  padding: 0.75rem;--*/
-/* --  align-items: center;--*/
-/* --  place-content: center;--*/
-/* --}--*/
-
-
 .events-spill {
   display: flex;
   justify-content: center;
@@ -142,7 +181,7 @@
 /* Control the width of the Flourish embed */
 .events-spill .flourish-embed {
   width: 100%;
-  max-width: 1200px; /* adjust as needed */
+  max-width: 1200px;
 }
 
 .events-spill .flourish-embed {
@@ -155,65 +194,18 @@
 }
 
 .embed-wrapper {
-  max-width: 900px; /* limit width */
+  max-width: 900px;
   width: 100%;
-  text-align: center; /* fallback */
+  text-align: center;
 }
 
 .flourish-embed {
   margin-left: auto !important;
   margin-right: auto !important;
-  display: block !important; /* inline-block or block ensures centering */
+  display: block !important;
 }
 
 #fl-layout-wrapper {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-
-/* Event plots container */
-.event-plots {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Individual plot container */
-.plot-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 48%;
-  background: #222;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #333;
-}
-
-/* Plot images */
-.plot-container img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #333;
-  border-radius: 4px;
-  background: #222;
-}
-
-/* Plot description text */
-.plot-description {
-  margin-top: 10px;
-  color: #ccc;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.5;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .plot-container {
-    max-width: 100%;
-  }
-}
-
