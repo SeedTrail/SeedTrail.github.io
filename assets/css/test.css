@@ -21,13 +21,6 @@ body {
   border: 1px solid #333;
 }
 
-.plot-image {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
 #politics-plot,
 #gaming-plot {
   width: 100%;
