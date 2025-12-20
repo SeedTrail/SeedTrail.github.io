@@ -1243,8 +1243,8 @@ pre {
 /* --- ADDED STUFFS --------------------------------------------------------------------------------- */ 
 .main-content,  .container {
   max-width: 90% !important;  /* makes content wider */
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
 }
 /* --- ADDED STUFFS ---------------------------------------------------------------------------------- */ 
 /* Section styling (similar to post preview sections) */
@@ -1580,7 +1580,7 @@ body {
   position: relative;
   overflow: visible; /* MUST be visible */
 
-  border: 30px solid transparent;
+  border: 25px solid transparent;
   border-image-source: var(--border-image);
   border-image-slice: 90;
   /*border-image-width: 28px;*/
