@@ -1,9 +1,8 @@
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Check if Leaflet is loaded
   if (typeof L === 'undefined') {
     console.error('Leaflet.js is not loaded.');
-    document.getElementById('map').innerHTML = '<p style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 8px;">Map unavailable. Please try again later.</p>';
+    document.getElementById('map').innerHTML = '<p style="text-align: center; padding: 20px; background: #111; color: #fff; border-radius: 8px;">Map unavailable. Please try again later.</p>';
     return;
   }
 
@@ -141,17 +140,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   ];
 
-  // Initialize the map
+// Initialize the map with dark tiles
   const map = L.map('map').setView([20, 0], 2);
-
-  // Add OpenStreetMap tiles
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    maxZoom: 19
   }).addTo(map);
 
   // Add markers to the map
   events.forEach(event => {
-    const marker = L.marker(event.coords).addTo(map);
+    const marker = L.marker(event.coords, {
+      icon: L.divIcon({
+        className: 'custom-marker',
+        html: `<div style="background: #007BFF; width: 20px; height: 20px; border-radius: 50%; border: 2px solid #fff;"></div>`,
+        iconSize: [20, 20]
+      })
+    }).addTo(map);
     marker.on('click', () => {
       document.getElementById('popup-event-name').textContent = event.name;
       document.getElementById('popup-event-date').textContent = event.date;
