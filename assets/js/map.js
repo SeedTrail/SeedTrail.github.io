@@ -157,15 +157,25 @@ document.addEventListener('DOMContentLoaded', function() {
       })
     }).addTo(map);
     marker.on('click', () => {
+    // Set pop-up content
       document.getElementById('popup-event-name').textContent = event.name;
       document.getElementById('popup-event-date').textContent = event.date;
       document.getElementById('popup-event-description').textContent = event.description;
       document.getElementById('popup-plot1').src = event.plotPaths[0];
       document.getElementById('popup-plot2').src = event.plotPaths[1];
-      document.getElementById('event-popup').style.display = 'block';
+  
+      // Show pop-up
+      const popup = document.getElementById('event-popup');
+      popup.style.display = 'block';
+    
+      // Adjust position if needed (e.g., scroll to top)
+      popup.scrollTop = 0;
     });
   });
 
+
+
+  
   // Close pop-up when clicking outside
   document.getElementById('event-popup').addEventListener('click', function(e) {
     if (e.target === this) {
