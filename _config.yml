@@ -21,11 +21,12 @@ author: ParADAise
 
 navbar-links:
   Capsule 1: "/#part1"
-  capsule 2: "aboutme"
-  Capsule 3: "aboutme"
-  Capsule 4: "aboutme"
+  capsule 2: "/#part2"
+  Capsule 3: "/#part3"
+  Capsule 4: "/#part4"
   Resources:
     - Github Repro: "https://SeedTrail.github.io"
+    - Data: "https://SeedTrail.github.io"
 
 ################
 # --- Logo --- #
@@ -86,7 +87,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # Add a search button to the navbar
-post_search: true
+post_search: false
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
 edit_page_button: true
