@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const marker = L.marker(event.coords, {
       icon: L.divIcon({
         className: 'custom-marker',
-        html: `<div style="background: #007BFF; width: 20px; height: 20px; border-radius: 50%; border: 2px solid #fff;"></div>`,
+        html: `<div style="background: #0CF2DB; width: 20px; height: 20px; border-radius: 50%; border: 2px solid #fff;"></div>`,
         iconSize: [20, 20]
       })
     }).addTo(map);
