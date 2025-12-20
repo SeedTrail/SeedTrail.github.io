@@ -69,7 +69,7 @@ subtitle: CLICK TO START AUDIO
 </div>
 <!-- END: card -->
 
-<h2>Diving into historical events timeline</h2>
+<h4>Diving into historical events timeline</h4>
 <section class="timeline">
 <div class="timeline-slider">
   <div class="slider-container">
@@ -83,6 +83,47 @@ subtitle: CLICK TO START AUDIO
   <!-- Other scripts -->
   <script src="/assets/js/timeline.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical Events Timeline</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="/assets/css/timeline.css" />
+  <link rel="stylesheet" href="/assets/css/map.css" /> <!-- New CSS -->
+  <h5>Diving into historical events timeline</h5>
+
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Pop-up for plots and text -->
+  <div id="event-popup">
+    <h2 id="popup-event-name"></h2>
+    <p id="popup-event-date"></p>
+    <p id="popup-event-description"></p>
+    <div id="popup-plots">
+      <img id="popup-plot1">
+      <img id="popup-plot2">
+    </div>
+    <button onclick="document.getElementById('event-popup').style.display = 'none'">Close</button>
+  </div>
+
+  
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="/assets/js/map.js"></script> <!-- New JS -->
+
+
+
+
+
+
+
+  
 
 </section>
 </section>
