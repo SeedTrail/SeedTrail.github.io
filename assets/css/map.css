@@ -139,10 +139,12 @@
 }
 
 
-/* Custom blue markers */
+
+/* Change default Leaflet marker color to #0CF2DB */
 .leaflet-marker-icon {
-  filter: hue-rotate(240deg) brightness(1.2) saturate(1.5);
+  filter: hue-rotate(150deg) saturate(1.5) brightness(1.2);
 }
+
 
 /* Or use custom HTML markers (defined in map.js) */
 .custom-marker {
