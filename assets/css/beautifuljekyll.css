@@ -36,6 +36,19 @@ layout: null
   --mid-col: #808080;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main, .content, .wrapper {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding-left: 15px;  /* optional small padding */
+  padding-right: 15px; /* optional small padding */
+}
+                       
 /* ----------- ADDED STUFFS --------------------------------------- */
 @keyframes zoom {
   from {
