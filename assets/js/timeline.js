@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   const sliderContainer = document.querySelector('.slider-container');
   const eventDetails = document.getElementById('eventDetails');
@@ -162,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ];
 
 
-  // Create cards for each event
+ // Create cards for each event
   events.forEach((event, index) => {
     const cardDiv = document.createElement('div');
     cardDiv.className = 'event-card';
@@ -186,10 +185,15 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         `;
 
-        // Load the Plotly JSON file and render the first plot
-        const response = await fetch(event.plotJson);
-        const plotData = await response.json();
-        Plotly.newPlot('plotly-plot', plotData.data, plotData.layout);
+        // Load the Plotly JSON file and render the plot
+        try {
+          const response = await fetch(event.plotJson);
+          const plotData = await response.json();
+          Plotly.newPlot('plotly-plot', plotData.data, plotData.layout);
+        } catch (error) {
+          console.error('Error loading the Plotly JSON:', error);
+          document.getElementById('plotly-plot').innerHTML = '<p>Error loading plot data.</p>';
+        }
       }
     });
 
