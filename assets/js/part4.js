@@ -1,12 +1,16 @@
 // Load your JSON data
-fetch('assets/js/events_data.json')
-  .then(response => response.json())
-  .then(data => {
-    // Extract dates and percentages for the plot
-    const dates = data.map(event => event.date);
-    const percentages = data.map(event => event.percentage);
+Promise.all([
+  fetch('assets/js/part4.json').then(response => response.json())
+]).then(([data]) => {
+  // Create plots for Politics and Gaming
+  ['politics', 'gaming'].forEach(sector => {
+    const sectorData = data[sector];
 
-    // Create the plot with a black line and blue dots
+    // Extract dates and percentages for the plot
+    const dates = sectorData.map(event => event.date);
+    const percentages = sectorData.map(event => event.percentage);
+
+    // Create the plot with a black line and colored dots
     const trace = {
       x: dates,
       y: percentages,
@@ -14,79 +18,83 @@ fetch('assets/js/events_data.json')
       type: 'scatter',
       name: 'Consensus %',
       marker: {
-        color: 'blue',  // Blue dots
-        size: 8
+        color: percentages, // Color based on percentage
+        colorscale: sector === 'politics' ? 'Reds' : 'Greens', // Different colors for each sector
+        size: 8,
+        showscale: true,
+        colorbar: {
+          title: '% Consensus'
+        }
       },
       line: {
-        color: 'white',  // White line for visibility on black background
+        color: 'white',
         width: 1
       }
     };
 
     const layout = {
       title: {
-        text: 'Timeline of Synchronized Narratives (Multi-Channel Consensus)',
+        text: `${sector.charAt(0).toUpperCase() + sector.slice(1)} Event Detection`,
         font: {
-          color: 'white'  // White title text for visibility
+          color: 'white'
         }
       },
       xaxis: {
         title: 'Date',
         titlefont: {
-          color: 'white'  // White x-axis title
+          color: 'white'
         },
         tickfont: {
-          color: 'white'  // White x-axis tick labels
+          color: 'white'
         },
-        gridcolor: 'rgba(255, 255, 255, 0.2)',  // Light grid lines for visibility
-        zerolinecolor: 'rgba(255, 255, 255, 0.2)'  // Light zero line
+        gridcolor: 'rgba(255, 255, 255, 0.2)',
+        zerolinecolor: 'rgba(255, 255, 255, 0.2)'
       },
       yaxis: {
         title: '% of Channels Discussing Same Topic',
         titlefont: {
-          color: 'white'  // White y-axis title
+          color: 'white'
         },
         tickfont: {
-          color: 'white'  // White y-axis tick labels
+          color: 'white'
         },
-        gridcolor: 'rgba(255, 255, 255, 0.2)',  // Light grid lines for visibility
-        zerolinecolor: 'rgba(255, 255, 255, 0.2)'  // Light zero line
+        gridcolor: 'rgba(255, 255, 255, 0.2)',
+        zerolinecolor: 'rgba(255, 255, 255, 0.2)'
       },
       hovermode: 'closest',
-      plot_bgcolor: 'black',  // Black plot background
-      paper_bgcolor: 'black',  // Black paper background
+      plot_bgcolor: 'black',
+      paper_bgcolor: 'black',
       font: {
-        color: 'white'  // Default font color for all text
+        color: 'white'
       }
     };
 
     // Draw the plot
-    Plotly.newPlot('plot', [trace], layout);
+    Plotly.newPlot(`${sector}-plot`, [trace], layout);
 
     // Add click event to the plot
-    document.getElementById('plot').on('plotly_click', function(plotData) {
+    document.getElementById(`${sector}-plot`).on('plotly_click', function(plotData) {
       const point = plotData.points[0];
-      const clickedDate = point.x;
-
-      // Find the event corresponding to the clicked date
-      const event = data.find(event => event.date === clickedDate);
+      const pointIndex = point.pointIndex;
+      const clickedEvent = sectorData[pointIndex];
 
       // Display keywords
-      const keywordList = document.getElementById('keyword-list');
+      const keywordList = document.getElementById(`${sector}-keywords`);
       keywordList.innerHTML = `
-        <h2>Keywords for ${clickedDate}</h2>
+        <h3>Top Keywords for ${clickedEvent.date}</h3>
         <ul>
-          ${event.keywords.map(keyword => `<li>${keyword}</li>`).join('')}
+          ${clickedEvent.keywords.map(keyword => `<li>${keyword}</li>`).join('')}
         </ul>
       `;
 
       // Display analysis
-      const analysisDiv = document.getElementById('analysis');
+      const analysisDiv = document.getElementById(`${sector}-analysis`);
       analysisDiv.innerHTML = `
-        <h2>Analysis for ${clickedDate}</h2>
-        <p>On ${clickedDate}, the keywords "${event.keywords.join(', ')}" were discussed by ${event.channels} channels.
-        This likely corresponds to [insert event description here].</p>
+        <h3>Analysis for ${clickedEvent.date}</h3>
+        <p>On ${clickedEvent.date}, the topics "${clickedEvent.keywords.join(', ')}" were discussed by ${clickedEvent.channels} channels (${clickedEvent.percentage}% consensus).</p>
+        <p>This indicates a synchronized narrative, likely corresponding to a real-world event.</p>
       `;
     });
-  })
-  .catch(error => console.error('Error loading the JSON data:', error));
+  });
+}).catch(error => console.error('Error loading the JSON data:', error));
+
