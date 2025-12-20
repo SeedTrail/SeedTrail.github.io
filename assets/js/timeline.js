@@ -164,34 +164,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Create cards for each event
   events.forEach((event, index) => {
-  const cardDiv = document.createElement('div');
-  cardDiv.className = 'event-card';
-  cardDiv.innerHTML = `
-    <img src="${event.image}" alt="${event.name}">
-    <div class="event-date">${event.date}</div>
-  `;
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'event-card';
+    cardDiv.innerHTML = `
+      <img src="${event.image}" alt="${event.name}">
+      <div class="event-date">${event.date}</div>
+    `;
 
-  cardDiv.addEventListener('click', async () => {
-    if (eventDetails.style.display === 'block') {
-      eventDetails.style.display = 'none';
-    } else {
-      eventDetails.style.display = 'block';
-      eventDetails.innerHTML = `
-        <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
-        <p>${event.description}</p>
-        <div id="plotly-plot" style="width: 100%; height: 500px; margin-top: 20px;"></div>
-        <div class="event-plots" style="display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; justify-content: center;">
-          ${event.plotPaths.map(path => `<img src="${path}" alt="Plot" style="max-width: 48%; height: auto; border: 1px solid #333; border-radius: 4px; padding: 5px; background: #222;">`).join('')}
-        </div>
-      `;
+    // Toggle event details on click
+    cardDiv.addEventListener('click', async () => {
+      if (eventDetails.style.display === 'block') {
+        eventDetails.style.display = 'none';
+      } else {
+        eventDetails.style.display = 'block';
+        eventDetails.innerHTML = `
+          <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
+          <p>${event.description}</p>
+          <div id="plotly-plot" style="width:100%; height:500px;"></div>
+          <div class="event-plots">
+            ${event.plotPaths.map(path => `<img src="${path}" alt="Plot">`).join('')}
+          </div>
+        `;
 
-      // Load the Plotly JSON file and render the first plot
-      const response = await fetch(event.plotJson);
-      const plotData = await response.json();
-      Plotly.newPlot('plotly-plot', plotData.data, plotData.layout);
-    }
+        // Load the Plotly JSON file and render the first plot
+        const response = await fetch(event.plotJson);
+        const plotData = await response.json();
+        Plotly.newPlot('plotly-plot', plotData.data, plotData.layout);
+      }
+    });
+
+    sliderContainer.appendChild(cardDiv);
   });
-
-  sliderContainer.appendChild(cardDiv);
 });
-
