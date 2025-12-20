@@ -85,19 +85,11 @@ fetch('assets/js/events_combined.json')
             ${clickedEvent.keywords.map(keywordObj => `<li>${keywordObj.term}</li>`).join('')}
           </ul>
         `;
-
-        // Display analysis
-        const analysisDiv = document.getElementById(`${category}-analysis`);
-        analysisDiv.innerHTML = `
-          <h3>Analysis for ${clickedEvent.date}</h3>
-          <p>On ${clickedEvent.date}, ${clickedEvent.channels} out of ${clickedEvent.total_channels} channels (${clickedEvent.percentage.toFixed(2)}% consensus) discussed the topics: "${clickedEvent.keywords.map(k => k.term).join(', ')}".</p>
-          <p>This indicates a synchronized narrative, likely corresponding to a real-world event.</p>
-        `;
       });
     };
 
     // Create plots for both categories
-    createPlot('politics', politicsData, 'Reds');
-    createPlot('gaming', gamingData, 'Greens');
+    createPlot('politics', politicsData, 'politics');
+    createPlot('gaming', gamingData, 'gaming');
   })
   .catch(error => console.error('Error loading the JSON data:', error));
