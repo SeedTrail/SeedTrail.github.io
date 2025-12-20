@@ -3,6 +3,37 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
       {% include social-networks-links.html %}
+
+        <!-- ===== TEAM PRESENTATION (added) ===== -->
+        <div class="footer-team">
+          <div class="footer-team-member team-member">
+            <div class="first-name">Alice</div>
+            <div class="last-name">Dupont</div>
+            <div class="contact">
+              <a href="mailto:alice@email.com">
+                <img src="/assets/icons/mail.svg" alt="Email">
+              </a>
+              <a href="https://linkedin.com">
+                <img src="/assets/icons/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-team-member team-member">
+            <div class="first-name">Bob</div>
+            <div class="last-name">Martin</div>
+            <div class="contact">
+              <a href="mailto:bob@email.com">
+                <img src="/assets/icons/mail.svg" alt="Email">
+              </a>
+              <a href="https://linkedin.com">
+                <img src="/assets/icons/linkedin.svg" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ===== END TEAM ===== -->
+        
       {% if page.footer-extra %}
         <div class="footer-custom-content">
           {% for file in page.footer-extra %}
