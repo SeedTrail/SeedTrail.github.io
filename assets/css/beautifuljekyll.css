@@ -20,11 +20,11 @@ layout: null
   /*--frame: {{ site.frame | default: url("/assets/img/frame.jpg")}};*/
 
   /* ----------- ADDED STUFFS --------------------------------------- */
-  --fontOrigin: 1rem;     /* 16px */
-  --fontSmall: 0.625em;   /* 10px */
-  --fontMedium: 0.875em;  /* 14px */
-  --fontNormal: 1em;      /* 16px */
-  --fontLarge:  1.375em;  /* 22px */
+  --fontOrigin: 14px;     /* 16px */
+  --fontSmall: 10px;   /* 10px */
+  --fontMedium: 12px;  /* 14px */
+  --fontNormal: 14px;      /* 16px */
+  --fontLarge:  10px;  /* 22px */
   --fontLight: 100;
   --fontRegular: 400;
   --speed: 0.65s;
@@ -45,8 +45,8 @@ body, html {
 main, .content, .wrapper {
   max-width: 100% !important;
   width: 100% !important;
-  padding-left: 15px;  /* optional small padding */
-  padding-right: 15px; /* optional small padding */
+  padding-left: 10px;  /* optional small padding */
+  padding-right: 10px; /* optional small padding */
 }
                        
 /* ----------- ADDED STUFFS --------------------------------------- */
@@ -1331,11 +1331,6 @@ body {
 .navbar-custom {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
-}
-
-/* Remove Bootstrap's default padding for fixed navbar */
-body {
-  padding-top: 0 !important;
 }
 
 /* Hero section container */
