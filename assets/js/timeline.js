@@ -229,50 +229,63 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     }
   ];
+  
+  events.forEach((event, index) => {
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'event-card';
+    cardDiv.innerHTML = `
+      <img src="${event.image}" alt="${event.name}">
+      <div class="event-date">${event.date}</div>
+    `;
 
- events.forEach((event, index) => {
-  const cardDiv = document.createElement('div');
-  cardDiv.className = 'event-card';
-  cardDiv.innerHTML = `
-    <img src="${event.image}" alt="${event.name}">
-    <div class="event-date">${event.date}</div>
-  `;
+    cardDiv.addEventListener('click', async () => {
+      if (eventDetails.style.display === 'block') {
+        eventDetails.style.display = 'none';
+      } else {
+        eventDetails.style.display = 'block';
 
-  cardDiv.addEventListener('click', async () => {
-    if (eventDetails.style.display === 'block') {
-      eventDetails.style.display = 'none';
-    } else {
-      eventDetails.style.display = 'block';
-      eventDetails.innerHTML = `
-        <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
-        <p>${event.description}</p>
-        <div class="plotly-container">
-          <div id="plotly-plot"></div>
-          <div class="plotly-description-container">
-            <p class="plotly-description">${event.plotlyDescription}</p>
-          </div>
-        </div>
-        <div class="event-plots">
-          ${event.plotPaths.map((path, index) => `
+        // Plotly description section
+        const plotlyDescHTML = event.plotlyDescription ?
+          `<div class="plotly-description-container"><p class="plotly-description">${event.plotlyDescription}</p></div>` : '';
+
+        // Static plots descriptions section
+        const plotsDescHTML = event.plotDescriptions ?
+          event.plotPaths.map((path, index) => `
             <div class="plot-with-description">
               <img src="${path}" alt="Plot ${index + 1}" class="plot-image">
-              <p class="plot-description">${event.plotDescriptions[index]}</p>
+              ${event.plotDescriptions[index] ? `<p class="plot-description">${event.plotDescriptions[index]}</p>` : ''}
             </div>
-          `).join('')}
-        </div>
-      `;
+          `).join('') :
+          event.plotPaths.map((path, index) => `
+            <div class="plot-with-description">
+              <img src="${path}" alt="Plot ${index + 1}" class="plot-image">
+            </div>
+          `).join('');
 
-      try {
-        const response = await fetch(event.plotJson);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const plotData = await response.json();
-        Plotly.newPlot('plotly-plot', plotData.plotly_data.data, plotData.plotly_data.layout);
-      } catch (error) {
-        console.error('Error loading the Plotly JSON:', error);
-        document.getElementById('plotly-plot').innerHTML = '<p>Error loading plot data. Please try again later.</p>';
+        eventDetails.innerHTML = `
+          <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
+          <p>${event.description}</p>
+          <div class="plotly-container">
+            <div id="plotly-plot"></div>
+            ${plotlyDescHTML}
+          </div>
+          <div class="event-plots">
+            ${plotsDescHTML}
+          </div>
+        `;
+
+        try {
+          const response = await fetch(event.plotJson);
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          const plotData = await response.json();
+          Plotly.newPlot('plotly-plot', plotData.plotly_data.data, plotData.plotly_data.layout);
+        } catch (error) {
+          console.error('Error loading the Plotly JSON:', error);
+          document.getElementById('plotly-plot').innerHTML = '<p>Error loading plot data. Please try again later.</p>';
+        }
       }
-    }
-  });
+    });
 
-  sliderContainer.appendChild(cardDiv);
+    sliderContainer.appendChild(cardDiv);
+  });
 });
