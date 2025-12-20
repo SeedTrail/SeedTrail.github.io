@@ -24,7 +24,7 @@
   background: #222;
 }
 .leaflet-control-zoom a:hover {
-  background: #007BFF;
+  background: #0CF2DB;
 }
 
 /* Leaflet attribution (bottom-right text) */
@@ -49,12 +49,12 @@
   max-height: 90%;
   overflow-y: auto;
   color: #fff;
-  border: 1px solid #007BFF;
+  border: 1px solid #0CF2DB;
 }
 
 #event-popup h2 {
   margin-top: 0;
-  color: #007BFF;
+  color: #0CF2DB;
   font-size: 24px;
   border-bottom: 1px solid #333;
   padding-bottom: 10px;
@@ -75,13 +75,13 @@
   background: #222;
   padding: 15px;
   border-radius: 6px;
-  border: 1px solid #007BFF;
+  border: 1px solid #0CF2DB;
 }
 
 #popup-plots img {
   max-width: 100%;
   max-height: 300px;
-  border: 1px solid #007BFF;
+  border: 1px solid #0CF2DB;
   border-radius: 4px;
   object-fit: contain;
   background: #111;
@@ -90,7 +90,7 @@
 #event-popup button {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #007BFF;
+  background: #0CF2DB;
   color: white;
   border: none;
   border-radius: 4px;
@@ -100,7 +100,7 @@
 }
 
 #event-popup button:hover {
-  background: #0056b3;
+  background: #0CF2DB;
 }
 
 /* Responsive adjustments */
@@ -130,7 +130,7 @@
 }
 
 #event-popup::-webkit-scrollbar-thumb {
-  background: #007BFF;
+  background: #0CF2DB;
   border-radius: 4px;
 }
 
@@ -151,7 +151,7 @@
   box-shadow: none;
 }
 .custom-marker div {
-  background: #007BFF;
+  background: #0CF2DB;
   border: 2px solid #fff;
 }
 
