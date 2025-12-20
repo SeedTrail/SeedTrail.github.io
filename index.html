@@ -68,14 +68,18 @@ subtitle: CLICK TO START AUDIO
 <section class="timeline">
 <div class="timeline-slider">
   <div class="slider-container">
-  <h2>Event Timeline</h2>
-    <!-- 14 event cards will be added here -->
+    <!-- Event cards will be added here -->
   </div>
-  <div class="event-details" id="eventDetails"></div>
+  <div class="event-details" id="eventDetails">
+    <!-- Plotly plot will be rendered here -->
+    <div id="plotly-plot" style="width:100%;height:500px;"></div>
+  </div>
 </div>
 
+  
   <!-- Other scripts -->
   <script src="/assets/js/timeline.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </section>
 
 
