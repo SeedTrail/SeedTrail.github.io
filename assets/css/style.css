@@ -115,17 +115,31 @@
 
 
 /* --- Adding stuffs to center ---*/
+/* --.events-spill {--*/
+/* --  display: flex;--*/
+/* --  flex-grow: 1;--*/
+/* --  margin-top: auto;--*/
+/* --  margin-bottom: auto;--*/
+/* --  flex-direction: column;--*/
+/* --  box-sizing: border-box;--*/
+/* --  overflow: hidden;--*/
+/* --  color: rgb(255, 255, 255);--*/
+  /*max-width: 1000px !important;*/
+/* --  padding: 0.75rem;--*/
+/* --  align-items: center;--*/
+/* --  place-content: center;--*/
+/* --}--*/
+
+
 .events-spill {
   display: flex;
-  flex-grow: 1;
+  justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
-  flex-direction: column;
-  box-sizing: border-box;
-  overflow: hidden;
-  color: rgb(255, 255, 255);
-  /*max-width: 1000px !important;*/
-  padding: 0.75rem;
-  align-items: center;
-  place-content: center;
+}
+
+/* Control the width of the Flourish embed */
+.events-spill .flourish-embed {
+  width: 100%;
+  max-width: 1200px; /* adjust as needed */
 }
