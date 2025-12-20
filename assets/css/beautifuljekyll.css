@@ -77,7 +77,6 @@ body {
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
-  text-aling: center;
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
@@ -1229,10 +1228,10 @@ pre {
 /* Main content container (similar to post preview container) */
 
 /* --- ADDED STUFFS --------------------------------------------------------------------------------- */ 
-.main-content {
+.main-content,  .container {
   max-width: 90% !important;  /* makes content wider */
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 /* --- ADDED STUFFS ---------------------------------------------------------------------------------- */ 
 /* Section styling (similar to post preview sections) */
@@ -1969,6 +1968,24 @@ body {
 }
 
 
+/* ---- ADD CENTERING FOR EVENT SPILLOVER ---*/
+.events-spill {
+  display: flex;
+  flex-grow: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  max-width: 600px;
+  padding: 0.75rem;
+  align-items: center;
+  place-content: center;
+}
+/* ---- ADD CENTERING FOR EVENT SPILLOVER ---*/
+
+  
 /* keep border stable */  
 
 /* --- TRYING SOMETHING DIFFERENT --- */
