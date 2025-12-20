@@ -77,6 +77,7 @@ body {
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
+  text-aling: center;
   {% if site.page-img %}
   background-image: url({{ site.page-img | relative_url }});
   background-attachment: fixed;
@@ -85,7 +86,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  text-aling: center;
 
 /* ----------- ADDED STUFFS --------------------------------------- */
   letter-spacing: 0.005rem;
@@ -1228,7 +1228,13 @@ pre {
 
 /* Main content container (similar to post preview container) */
 
-
+/* --- ADDED STUFFS --------------------------------------------------------------------------------- */ 
+.main-content {
+  max-width: 90% !important;  /* makes content wider */
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+/* --- ADDED STUFFS ---------------------------------------------------------------------------------- */ 
 /* Section styling (similar to post preview sections) */
 .main-content-section {
   padding: 1.25rem 0;
