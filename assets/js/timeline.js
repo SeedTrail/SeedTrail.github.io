@@ -8,11 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
       name: "US Election 2016",
       date: "2016-11-08",
       image: "/assets/img/icon1.avif",
-      description: "The 2016 US Presidential Election was a historic event with significant global impact.",
+      description: "Together, the three analyses identify the 2012 US presidential election as a highly salient but transient event in YouTube activity. The strong DiD divergence, the ITS discontinuity, and the extreme placebo result consistently point to a short-lived surge in attention tied closely to the election date.",
       plotJson: "/assets/js/us_election_2016.json", // Plotly JSON for the first plot
+      plotlyDescription: "I observe a clear and well-timed spike in the treated topic at the event date, standing out from the control category. Prior to the election, both series display similar cyclical behavior, suggesting that the parallel trends assumption is reasonably satisfied. The divergence at the event date is sharp but short-lived, with the treated series quickly reverting toward pre-event levels.
+",
       plotPaths: [
         "/assets/plots/us_election_2016_ITS.png", // Static image for the second plot
         "/assets/plots/us_election_2016_Placebo.png"  // Static image for the third plot
+      ]
+      plotDescriptions: [
+      "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. This pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.
+",
+      "The placebo test places the estimated effect for the actual election date far in the extreme right tail of the distribution. Effects of comparable magnitude are virtually absent under random-date assignments, strongly suggesting that the observed spike is not attributable to background variability."
       ]
     },
     {
@@ -160,43 +167,49 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   ];
 
-  // Create cards for each event
-  events.forEach((event, index) => {
-    const cardDiv = document.createElement('div');
-    cardDiv.className = 'event-card';
-    cardDiv.innerHTML = `
-      <img src="${event.image}" alt="${event.name}">
-      <div class="event-date">${event.date}</div>
-    `;
+ events.forEach((event, index) => {
+  const cardDiv = document.createElement('div');
+  cardDiv.className = 'event-card';
+  cardDiv.innerHTML = `
+    <img src="${event.image}" alt="${event.name}">
+    <div class="event-date">${event.date}</div>
+  `;
 
-    // Toggle event details on click
-    cardDiv.addEventListener('click', async () => {
-      if (eventDetails.style.display === 'block') {
-        eventDetails.style.display = 'none';
-      } else {
-        eventDetails.style.display = 'block';
-        eventDetails.innerHTML = `
-          <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
-          <p>${event.description}</p>
-          <div id="plotly-plot" style="width:100%; height:500px;"></div>
-          <div class="event-plots">
-            ${event.plotPaths.map(path => `<img src="${path}" alt="Plot">`).join('')}
+  cardDiv.addEventListener('click', async () => {
+    if (eventDetails.style.display === 'block') {
+      eventDetails.style.display = 'none';
+    } else {
+      eventDetails.style.display = 'block';
+      eventDetails.innerHTML = `
+        <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
+        <p>${event.description}</p>
+        <div class="plotly-container">
+          <div id="plotly-plot"></div>
+          <div class="plotly-description-container">
+            <p class="plotly-description">${event.plotlyDescription}</p>
           </div>
-        `;
+        </div>
+        <div class="event-plots">
+          ${event.plotPaths.map((path, index) => `
+            <div class="plot-with-description">
+              <img src="${path}" alt="Plot ${index + 1}" class="plot-image">
+              <p class="plot-description">${event.plotDescriptions[index]}</p>
+            </div>
+          `).join('')}
+        </div>
+      `;
 
-        // Load the Plotly JSON file and render the plot
-        try {
-          const response = await fetch(event.plotJson);
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-          const plotData = await response.json();
-          Plotly.newPlot('plotly-plot', plotData.plotly_data.data, plotData.plotly_data.layout);
-        } catch (error) {
-          console.error('Error loading the Plotly JSON:', error);
-          document.getElementById('plotly-plot').innerHTML = '<p>Error loading plot data. Please try again later.</p>';
-        }
+      try {
+        const response = await fetch(event.plotJson);
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const plotData = await response.json();
+        Plotly.newPlot('plotly-plot', plotData.plotly_data.data, plotData.plotly_data.layout);
+      } catch (error) {
+        console.error('Error loading the Plotly JSON:', error);
+        document.getElementById('plotly-plot').innerHTML = '<p>Error loading plot data. Please try again later.</p>';
       }
-    });
-
-    sliderContainer.appendChild(cardDiv);
+    }
   });
+
+  sliderContainer.appendChild(cardDiv);
 });
