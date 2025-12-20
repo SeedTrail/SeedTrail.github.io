@@ -1,3 +1,47 @@
+
+/* Plotly plot container */
+#plotly-plot {
+  width: 100%;
+  height: 500px;
+  background: #222;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Plotly dark theme overrides */
+.plotly-graph-div {
+  background: #222 !important;
+  color: white !important;
+}
+
+.plotly-graph-div .plotly .title text {
+  fill: white !important;
+}
+
+.plotly-graph-div .plotly .cartesianlayer > .xaxis > .title text,
+.plotly-graph-div .plotly .cartesianlayer > .yaxis > .title text {
+  fill: white !important;
+}
+
+.plotly-graph-div .plotly .cartesianlayer > .xaxis > .tick > .ticktext,
+.plotly-graph-div .plotly .cartesianlayer > .yaxis > .tick > .ticktext {
+  fill: #ccc !important;
+}
+
+.plotly-graph-div .plotly .cartesianlayer > .xaxis > .gridline,
+.plotly-graph-div .plotly .cartesianlayer > .yaxis > .gridline {
+  stroke: #444 !important;
+}
+
+/* Adjust static plots to fit alongside Plotly */
+.event-plots img {
+  max-width: 48%;
+  height: auto;
+}
+
+
+
+
 /* Timeline slider background */
 .timeline-slider {
   display: flex;
