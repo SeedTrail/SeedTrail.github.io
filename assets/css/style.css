@@ -145,16 +145,13 @@
   max-width: 1200px; /* adjust as needed */
 }
 
-/* Control the width of the Flourish embed */
-element.style {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    box-sizing: border-box;
-    overflow: hidden;
-    color: rgb(255, 255, 255);
-    max-width: 600px;
-    /* margin-right: auto; */
-    margin: auto;
-    padding: 0.75rem;
+.events-spill .flourish-embed {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
+
+/*.events-spill > div {*/
+/*  margin: 0 !important;*/
+/*}*/
+
+
