@@ -1,0 +1,1178 @@
+[
+  {
+    "date": "2008-02-01",
+    "percentage": 18.75,
+    "channels": 6,
+    "total_channels": 32,
+    "keywords": []
+  },
+  {
+    "date": "2008-08-26",
+    "percentage": 17.31,
+    "channels": 9,
+    "total_channels": 52,
+    "keywords": []
+  },
+  {
+    "date": "2008-08-27",
+    "percentage": 27.91,
+    "channels": 12,
+    "total_channels": 43,
+    "keywords": []
+  },
+  {
+    "date": "2008-08-28",
+    "percentage": 21.15,
+    "channels": 11,
+    "total_channels": 52,
+    "keywords": []
+  },
+  {
+    "date": "2008-08-29",
+    "percentage": 22.92,
+    "channels": 11,
+    "total_channels": 48,
+    "keywords": []
+  },
+  {
+    "date": "2008-08-30",
+    "percentage": 21.74,
+    "channels": 5,
+    "total_channels": 23,
+    "keywords": []
+  },
+  {
+    "date": "2008-09-04",
+    "percentage": 21.15,
+    "channels": 11,
+    "total_channels": 52,
+    "keywords": []
+  },
+  {
+    "date": "2008-09-09",
+    "percentage": 17.14,
+    "channels": 6,
+    "total_channels": 35,
+    "keywords": []
+  },
+  {
+    "date": "2008-10-03",
+    "percentage": 16.95,
+    "channels": 10,
+    "total_channels": 59,
+    "keywords": []
+  },
+  {
+    "date": "2008-10-15",
+    "percentage": 16.98,
+    "channels": 9,
+    "total_channels": 53,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-01",
+    "percentage": 20.0,
+    "channels": 6,
+    "total_channels": 30,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-03",
+    "percentage": 17.54,
+    "channels": 10,
+    "total_channels": 57,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-04",
+    "percentage": 21.67,
+    "channels": 13,
+    "total_channels": 60,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-05",
+    "percentage": 36.07,
+    "channels": 22,
+    "total_channels": 61,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-06",
+    "percentage": 23.33,
+    "channels": 14,
+    "total_channels": 60,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-07",
+    "percentage": 20.75,
+    "channels": 11,
+    "total_channels": 53,
+    "keywords": []
+  },
+  {
+    "date": "2008-11-08",
+    "percentage": 18.52,
+    "channels": 5,
+    "total_channels": 27,
+    "keywords": []
+  },
+  {
+    "date": "2009-01-19",
+    "percentage": 20.29,
+    "channels": 14,
+    "total_channels": 69,
+    "keywords": []
+  },
+  {
+    "date": "2009-01-20",
+    "percentage": 30.88,
+    "channels": 21,
+    "total_channels": 68,
+    "keywords": []
+  },
+  {
+    "date": "2009-01-21",
+    "percentage": 29.03,
+    "channels": 18,
+    "total_channels": 62,
+    "keywords": []
+  },
+  {
+    "date": "2009-01-22",
+    "percentage": 18.42,
+    "channels": 14,
+    "total_channels": 76,
+    "keywords": []
+  },
+  {
+    "date": "2009-04-05",
+    "percentage": 17.95,
+    "channels": 7,
+    "total_channels": 39,
+    "keywords": []
+  },
+  {
+    "date": "2009-04-15",
+    "percentage": 19.7,
+    "channels": 13,
+    "total_channels": 66,
+    "keywords": []
+  },
+  {
+    "date": "2009-04-27",
+    "percentage": 19.48,
+    "channels": 15,
+    "total_channels": 77,
+    "keywords": []
+  },
+  {
+    "date": "2009-04-28",
+    "percentage": 22.11,
+    "channels": 21,
+    "total_channels": 95,
+    "keywords": []
+  },
+  {
+    "date": "2009-04-29",
+    "percentage": 24.42,
+    "channels": 21,
+    "total_channels": 86,
+    "keywords": []
+  },
+  {
+    "date": "2009-04-30",
+    "percentage": 18.56,
+    "channels": 18,
+    "total_channels": 97,
+    "keywords": []
+  },
+  {
+    "date": "2009-05-01",
+    "percentage": 19.1,
+    "channels": 17,
+    "total_channels": 89,
+    "keywords": []
+  },
+  {
+    "date": "2009-05-03",
+    "percentage": 21.05,
+    "channels": 8,
+    "total_channels": 38,
+    "keywords": []
+  },
+  {
+    "date": "2009-05-25",
+    "percentage": 17.78,
+    "channels": 8,
+    "total_channels": 45,
+    "keywords": []
+  },
+  {
+    "date": "2009-06-26",
+    "percentage": 21.35,
+    "channels": 19,
+    "total_channels": 89,
+    "keywords": []
+  },
+  {
+    "date": "2009-07-05",
+    "percentage": 20.0,
+    "channels": 6,
+    "total_channels": 30,
+    "keywords": []
+  },
+  {
+    "date": "2009-07-20",
+    "percentage": 17.89,
+    "channels": 17,
+    "total_channels": 95,
+    "keywords": []
+  },
+  {
+    "date": "2009-07-26",
+    "percentage": 17.95,
+    "channels": 7,
+    "total_channels": 39,
+    "keywords": []
+  },
+  {
+    "date": "2009-08-07",
+    "percentage": 16.87,
+    "channels": 14,
+    "total_channels": 83,
+    "keywords": []
+  },
+  {
+    "date": "2009-08-15",
+    "percentage": 21.05,
+    "channels": 8,
+    "total_channels": 38,
+    "keywords": []
+  },
+  {
+    "date": "2009-08-16",
+    "percentage": 22.58,
+    "channels": 7,
+    "total_channels": 31,
+    "keywords": []
+  },
+  {
+    "date": "2009-10-09",
+    "percentage": 21.0,
+    "channels": 21,
+    "total_channels": 100,
+    "keywords": []
+  },
+  {
+    "date": "2009-11-10",
+    "percentage": 25.37,
+    "channels": 34,
+    "total_channels": 134,
+    "keywords": []
+  },
+  {
+    "date": "2009-11-11",
+    "percentage": 18.6,
+    "channels": 24,
+    "total_channels": 129,
+    "keywords": []
+  },
+  {
+    "date": "2009-12-24",
+    "percentage": 16.38,
+    "channels": 19,
+    "total_channels": 116,
+    "keywords": []
+  },
+  {
+    "date": "2009-12-25",
+    "percentage": 17.28,
+    "channels": 14,
+    "total_channels": 81,
+    "keywords": []
+  },
+  {
+    "date": "2010-01-16",
+    "percentage": 19.61,
+    "channels": 10,
+    "total_channels": 51,
+    "keywords": []
+  },
+  {
+    "date": "2010-09-14",
+    "percentage": 19.1,
+    "channels": 38,
+    "total_channels": 199,
+    "keywords": []
+  },
+  {
+    "date": "2010-09-18",
+    "percentage": 14.14,
+    "channels": 27,
+    "total_channels": 191,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-08",
+    "percentage": 17.86,
+    "channels": 45,
+    "total_channels": 252,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-09",
+    "percentage": 28.35,
+    "channels": 72,
+    "total_channels": 254,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-10",
+    "percentage": 27.13,
+    "channels": 70,
+    "total_channels": 258,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-11",
+    "percentage": 23.91,
+    "channels": 55,
+    "total_channels": 230,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-12",
+    "percentage": 23.95,
+    "channels": 63,
+    "total_channels": 263,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-13",
+    "percentage": 25.31,
+    "channels": 61,
+    "total_channels": 241,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-14",
+    "percentage": 26.17,
+    "channels": 56,
+    "total_channels": 214,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-15",
+    "percentage": 22.94,
+    "channels": 53,
+    "total_channels": 231,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-16",
+    "percentage": 16.79,
+    "channels": 44,
+    "total_channels": 262,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-17",
+    "percentage": 21.9,
+    "channels": 53,
+    "total_channels": 242,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-18",
+    "percentage": 14.71,
+    "channels": 35,
+    "total_channels": 238,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-19",
+    "percentage": 16.88,
+    "channels": 40,
+    "total_channels": 237,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-20",
+    "percentage": 21.18,
+    "channels": 43,
+    "total_channels": 203,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-21",
+    "percentage": 15.56,
+    "channels": 28,
+    "total_channels": 180,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-23",
+    "percentage": 14.92,
+    "channels": 37,
+    "total_channels": 248,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-26",
+    "percentage": 16.27,
+    "channels": 34,
+    "total_channels": 209,
+    "keywords": []
+  },
+  {
+    "date": "2010-11-28",
+    "percentage": 14.61,
+    "channels": 32,
+    "total_channels": 219,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-01",
+    "percentage": 14.1,
+    "channels": 32,
+    "total_channels": 227,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-03",
+    "percentage": 14.78,
+    "channels": 34,
+    "total_channels": 230,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-11",
+    "percentage": 14.15,
+    "channels": 29,
+    "total_channels": 205,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-12",
+    "percentage": 14.35,
+    "channels": 30,
+    "total_channels": 209,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-24",
+    "percentage": 15.32,
+    "channels": 34,
+    "total_channels": 222,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-25",
+    "percentage": 22.94,
+    "channels": 39,
+    "total_channels": 170,
+    "keywords": []
+  },
+  {
+    "date": "2010-12-27",
+    "percentage": 14.73,
+    "channels": 33,
+    "total_channels": 224,
+    "keywords": []
+  },
+  {
+    "date": "2011-01-05",
+    "percentage": 14.69,
+    "channels": 36,
+    "total_channels": 245,
+    "keywords": []
+  },
+  {
+    "date": "2011-02-01",
+    "percentage": 14.19,
+    "channels": 42,
+    "total_channels": 296,
+    "keywords": []
+  },
+  {
+    "date": "2011-05-01",
+    "percentage": 25.53,
+    "channels": 24,
+    "total_channels": 94,
+    "keywords": []
+  },
+  {
+    "date": "2011-05-02",
+    "percentage": 48.29,
+    "channels": 99,
+    "total_channels": 205,
+    "keywords": []
+  },
+  {
+    "date": "2011-05-03",
+    "percentage": 25.89,
+    "channels": 51,
+    "total_channels": 197,
+    "keywords": []
+  },
+  {
+    "date": "2011-05-04",
+    "percentage": 19.67,
+    "channels": 36,
+    "total_channels": 183,
+    "keywords": []
+  },
+  {
+    "date": "2011-05-07",
+    "percentage": 22.97,
+    "channels": 17,
+    "total_channels": 74,
+    "keywords": []
+  },
+  {
+    "date": "2011-05-08",
+    "percentage": 18.39,
+    "channels": 16,
+    "total_channels": 87,
+    "keywords": []
+  },
+  {
+    "date": "2011-08-26",
+    "percentage": 18.42,
+    "channels": 35,
+    "total_channels": 190,
+    "keywords": []
+  },
+  {
+    "date": "2011-08-27",
+    "percentage": 28.97,
+    "channels": 31,
+    "total_channels": 107,
+    "keywords": []
+  },
+  {
+    "date": "2011-08-28",
+    "percentage": 29.41,
+    "channels": 35,
+    "total_channels": 119,
+    "keywords": []
+  },
+  {
+    "date": "2011-09-20",
+    "percentage": 14.84,
+    "channels": 73,
+    "total_channels": 492,
+    "keywords": []
+  },
+  {
+    "date": "2011-11-08",
+    "percentage": 27.24,
+    "channels": 149,
+    "total_channels": 547,
+    "keywords": []
+  },
+  {
+    "date": "2011-11-09",
+    "percentage": 18.0,
+    "channels": 97,
+    "total_channels": 539,
+    "keywords": []
+  },
+  {
+    "date": "2011-12-24",
+    "percentage": 19.2,
+    "channels": 82,
+    "total_channels": 427,
+    "keywords": []
+  },
+  {
+    "date": "2011-12-25",
+    "percentage": 18.16,
+    "channels": 65,
+    "total_channels": 358,
+    "keywords": []
+  },
+  {
+    "date": "2012-06-28",
+    "percentage": 18.58,
+    "channels": 55,
+    "total_channels": 296,
+    "keywords": []
+  },
+  {
+    "date": "2012-10-28",
+    "percentage": 17.71,
+    "channels": 31,
+    "total_channels": 175,
+    "keywords": []
+  },
+  {
+    "date": "2012-10-29",
+    "percentage": 23.83,
+    "channels": 66,
+    "total_channels": 277,
+    "keywords": []
+  },
+  {
+    "date": "2012-10-30",
+    "percentage": 23.46,
+    "channels": 61,
+    "total_channels": 260,
+    "keywords": []
+  },
+  {
+    "date": "2012-10-31",
+    "percentage": 18.53,
+    "channels": 53,
+    "total_channels": 286,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-02",
+    "percentage": 17.43,
+    "channels": 53,
+    "total_channels": 304,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-12",
+    "percentage": 20.08,
+    "channels": 211,
+    "total_channels": 1051,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-13",
+    "percentage": 32.32,
+    "channels": 352,
+    "total_channels": 1089,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-14",
+    "percentage": 26.27,
+    "channels": 274,
+    "total_channels": 1043,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-15",
+    "percentage": 25.43,
+    "channels": 265,
+    "total_channels": 1042,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-16",
+    "percentage": 23.44,
+    "channels": 241,
+    "total_channels": 1028,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-17",
+    "percentage": 23.48,
+    "channels": 220,
+    "total_channels": 937,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-18",
+    "percentage": 22.86,
+    "channels": 216,
+    "total_channels": 945,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-19",
+    "percentage": 20.18,
+    "channels": 204,
+    "total_channels": 1011,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-20",
+    "percentage": 18.39,
+    "channels": 192,
+    "total_channels": 1044,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-21",
+    "percentage": 18.72,
+    "channels": 193,
+    "total_channels": 1031,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-22",
+    "percentage": 16.0,
+    "channels": 145,
+    "total_channels": 906,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-23",
+    "percentage": 16.32,
+    "channels": 156,
+    "total_channels": 956,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-24",
+    "percentage": 17.47,
+    "channels": 155,
+    "total_channels": 887,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-25",
+    "percentage": 16.54,
+    "channels": 147,
+    "total_channels": 889,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-26",
+    "percentage": 15.62,
+    "channels": 157,
+    "total_channels": 1005,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-27",
+    "percentage": 15.51,
+    "channels": 156,
+    "total_channels": 1006,
+    "keywords": []
+  },
+  {
+    "date": "2012-11-28",
+    "percentage": 14.71,
+    "channels": 150,
+    "total_channels": 1020,
+    "keywords": []
+  },
+  {
+    "date": "2012-12-25",
+    "percentage": 19.92,
+    "channels": 142,
+    "total_channels": 713,
+    "keywords": []
+  },
+  {
+    "date": "2013-01-29",
+    "percentage": 15.25,
+    "channels": 181,
+    "total_channels": 1187,
+    "keywords": []
+  },
+  {
+    "date": "2013-04-15",
+    "percentage": 18.46,
+    "channels": 67,
+    "total_channels": 363,
+    "keywords": []
+  },
+  {
+    "date": "2013-04-16",
+    "percentage": 24.54,
+    "channels": 93,
+    "total_channels": 379,
+    "keywords": []
+  },
+  {
+    "date": "2013-04-19",
+    "percentage": 18.73,
+    "channels": 62,
+    "total_channels": 331,
+    "keywords": []
+  },
+  {
+    "date": "2013-06-26",
+    "percentage": 18.51,
+    "channels": 67,
+    "total_channels": 362,
+    "keywords": []
+  },
+  {
+    "date": "2013-07-14",
+    "percentage": 17.48,
+    "channels": 36,
+    "total_channels": 206,
+    "keywords": []
+  },
+  {
+    "date": "2013-09-17",
+    "percentage": 18.28,
+    "channels": 277,
+    "total_channels": 1515,
+    "keywords": []
+  },
+  {
+    "date": "2013-09-18",
+    "percentage": 15.28,
+    "channels": 228,
+    "total_channels": 1492,
+    "keywords": []
+  },
+  {
+    "date": "2013-10-01",
+    "percentage": 18.16,
+    "channels": 67,
+    "total_channels": 369,
+    "keywords": []
+  },
+  {
+    "date": "2013-10-03",
+    "percentage": 17.95,
+    "channels": 63,
+    "total_channels": 351,
+    "keywords": []
+  },
+  {
+    "date": "2013-11-05",
+    "percentage": 17.54,
+    "channels": 268,
+    "total_channels": 1528,
+    "keywords": []
+  },
+  {
+    "date": "2013-12-05",
+    "percentage": 16.91,
+    "channels": 70,
+    "total_channels": 414,
+    "keywords": []
+  },
+  {
+    "date": "2013-12-06",
+    "percentage": 23.51,
+    "channels": 87,
+    "total_channels": 370,
+    "keywords": []
+  },
+  {
+    "date": "2013-12-10",
+    "percentage": 17.51,
+    "channels": 62,
+    "total_channels": 354,
+    "keywords": []
+  },
+  {
+    "date": "2013-12-25",
+    "percentage": 20.83,
+    "channels": 245,
+    "total_channels": 1176,
+    "keywords": []
+  },
+  {
+    "date": "2014-08-12",
+    "percentage": 19.95,
+    "channels": 84,
+    "total_channels": 421,
+    "keywords": []
+  },
+  {
+    "date": "2014-11-03",
+    "percentage": 16.94,
+    "channels": 346,
+    "total_channels": 2043,
+    "keywords": []
+  },
+  {
+    "date": "2014-11-04",
+    "percentage": 16.75,
+    "channels": 350,
+    "total_channels": 2090,
+    "keywords": []
+  },
+  {
+    "date": "2014-11-28",
+    "percentage": 17.55,
+    "channels": 53,
+    "total_channels": 302,
+    "keywords": []
+  },
+  {
+    "date": "2014-12-25",
+    "percentage": 20.02,
+    "channels": 347,
+    "total_channels": 1733,
+    "keywords": []
+  },
+  {
+    "date": "2015-06-26",
+    "percentage": 21.59,
+    "channels": 106,
+    "total_channels": 491,
+    "keywords": []
+  },
+  {
+    "date": "2015-11-06",
+    "percentage": 16.63,
+    "channels": 488,
+    "total_channels": 2935,
+    "keywords": []
+  },
+  {
+    "date": "2015-11-07",
+    "percentage": 15.46,
+    "channels": 415,
+    "total_channels": 2684,
+    "keywords": []
+  },
+  {
+    "date": "2015-11-08",
+    "percentage": 16.27,
+    "channels": 423,
+    "total_channels": 2600,
+    "keywords": []
+  },
+  {
+    "date": "2015-11-14",
+    "percentage": 18.28,
+    "channels": 53,
+    "total_channels": 290,
+    "keywords": []
+  },
+  {
+    "date": "2015-12-25",
+    "percentage": 19.13,
+    "channels": 462,
+    "total_channels": 2415,
+    "keywords": []
+  },
+  {
+    "date": "2016-06-24",
+    "percentage": 18.73,
+    "channels": 112,
+    "total_channels": 598,
+    "keywords": []
+  },
+  {
+    "date": "2016-07-28",
+    "percentage": 17.85,
+    "channels": 111,
+    "total_channels": 622,
+    "keywords": []
+  },
+  {
+    "date": "2016-09-27",
+    "percentage": 18.94,
+    "channels": 125,
+    "total_channels": 660,
+    "keywords": []
+  },
+  {
+    "date": "2016-10-07",
+    "percentage": 18.65,
+    "channels": 119,
+    "total_channels": 638,
+    "keywords": []
+  },
+  {
+    "date": "2016-10-09",
+    "percentage": 20.24,
+    "channels": 85,
+    "total_channels": 420,
+    "keywords": []
+  },
+  {
+    "date": "2016-10-10",
+    "percentage": 18.68,
+    "channels": 116,
+    "total_channels": 621,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-07",
+    "percentage": 17.49,
+    "channels": 127,
+    "total_channels": 726,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-08",
+    "percentage": 18.66,
+    "channels": 128,
+    "total_channels": 686,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-09",
+    "percentage": 37.6,
+    "channels": 282,
+    "total_channels": 750,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-10",
+    "percentage": 30.29,
+    "channels": 222,
+    "total_channels": 733,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-11",
+    "percentage": 23.53,
+    "channels": 156,
+    "total_channels": 663,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-12",
+    "percentage": 16.86,
+    "channels": 71,
+    "total_channels": 421,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-14",
+    "percentage": 19.04,
+    "channels": 131,
+    "total_channels": 688,
+    "keywords": []
+  },
+  {
+    "date": "2016-11-26",
+    "percentage": 18.71,
+    "channels": 78,
+    "total_channels": 417,
+    "keywords": []
+  },
+  {
+    "date": "2016-12-25",
+    "percentage": 19.87,
+    "channels": 628,
+    "total_channels": 3161,
+    "keywords": []
+  },
+  {
+    "date": "2017-01-11",
+    "percentage": 17.4,
+    "channels": 123,
+    "total_channels": 707,
+    "keywords": []
+  },
+  {
+    "date": "2017-01-19",
+    "percentage": 19.68,
+    "channels": 147,
+    "total_channels": 747,
+    "keywords": []
+  },
+  {
+    "date": "2017-01-20",
+    "percentage": 31.42,
+    "channels": 235,
+    "total_channels": 748,
+    "keywords": []
+  },
+  {
+    "date": "2017-01-21",
+    "percentage": 21.64,
+    "channels": 111,
+    "total_channels": 513,
+    "keywords": []
+  },
+  {
+    "date": "2017-01-23",
+    "percentage": 18.91,
+    "channels": 139,
+    "total_channels": 735,
+    "keywords": []
+  },
+  {
+    "date": "2017-01-30",
+    "percentage": 17.51,
+    "channels": 128,
+    "total_channels": 731,
+    "keywords": []
+  },
+  {
+    "date": "2017-08-21",
+    "percentage": 18.09,
+    "channels": 140,
+    "total_channels": 774,
+    "keywords": []
+  },
+  {
+    "date": "2017-09-07",
+    "percentage": 17.58,
+    "channels": 151,
+    "total_channels": 859,
+    "keywords": []
+  },
+  {
+    "date": "2017-09-10",
+    "percentage": 20.8,
+    "channels": 120,
+    "total_channels": 577,
+    "keywords": []
+  },
+  {
+    "date": "2017-10-02",
+    "percentage": 29.55,
+    "channels": 245,
+    "total_channels": 829,
+    "keywords": []
+  },
+  {
+    "date": "2017-10-03",
+    "percentage": 22.63,
+    "channels": 189,
+    "total_channels": 835,
+    "keywords": []
+  },
+  {
+    "date": "2017-10-04",
+    "percentage": 18.86,
+    "channels": 165,
+    "total_channels": 875,
+    "keywords": []
+  },
+  {
+    "date": "2017-12-25",
+    "percentage": 16.71,
+    "channels": 596,
+    "total_channels": 3567,
+    "keywords": []
+  },
+  {
+    "date": "2018-03-08",
+    "percentage": 16.91,
+    "channels": 182,
+    "total_channels": 1076,
+    "keywords": []
+  },
+  {
+    "date": "2018-12-25",
+    "percentage": 15.2,
+    "channels": 605,
+    "total_channels": 3981,
+    "keywords": []
+  },
+  {
+    "date": "2019-04-15",
+    "percentage": 17.34,
+    "channels": 216,
+    "total_channels": 1246,
+    "keywords": []
+  },
+  {
+    "date": "2019-04-16",
+    "percentage": 17.97,
+    "channels": 223,
+    "total_channels": 1241,
+    "keywords": []
+  },
+  {
+    "date": "2019-04-21",
+    "percentage": 21.06,
+    "channels": 182,
+    "total_channels": 864,
+    "keywords": []
+  }
+]
