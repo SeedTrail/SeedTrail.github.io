@@ -33,62 +33,61 @@
   color: #aaa;
 }
 
-/* Pop-up styling (black background, blue accents) */
+
+/* Pop-up styling (adjusted for visibility) */
 #event-popup {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 60%; /* Adjusted to lower the pop-up */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Center horizontally and adjust vertical */
   background: #1a1a1a;
-  padding: 25px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 80vh; /* Limit height to 80% of viewport */
   overflow-y: auto;
   color: #fff;
   border: 1px solid #0CF2DB;
+  margin-top: -10vh; /* Optional: Fine-tune vertical position */
 }
 
+/* Ensure the pop-up content is not cut off */
 #event-popup h2 {
-  margin-top: 0;
+  margin-top: 10px; /* Add space at the top */
   color: #0CF2DB;
   font-size: 24px;
   border-bottom: 1px solid #333;
   padding-bottom: 10px;
 }
 
-#event-popup p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #ccc;
-}
-
+/* Adjust the plots container */
 #popup-plots {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0;
-  background: #222;
-  padding: 15px;
-  border-radius: 6px;
+  margin: 15px 0;
+  padding: 10px;
   border: 1px solid #0CF2DB;
+  border-radius: 6px;
 }
 
+/* Ensure images fit well */
 #popup-plots img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 250px; /* Limit image height */
   border: 1px solid #0CF2DB;
   border-radius: 4px;
   object-fit: contain;
   background: #111;
 }
 
+/* Close button styling */
 #event-popup button {
-  margin-top: 20px;
+  margin: 15px 0 5px 0;
   padding: 10px 20px;
   background: #0CF2DB;
   color: white;
@@ -96,12 +95,12 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s;
 }
 
 #event-popup button:hover {
   background: #0CF2DB;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
