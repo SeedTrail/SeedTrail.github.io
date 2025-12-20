@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     date: "2017-03-03",
     image: "/assets/img/zelda.webp",
     description: "The Legend of Zelda: Breath of the Wild is an action-adventure game released in 2017, praised for its open-world design and freedom of exploration.",
-    plotJson: "/assets/plots/zelda_breath_of_the_wild_did.json, // Plotly JSON for the first plot
+    plotJson: "/assets/plots/zelda_breath_of_the_wild_did.json", // Plotly JSON for the first plot
     plotPaths: [
       "/assets/img/plot2.png",
       "/assets/img/plot3.png"
