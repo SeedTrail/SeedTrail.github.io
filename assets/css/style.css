@@ -165,3 +165,8 @@
   margin-right: auto !important;
   display: block !important; /* inline-block or block ensures centering */
 }
+
+#fl-layout-wrapper {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
