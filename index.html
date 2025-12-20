@@ -336,16 +336,24 @@ subtitle: CLICK TO START AUDIO
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prediction of events</title>
+  <title>Event Detection Dashboard</title>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link rel="stylesheet" href="assets/css/test.css">
-  <h4>Prediction of events</h4>
-  <div id="plot"></div>
-  <!-- Div to display keywords -->
-  <div id="keyword-list"></div>
-  <!-- Div to display analysis -->
-  <div id="analysis"></div>
-  <!-- Link to your JavaScript file -->
+  <h1>Event Detection Dashboard</h1>
+  <div class="dashboard">
+    <div class="panel">
+      <h2>Politics Events</h2>
+      <div id="politics-plot"></div>
+      <div id="politics-keywords"></div>
+      <div id="politics-analysis"></div>
+    </div>
+    <div class="panel">
+      <h2>Gaming Events</h2>
+      <div id="gaming-plot"></div>
+      <div id="gaming-keywords"></div>
+      <div id="gaming-analysis"></div>
+    </div>
+  </div>
   <script src="assets/js/part4.js"></script>
 
  </section> 
