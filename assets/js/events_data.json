@@ -1,0 +1,1710 @@
+[
+  {
+    "date": "2008-02-01",
+    "percentage": 13.64,
+    "channels": 6,
+    "total_channels": 44,
+    "keywords": [
+      {
+        "term": "barack obama",
+        "channels": 6
+      }
+    ]
+  },
+  {
+    "date": "2008-02-05",
+    "percentage": 13.51,
+    "channels": 5,
+    "total_channels": 37,
+    "keywords": [
+      {
+        "term": "super tuesday",
+        "channels": 5
+      }
+    ]
+  },
+  {
+    "date": "2008-02-06",
+    "percentage": 13.51,
+    "channels": 5,
+    "total_channels": 37,
+    "keywords": [
+      {
+        "term": "super tuesday",
+        "channels": 5
+      }
+    ]
+  },
+  {
+    "date": "2008-04-17",
+    "percentage": 14.58,
+    "channels": 7,
+    "total_channels": 48,
+    "keywords": [
+      {
+        "term": "united states",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2008-08-27",
+    "percentage": 15.38,
+    "channels": 12,
+    "total_channels": 78,
+    "keywords": [
+      {
+        "term": "national convention",
+        "channels": 12
+      },
+      {
+        "term": "democratic national",
+        "channels": 11
+      },
+      {
+        "term": "hillary clinton",
+        "channels": 8
+      },
+      {
+        "term": "barack obama",
+        "channels": 8
+      },
+      {
+        "term": "democratic party",
+        "channels": 5
+      }
+    ]
+  },
+  {
+    "date": "2008-08-29",
+    "percentage": 12.94,
+    "channels": 11,
+    "total_channels": 85,
+    "keywords": [
+      {
+        "term": "john mccain",
+        "channels": 11
+      },
+      {
+        "term": "barack obama",
+        "channels": 11
+      },
+      {
+        "term": "sarah palin",
+        "channels": 10
+      },
+      {
+        "term": "running mate",
+        "channels": 8
+      },
+      {
+        "term": "national convention",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2008-09-04",
+    "percentage": 12.79,
+    "channels": 11,
+    "total_channels": 86,
+    "keywords": [
+      {
+        "term": "sarah palin",
+        "channels": 11
+      },
+      {
+        "term": "national convention",
+        "channels": 11
+      },
+      {
+        "term": "republican national",
+        "channels": 10
+      },
+      {
+        "term": "john mccain",
+        "channels": 8
+      },
+      {
+        "term": "st paul",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2008-11-05",
+    "percentage": 21.36,
+    "channels": 22,
+    "total_channels": 103,
+    "keywords": [
+      {
+        "term": "barack obama",
+        "channels": 22
+      },
+      {
+        "term": "obama victory",
+        "channels": 9
+      },
+      {
+        "term": "united states",
+        "channels": 8
+      },
+      {
+        "term": "president elect",
+        "channels": 8
+      },
+      {
+        "term": "obama wins",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2008-11-06",
+    "percentage": 12.73,
+    "channels": 14,
+    "total_channels": 110,
+    "keywords": [
+      {
+        "term": "barack obama",
+        "channels": 14
+      },
+      {
+        "term": "president elect",
+        "channels": 8
+      },
+      {
+        "term": "let play",
+        "channels": 8
+      },
+      {
+        "term": "obama victory",
+        "channels": 5
+      },
+      {
+        "term": "john mccain",
+        "channels": 5
+      }
+    ]
+  },
+  {
+    "date": "2008-12-28",
+    "percentage": 14.29,
+    "channels": 11,
+    "total_channels": 77,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 11
+      }
+    ]
+  },
+  {
+    "date": "2009-01-03",
+    "percentage": 13.48,
+    "channels": 12,
+    "total_channels": 89,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 12
+      }
+    ]
+  },
+  {
+    "date": "2009-01-04",
+    "percentage": 13.51,
+    "channels": 10,
+    "total_channels": 74,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 10
+      }
+    ]
+  },
+  {
+    "date": "2009-01-10",
+    "percentage": 12.5,
+    "channels": 11,
+    "total_channels": 88,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 11
+      }
+    ]
+  },
+  {
+    "date": "2009-01-15",
+    "percentage": 13.01,
+    "channels": 16,
+    "total_channels": 123,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 16
+      }
+    ]
+  },
+  {
+    "date": "2009-01-20",
+    "percentage": 16.67,
+    "channels": 21,
+    "total_channels": 126,
+    "keywords": [
+      {
+        "term": "barack obama",
+        "channels": 21
+      },
+      {
+        "term": "obama inauguration",
+        "channels": 17
+      },
+      {
+        "term": "president barack",
+        "channels": 11
+      },
+      {
+        "term": "united states",
+        "channels": 10
+      },
+      {
+        "term": "th president",
+        "channels": 10
+      }
+    ]
+  },
+  {
+    "date": "2009-01-21",
+    "percentage": 15.13,
+    "channels": 18,
+    "total_channels": 119,
+    "keywords": [
+      {
+        "term": "barack obama",
+        "channels": 18
+      },
+      {
+        "term": "president barack",
+        "channels": 10
+      },
+      {
+        "term": "obama inauguration",
+        "channels": 8
+      },
+      {
+        "term": "let play",
+        "channels": 7
+      },
+      {
+        "term": "president obama",
+        "channels": 6
+      }
+    ]
+  },
+  {
+    "date": "2009-02-01",
+    "percentage": 12.63,
+    "channels": 12,
+    "total_channels": 95,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 12
+      }
+    ]
+  },
+  {
+    "date": "2009-02-14",
+    "percentage": 14.29,
+    "channels": 12,
+    "total_channels": 84,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 12
+      }
+    ]
+  },
+  {
+    "date": "2009-02-15",
+    "percentage": 12.94,
+    "channels": 11,
+    "total_channels": 85,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 11
+      }
+    ]
+  },
+  {
+    "date": "2009-02-28",
+    "percentage": 13.73,
+    "channels": 14,
+    "total_channels": 102,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 14
+      }
+    ]
+  },
+  {
+    "date": "2009-03-07",
+    "percentage": 12.63,
+    "channels": 12,
+    "total_channels": 95,
+    "keywords": [
+      {
+        "term": "let play",
+        "channels": 12
+      }
+    ]
+  },
+  {
+    "date": "2009-04-29",
+    "percentage": 12.5,
+    "channels": 22,
+    "total_channels": 176,
+    "keywords": [
+      {
+        "term": "swine flu",
+        "channels": 22
+      },
+      {
+        "term": "let play",
+        "channels": 12
+      },
+      {
+        "term": "united states",
+        "channels": 10
+      },
+      {
+        "term": "president obama",
+        "channels": 7
+      },
+      {
+        "term": "barack obama",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2009-11-10",
+    "percentage": 14.17,
+    "channels": 34,
+    "total_channels": 240,
+    "keywords": [
+      {
+        "term": "modern warfare",
+        "channels": 34
+      },
+      {
+        "term": "duty modern",
+        "channels": 19
+      },
+      {
+        "term": "let play",
+        "channels": 12
+      },
+      {
+        "term": "fort hood",
+        "channels": 7
+      },
+      {
+        "term": "berlin wall",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2009-12-24",
+    "percentage": 13.61,
+    "channels": 23,
+    "total_channels": 169,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 23
+      },
+      {
+        "term": "let play",
+        "channels": 12
+      },
+      {
+        "term": "christmas eve",
+        "channels": 9
+      },
+      {
+        "term": "health care",
+        "channels": 8
+      },
+      {
+        "term": "year old",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2009-12-25",
+    "percentage": 13.39,
+    "channels": 15,
+    "total_channels": 112,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 15
+      },
+      {
+        "term": "let play",
+        "channels": 10
+      },
+      {
+        "term": "christmas eve",
+        "channels": 9
+      },
+      {
+        "term": "modern warfare",
+        "channels": 8
+      },
+      {
+        "term": "happy holidays",
+        "channels": 6
+      }
+    ]
+  },
+  {
+    "date": "2010-11-09",
+    "percentage": 18.2,
+    "channels": 73,
+    "total_channels": 401,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 73
+      },
+      {
+        "term": "duty black",
+        "channels": 45
+      },
+      {
+        "term": "let play",
+        "channels": 28
+      },
+      {
+        "term": "cod black",
+        "channels": 9
+      },
+      {
+        "term": "president obama",
+        "channels": 8
+      }
+    ]
+  },
+  {
+    "date": "2010-11-10",
+    "percentage": 17.07,
+    "channels": 70,
+    "total_channels": 410,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 70
+      },
+      {
+        "term": "duty black",
+        "channels": 38
+      },
+      {
+        "term": "let play",
+        "channels": 27
+      },
+      {
+        "term": "president obama",
+        "channels": 13
+      },
+      {
+        "term": "super mario",
+        "channels": 8
+      }
+    ]
+  },
+  {
+    "date": "2010-11-11",
+    "percentage": 14.82,
+    "channels": 55,
+    "total_channels": 371,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 55
+      },
+      {
+        "term": "let play",
+        "channels": 28
+      },
+      {
+        "term": "duty black",
+        "channels": 26
+      },
+      {
+        "term": "world war",
+        "channels": 7
+      },
+      {
+        "term": "single player",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2010-11-12",
+    "percentage": 16.16,
+    "channels": 64,
+    "total_channels": 396,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 64
+      },
+      {
+        "term": "duty black",
+        "channels": 31
+      },
+      {
+        "term": "let play",
+        "channels": 22
+      },
+      {
+        "term": "cod black",
+        "channels": 9
+      },
+      {
+        "term": "launch trailer",
+        "channels": 9
+      }
+    ]
+  },
+  {
+    "date": "2010-11-13",
+    "percentage": 20.33,
+    "channels": 61,
+    "total_channels": 300,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 61
+      },
+      {
+        "term": "duty black",
+        "channels": 28
+      },
+      {
+        "term": "let play",
+        "channels": 26
+      },
+      {
+        "term": "thanks watching",
+        "channels": 7
+      },
+      {
+        "term": "gameplay commentary",
+        "channels": 6
+      }
+    ]
+  },
+  {
+    "date": "2010-11-14",
+    "percentage": 19.93,
+    "channels": 56,
+    "total_channels": 281,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 56
+      },
+      {
+        "term": "duty black",
+        "channels": 32
+      },
+      {
+        "term": "let play",
+        "channels": 19
+      },
+      {
+        "term": "thanks watching",
+        "channels": 7
+      },
+      {
+        "term": "super mario",
+        "channels": 7
+      }
+    ]
+  },
+  {
+    "date": "2010-11-15",
+    "percentage": 14.44,
+    "channels": 53,
+    "total_channels": 367,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 53
+      },
+      {
+        "term": "duty black",
+        "channels": 30
+      },
+      {
+        "term": "let play",
+        "channels": 21
+      },
+      {
+        "term": "year old",
+        "channels": 6
+      },
+      {
+        "term": "ops review",
+        "channels": 6
+      }
+    ]
+  },
+  {
+    "date": "2010-11-17",
+    "percentage": 13.95,
+    "channels": 53,
+    "total_channels": 380,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 53
+      },
+      {
+        "term": "let play",
+        "channels": 25
+      },
+      {
+        "term": "duty black",
+        "channels": 19
+      },
+      {
+        "term": "creed brotherhood",
+        "channels": 10
+      },
+      {
+        "term": "assassin creed",
+        "channels": 9
+      }
+    ]
+  },
+  {
+    "date": "2010-11-20",
+    "percentage": 16.35,
+    "channels": 43,
+    "total_channels": 263,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 43
+      },
+      {
+        "term": "let play",
+        "channels": 22
+      },
+      {
+        "term": "duty black",
+        "channels": 17
+      },
+      {
+        "term": "gameplay commentary",
+        "channels": 8
+      },
+      {
+        "term": "creed brotherhood",
+        "channels": 8
+      }
+    ]
+  },
+  {
+    "date": "2010-12-25",
+    "percentage": 18.35,
+    "channels": 40,
+    "total_channels": 218,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 40
+      },
+      {
+        "term": "black ops",
+        "channels": 23
+      },
+      {
+        "term": "let play",
+        "channels": 15
+      },
+      {
+        "term": "happy holidays",
+        "channels": 11
+      },
+      {
+        "term": "christmas special",
+        "channels": 8
+      }
+    ]
+  },
+  {
+    "date": "2011-05-02",
+    "percentage": 19.39,
+    "channels": 102,
+    "total_channels": 526,
+    "keywords": [
+      {
+        "term": "bin laden",
+        "channels": 102
+      },
+      {
+        "term": "osama bin",
+        "channels": 86
+      },
+      {
+        "term": "laden death",
+        "channels": 45
+      },
+      {
+        "term": "let play",
+        "channels": 41
+      },
+      {
+        "term": "laden dead",
+        "channels": 39
+      }
+    ]
+  },
+  {
+    "date": "2011-11-08",
+    "percentage": 19.87,
+    "channels": 151,
+    "total_channels": 760,
+    "keywords": [
+      {
+        "term": "modern warfare",
+        "channels": 151
+      },
+      {
+        "term": "duty modern",
+        "channels": 58
+      },
+      {
+        "term": "let play",
+        "channels": 49
+      },
+      {
+        "term": "live commentary",
+        "channels": 26
+      },
+      {
+        "term": "thanks watching",
+        "channels": 26
+      }
+    ]
+  },
+  {
+    "date": "2011-11-09",
+    "percentage": 12.42,
+    "channels": 97,
+    "total_channels": 781,
+    "keywords": [
+      {
+        "term": "modern warfare",
+        "channels": 97
+      },
+      {
+        "term": "let play",
+        "channels": 53
+      },
+      {
+        "term": "duty modern",
+        "channels": 32
+      },
+      {
+        "term": "thanks watching",
+        "channels": 21
+      },
+      {
+        "term": "elder scrolls",
+        "channels": 19
+      }
+    ]
+  },
+  {
+    "date": "2011-12-24",
+    "percentage": 16.7,
+    "channels": 86,
+    "total_channels": 515,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 86
+      },
+      {
+        "term": "let play",
+        "channels": 44
+      },
+      {
+        "term": "christmas eve",
+        "channels": 20
+      },
+      {
+        "term": "happy holidays",
+        "channels": 20
+      },
+      {
+        "term": "thanks watching",
+        "channels": 19
+      }
+    ]
+  },
+  {
+    "date": "2011-12-25",
+    "percentage": 16.51,
+    "channels": 70,
+    "total_channels": 424,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 70
+      },
+      {
+        "term": "let play",
+        "channels": 30
+      },
+      {
+        "term": "happy holidays",
+        "channels": 23
+      },
+      {
+        "term": "modern warfare",
+        "channels": 11
+      },
+      {
+        "term": "thanks watching",
+        "channels": 10
+      }
+    ]
+  },
+  {
+    "date": "2012-11-12",
+    "percentage": 15.76,
+    "channels": 211,
+    "total_channels": 1339,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 211
+      },
+      {
+        "term": "let play",
+        "channels": 102
+      },
+      {
+        "term": "thanks watching",
+        "channels": 67
+      },
+      {
+        "term": "duty black",
+        "channels": 63
+      },
+      {
+        "term": "hope enjoy",
+        "channels": 35
+      }
+    ]
+  },
+  {
+    "date": "2012-11-13",
+    "percentage": 25.84,
+    "channels": 352,
+    "total_channels": 1362,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 352
+      },
+      {
+        "term": "duty black",
+        "channels": 122
+      },
+      {
+        "term": "let play",
+        "channels": 91
+      },
+      {
+        "term": "thanks watching",
+        "channels": 71
+      },
+      {
+        "term": "ops zombies",
+        "channels": 51
+      }
+    ]
+  },
+  {
+    "date": "2012-11-14",
+    "percentage": 20.6,
+    "channels": 276,
+    "total_channels": 1340,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 276
+      },
+      {
+        "term": "duty black",
+        "channels": 99
+      },
+      {
+        "term": "let play",
+        "channels": 91
+      },
+      {
+        "term": "thanks watching",
+        "channels": 55
+      },
+      {
+        "term": "ops zombies",
+        "channels": 49
+      }
+    ]
+  },
+  {
+    "date": "2012-11-15",
+    "percentage": 19.73,
+    "channels": 265,
+    "total_channels": 1343,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 265
+      },
+      {
+        "term": "let play",
+        "channels": 105
+      },
+      {
+        "term": "duty black",
+        "channels": 90
+      },
+      {
+        "term": "thanks watching",
+        "channels": 55
+      },
+      {
+        "term": "ops zombies",
+        "channels": 41
+      }
+    ]
+  },
+  {
+    "date": "2012-11-16",
+    "percentage": 18.37,
+    "channels": 241,
+    "total_channels": 1312,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 241
+      },
+      {
+        "term": "let play",
+        "channels": 93
+      },
+      {
+        "term": "duty black",
+        "channels": 67
+      },
+      {
+        "term": "thanks watching",
+        "channels": 58
+      },
+      {
+        "term": "ops zombies",
+        "channels": 41
+      }
+    ]
+  },
+  {
+    "date": "2012-11-17",
+    "percentage": 20.31,
+    "channels": 220,
+    "total_channels": 1083,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 220
+      },
+      {
+        "term": "let play",
+        "channels": 83
+      },
+      {
+        "term": "thanks watching",
+        "channels": 67
+      },
+      {
+        "term": "duty black",
+        "channels": 58
+      },
+      {
+        "term": "ops zombies",
+        "channels": 34
+      }
+    ]
+  },
+  {
+    "date": "2012-11-18",
+    "percentage": 19.6,
+    "channels": 216,
+    "total_channels": 1102,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 216
+      },
+      {
+        "term": "let play",
+        "channels": 90
+      },
+      {
+        "term": "thanks watching",
+        "channels": 64
+      },
+      {
+        "term": "duty black",
+        "channels": 58
+      },
+      {
+        "term": "hope enjoy",
+        "channels": 39
+      }
+    ]
+  },
+  {
+    "date": "2012-11-19",
+    "percentage": 15.75,
+    "channels": 205,
+    "total_channels": 1302,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 205
+      },
+      {
+        "term": "let play",
+        "channels": 102
+      },
+      {
+        "term": "thanks watching",
+        "channels": 65
+      },
+      {
+        "term": "duty black",
+        "channels": 53
+      },
+      {
+        "term": "ops zombies",
+        "channels": 38
+      }
+    ]
+  },
+  {
+    "date": "2012-11-20",
+    "percentage": 14.22,
+    "channels": 192,
+    "total_channels": 1350,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 192
+      },
+      {
+        "term": "let play",
+        "channels": 107
+      },
+      {
+        "term": "thanks watching",
+        "channels": 63
+      },
+      {
+        "term": "hitman absolution",
+        "channels": 45
+      },
+      {
+        "term": "duty black",
+        "channels": 42
+      }
+    ]
+  },
+  {
+    "date": "2012-11-21",
+    "percentage": 14.64,
+    "channels": 193,
+    "total_channels": 1318,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 193
+      },
+      {
+        "term": "let play",
+        "channels": 100
+      },
+      {
+        "term": "thanks watching",
+        "channels": 66
+      },
+      {
+        "term": "walking dead",
+        "channels": 49
+      },
+      {
+        "term": "hitman absolution",
+        "channels": 41
+      }
+    ]
+  },
+  {
+    "date": "2012-11-22",
+    "percentage": 13.11,
+    "channels": 145,
+    "total_channels": 1106,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 145
+      },
+      {
+        "term": "let play",
+        "channels": 96
+      },
+      {
+        "term": "happy thanksgiving",
+        "channels": 66
+      },
+      {
+        "term": "thanks watching",
+        "channels": 53
+      },
+      {
+        "term": "hitman absolution",
+        "channels": 36
+      }
+    ]
+  },
+  {
+    "date": "2012-11-23",
+    "percentage": 13.27,
+    "channels": 156,
+    "total_channels": 1176,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 156
+      },
+      {
+        "term": "let play",
+        "channels": 94
+      },
+      {
+        "term": "thanks watching",
+        "channels": 61
+      },
+      {
+        "term": "black friday",
+        "channels": 39
+      },
+      {
+        "term": "walking dead",
+        "channels": 31
+      }
+    ]
+  },
+  {
+    "date": "2012-11-24",
+    "percentage": 15.3,
+    "channels": 155,
+    "total_channels": 1013,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 155
+      },
+      {
+        "term": "let play",
+        "channels": 91
+      },
+      {
+        "term": "thanks watching",
+        "channels": 61
+      },
+      {
+        "term": "hope enjoy",
+        "channels": 32
+      },
+      {
+        "term": "duty black",
+        "channels": 30
+      }
+    ]
+  },
+  {
+    "date": "2012-11-25",
+    "percentage": 14.23,
+    "channels": 147,
+    "total_channels": 1033,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 147
+      },
+      {
+        "term": "let play",
+        "channels": 88
+      },
+      {
+        "term": "thanks watching",
+        "channels": 60
+      },
+      {
+        "term": "hope enjoy",
+        "channels": 30
+      },
+      {
+        "term": "ops zombies",
+        "channels": 27
+      }
+    ]
+  },
+  {
+    "date": "2012-12-25",
+    "percentage": 18.14,
+    "channels": 150,
+    "total_channels": 827,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 150
+      },
+      {
+        "term": "black ops",
+        "channels": 62
+      },
+      {
+        "term": "let play",
+        "channels": 60
+      },
+      {
+        "term": "happy holidays",
+        "channels": 55
+      },
+      {
+        "term": "thanks watching",
+        "channels": 35
+      }
+    ]
+  },
+  {
+    "date": "2013-09-17",
+    "percentage": 15.16,
+    "channels": 283,
+    "total_channels": 1867,
+    "keywords": [
+      {
+        "term": "theft auto",
+        "channels": 283
+      },
+      {
+        "term": "grand theft",
+        "channels": 283
+      },
+      {
+        "term": "let play",
+        "channels": 187
+      },
+      {
+        "term": "thanks watching",
+        "channels": 113
+      },
+      {
+        "term": "twitch tv",
+        "channels": 58
+      }
+    ]
+  },
+  {
+    "date": "2013-09-18",
+    "percentage": 12.45,
+    "channels": 229,
+    "total_channels": 1840,
+    "keywords": [
+      {
+        "term": "grand theft",
+        "channels": 229
+      },
+      {
+        "term": "theft auto",
+        "channels": 229
+      },
+      {
+        "term": "let play",
+        "channels": 186
+      },
+      {
+        "term": "thanks watching",
+        "channels": 107
+      },
+      {
+        "term": "los santos",
+        "channels": 64
+      }
+    ]
+  },
+  {
+    "date": "2013-11-05",
+    "percentage": 14.24,
+    "channels": 270,
+    "total_channels": 1896,
+    "keywords": [
+      {
+        "term": "duty ghosts",
+        "channels": 270
+      },
+      {
+        "term": "let play",
+        "channels": 175
+      },
+      {
+        "term": "cod ghosts",
+        "channels": 149
+      },
+      {
+        "term": "thanks watching",
+        "channels": 118
+      },
+      {
+        "term": "ghosts multiplayer",
+        "channels": 49
+      }
+    ]
+  },
+  {
+    "date": "2013-12-25",
+    "percentage": 19.02,
+    "channels": 257,
+    "total_channels": 1351,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 257
+      },
+      {
+        "term": "let play",
+        "channels": 126
+      },
+      {
+        "term": "thanks watching",
+        "channels": 75
+      },
+      {
+        "term": "christmas special",
+        "channels": 70
+      },
+      {
+        "term": "happy holidays",
+        "channels": 68
+      }
+    ]
+  },
+  {
+    "date": "2014-11-03",
+    "percentage": 14.14,
+    "channels": 347,
+    "total_channels": 2454,
+    "keywords": [
+      {
+        "term": "advanced warfare",
+        "channels": 347
+      },
+      {
+        "term": "duty advanced",
+        "channels": 251
+      },
+      {
+        "term": "let play",
+        "channels": 220
+      },
+      {
+        "term": "thanks watching",
+        "channels": 133
+      },
+      {
+        "term": "social media",
+        "channels": 97
+      }
+    ]
+  },
+  {
+    "date": "2014-11-04",
+    "percentage": 14.05,
+    "channels": 352,
+    "total_channels": 2506,
+    "keywords": [
+      {
+        "term": "advanced warfare",
+        "channels": 352
+      },
+      {
+        "term": "duty advanced",
+        "channels": 242
+      },
+      {
+        "term": "let play",
+        "channels": 215
+      },
+      {
+        "term": "thanks watching",
+        "channels": 146
+      },
+      {
+        "term": "social media",
+        "channels": 90
+      }
+    ]
+  },
+  {
+    "date": "2014-12-25",
+    "percentage": 18.22,
+    "channels": 359,
+    "total_channels": 1970,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 359
+      },
+      {
+        "term": "let play",
+        "channels": 165
+      },
+      {
+        "term": "thanks watching",
+        "channels": 123
+      },
+      {
+        "term": "happy holidays",
+        "channels": 104
+      },
+      {
+        "term": "christmas special",
+        "channels": 99
+      }
+    ]
+  },
+  {
+    "date": "2015-11-06",
+    "percentage": 14.18,
+    "channels": 488,
+    "total_channels": 3441,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 488
+      },
+      {
+        "term": "let play",
+        "channels": 280
+      },
+      {
+        "term": "duty black",
+        "channels": 251
+      },
+      {
+        "term": "thanks watching",
+        "channels": 217
+      },
+      {
+        "term": "social media",
+        "channels": 204
+      }
+    ]
+  },
+  {
+    "date": "2015-11-07",
+    "percentage": 13.92,
+    "channels": 415,
+    "total_channels": 2982,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 415
+      },
+      {
+        "term": "let play",
+        "channels": 226
+      },
+      {
+        "term": "thanks watching",
+        "channels": 201
+      },
+      {
+        "term": "duty black",
+        "channels": 188
+      },
+      {
+        "term": "social media",
+        "channels": 165
+      }
+    ]
+  },
+  {
+    "date": "2015-11-08",
+    "percentage": 14.48,
+    "channels": 423,
+    "total_channels": 2922,
+    "keywords": [
+      {
+        "term": "black ops",
+        "channels": 423
+      },
+      {
+        "term": "let play",
+        "channels": 223
+      },
+      {
+        "term": "duty black",
+        "channels": 200
+      },
+      {
+        "term": "thanks watching",
+        "channels": 200
+      },
+      {
+        "term": "social media",
+        "channels": 188
+      }
+    ]
+  },
+  {
+    "date": "2015-12-25",
+    "percentage": 18.19,
+    "channels": 490,
+    "total_channels": 2694,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 490
+      },
+      {
+        "term": "let play",
+        "channels": 199
+      },
+      {
+        "term": "thanks watching",
+        "channels": 177
+      },
+      {
+        "term": "social media",
+        "channels": 160
+      },
+      {
+        "term": "happy holidays",
+        "channels": 141
+      }
+    ]
+  },
+  {
+    "date": "2016-12-25",
+    "percentage": 18.34,
+    "channels": 643,
+    "total_channels": 3506,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 643
+      },
+      {
+        "term": "thanks watching",
+        "channels": 264
+      },
+      {
+        "term": "social media",
+        "channels": 256
+      },
+      {
+        "term": "let play",
+        "channels": 203
+      },
+      {
+        "term": "happy holidays",
+        "channels": 160
+      }
+    ]
+  },
+  {
+    "date": "2017-12-25",
+    "percentage": 15.37,
+    "channels": 636,
+    "total_channels": 4137,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 636
+      },
+      {
+        "term": "social media",
+        "channels": 358
+      },
+      {
+        "term": "thanks watching",
+        "channels": 301
+      },
+      {
+        "term": "join discord",
+        "channels": 176
+      },
+      {
+        "term": "let play",
+        "channels": 168
+      }
+    ]
+  },
+  {
+    "date": "2018-12-25",
+    "percentage": 13.71,
+    "channels": 651,
+    "total_channels": 4747,
+    "keywords": [
+      {
+        "term": "merry christmas",
+        "channels": 651
+      },
+      {
+        "term": "social media",
+        "channels": 421
+      },
+      {
+        "term": "thanks watching",
+        "channels": 300
+      },
+      {
+        "term": "join discord",
+        "channels": 283
+      },
+      {
+        "term": "discord server",
+        "channels": 223
+      }
+    ]
+  }
+]
