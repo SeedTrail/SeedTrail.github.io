@@ -113,19 +113,6 @@
   border-radius: 4px;
 }
 
-/* --- Modifying Max borders ---*/
-.main-content {
-  max-width: 90% !important;  /* makes content wider */
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-}
-
-/* Optional: reduce default side spacing even more */
-.container {
-  max-width: 100% !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
 
 /* --- Adding stuffs to center ---*/
 .events-spill {
@@ -137,7 +124,7 @@
   box-sizing: border-box;
   overflow: hidden;
   color: rgb(255, 255, 255);
-  max-width: 600px;
+  max-width: 1000px !important;
   padding: 0.75rem;
   align-items: center;
   place-content: center;
