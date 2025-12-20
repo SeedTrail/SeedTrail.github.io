@@ -1,5 +1,5 @@
 // Load your JSON data
-fetch('consensus_events.json')
+fetch('assets/js/events_data.json')
   .then(response => response.json())
   .then(data => {
     // Extract dates and percentages for the plot
@@ -30,12 +30,15 @@ fetch('consensus_events.json')
       hovermode: 'closest'
     };
 
+    // Draw the plot
     Plotly.newPlot('plot', [trace], layout);
 
     // Add click event to the plot
-    document.getElementById('plot').on('plotly_click', function(data) {
-      const point = data.points[0];
+    document.getElementById('plot').on('plotly_click', function(plotData) {
+      const point = plotData.points[0];
       const clickedDate = point.x;
+
+      // Find the event corresponding to the clicked date
       const event = data.find(event => event.date === clickedDate);
 
       // Display keywords
@@ -47,7 +50,7 @@ fetch('consensus_events.json')
         </ul>
       `;
 
-      // Display analysis (you can customize this)
+      // Display analysis
       const analysisDiv = document.getElementById('analysis');
       analysisDiv.innerHTML = `
         <h2>Analysis for ${clickedDate}</h2>
@@ -55,4 +58,5 @@ fetch('consensus_events.json')
         This likely corresponds to [insert event description here].</p>
       `;
     });
-  });
+  })
+  .catch(error => console.error('Error loading the JSON data:', error));
