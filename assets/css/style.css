@@ -134,7 +134,9 @@
 .events-spill {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: auto !important;
+  align-items: center;
+  place-content: center;
 }
 
 /* Control the width of the Flourish embed */
