@@ -1,40 +1,69 @@
-/* Map container */
+/* Map container (black background, subtle border) */
 #map {
   height: 500px;
   width: 100%;
   margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #333;
-  background: #f0f0f0;
+  background: #111;
 }
 
-/* Pop-up styling */
+/* Dark theme for Leaflet map (override default styles) */
+.leaflet-container {
+  background: #111;
+  color: #fff;
+}
+
+/* Leaflet controls (zoom buttons) */
+.leaflet-control-zoom {
+  background: #222;
+  border: 1px solid #444;
+}
+.leaflet-control-zoom a {
+  color: #fff;
+  background: #222;
+}
+.leaflet-control-zoom a:hover {
+  background: #007BFF;
+}
+
+/* Leaflet attribution (bottom-right text) */
+.leaflet-control-attribution {
+  background: #111;
+  color: #aaa;
+}
+
+/* Pop-up styling (black background, blue accents) */
 #event-popup {
   display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
+  background: #1a1a1a;
+  padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   max-width: 90%;
   max-height: 90%;
   overflow-y: auto;
-  color: #333;
+  color: #fff;
+  border: 1px solid #007BFF;
 }
 
 #event-popup h2 {
   margin-top: 0;
   color: #007BFF;
   font-size: 24px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
 }
 
 #event-popup p {
   margin-bottom: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 #popup-plots {
@@ -43,14 +72,19 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px 0;
+  background: #222;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #007BFF;
 }
 
 #popup-plots img {
   max-width: 100%;
   max-height: 300px;
-  border: 1px solid #ddd;
+  border: 1px solid #007BFF;
   border-radius: 4px;
   object-fit: contain;
+  background: #111;
 }
 
 #event-popup button {
@@ -62,6 +96,7 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: background 0.3s;
 }
 
 #event-popup button:hover {
@@ -83,4 +118,22 @@
     max-width: 100%;
     margin-bottom: 15px;
   }
+
+  #event-popup {
+    padding: 15px;
+  }
+}
+
+/* Custom scrollbar for pop-up */
+#event-popup::-webkit-scrollbar {
+  width: 8px;
+}
+
+#event-popup::-webkit-scrollbar-thumb {
+  background: #007BFF;
+  border-radius: 4px;
+}
+
+#event-popup::-webkit-scrollbar-track {
+  background: #222;
 }
