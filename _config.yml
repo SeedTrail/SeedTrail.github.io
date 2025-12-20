@@ -10,18 +10,20 @@
 ############################
 
 # Name of website
-title: My amazing website
+title: ParADAise
 
 # Your name to show in the footer
-author: Some Person
+author: ParADAise
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  Capsule 1: "aboutme"
+  Capsule 1: href="#part1"
   capsule 2: "aboutme"
+  Capsule 3: "aboutme"
+  Capsule 4: "aboutme"
   Resources:
     - Github Repro: "https://SeedTrail.github.io"
 
