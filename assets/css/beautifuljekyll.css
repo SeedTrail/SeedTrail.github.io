@@ -1638,7 +1638,7 @@ body {
   align-items: center;
   place-content: center;
 }
-/* ---- ADD CENTERING FOR EVENT SPILLOVER ---*/
+/* --- ADD CENTERING FOR EVENT SPILLOVER ---*/
 
 .team {
   display: flex;
