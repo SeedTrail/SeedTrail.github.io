@@ -243,37 +243,40 @@ document.addEventListener('DOMContentLoaded', function() {
         eventDetails.style.display = 'none';
       } else {
         eventDetails.style.display = 'block';
-
-        // Plotly description section
-        const plotlyDescHTML = event.plotlyDescription ?
-          `<div class="plotly-description-container"><p class="plotly-description">${event.plotlyDescription}</p></div>` : '';
-
-        // Static plots descriptions section
-        const plotsDescHTML = event.plotDescriptions ?
-          event.plotPaths.map((path, index) => `
-            <div class="plot-with-description">
-              <img src="${path}" alt="Plot ${index + 1}" class="plot-image">
-              ${event.plotDescriptions[index] ? `<p class="plot-description">${event.plotDescriptions[index]}</p>` : ''}
+    
+        // Plotly plot and description
+        const plotlyHTML = `
+          <div class="plot-and-description">
+            <div class="plot-container">
+              <div id="plotly-plot"></div>
             </div>
-          `).join('') :
-          event.plotPaths.map((path, index) => `
-            <div class="plot-with-description">
+            <div class="description-bubble">
+              <p class="plotly-description">${event.plotlyDescription || ''}</p>
+            </div>
+          </div>
+        `;
+    
+        // Static plots and descriptions
+        const plotsHTML = event.plotPaths.map((path, index) => `
+          <div class="plot-and-description">
+            <div class="plot-container">
               <img src="${path}" alt="Plot ${index + 1}" class="plot-image">
             </div>
-          `).join('');
-
+            <div class="description-bubble">
+              <p class="plot-description">${event.plotDescriptions ? event.plotDescriptions[index] : ''}</p>
+            </div>
+          </div>
+        `).join('');
+    
         eventDetails.innerHTML = `
           <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
           <p>${event.description}</p>
-          <div class="plotly-container">
-            <div id="plotly-plot"></div>
-            ${plotlyDescHTML}
-          </div>
-          <div class="event-plots">
-            ${plotsDescHTML}
+          <div class="plots-and-descriptions">
+            ${plotlyHTML}
+            ${plotsHTML}
           </div>
         `;
-
+    
         try {
           const response = await fetch(event.plotJson);
           if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -285,6 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
+
 
     sliderContainer.appendChild(cardDiv);
   });
