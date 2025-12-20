@@ -137,3 +137,21 @@
 #event-popup::-webkit-scrollbar-track {
   background: #222;
 }
+
+
+/* Custom blue markers */
+.leaflet-marker-icon {
+  filter: hue-rotate(240deg) brightness(1.2) saturate(1.5);
+}
+
+/* Or use custom HTML markers (defined in map.js) */
+.custom-marker {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.custom-marker div {
+  background: #007BFF;
+  border: 2px solid #fff;
+}
+
