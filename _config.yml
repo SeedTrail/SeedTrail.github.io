@@ -20,7 +20,7 @@ author: ParADAise
 ###############################################
 
 navbar-links:
-  Capsule 1: #part1
+  Capsule 1: "/#part1"
   capsule 2: "aboutme"
   Capsule 3: "aboutme"
   Capsule 4: "aboutme"
@@ -52,38 +52,6 @@ navbar-links:
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
 #  email: paradaise@gmail.com
-#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-# facebook: yourname
-#  github: SeedTrail
-# twitter: yourname
-# patreon: yourname
-# youtube: yourname
-# whatsapp: 15551212
-#  medium: yourname
-#  reddit: yourname or r/yoursubreddit
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: name
-#  snapchat: name
-#  instagram: name
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  bluesky: yourname
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
-#  discord: "invite_code" or "users/userid" or "invite/invite_code"
-#  kaggle: yourname
-#  hackerrank: yourname
-#  gitlab: yourname
-#  itchio: yourname
-#  untappd: yourname
-#  strava: youruserid
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
