@@ -1344,7 +1344,7 @@ body {
 }
 /* --- ADD CENTERING FOR EVENT SPILLOVER ---*/
 
-.team {
+.footer-team {
   display: flex;
   gap: clamp(10px, 5vw, 30px); /* Dynamic gap between team members */
   width: 100%; /* Ensures it uses the full width available */
@@ -1355,7 +1355,7 @@ body {
   z-index: 2; /* Ensures it is above the background images */
 }
 
-.team-member {
+.footer-team-member {
   flex: 1 1 150px; /* Allows team members to resize but keeps a minimum width */
   text-align: center;
   padding: 10px; /* Adjusted for better responsiveness */
@@ -1363,20 +1363,20 @@ body {
 
 
 @media (max-width: 1200px) {
-  .team {
+  .footer-team {
     gap: clamp(8px, 4vw, 25px); /* Adjusted gap for medium screens */
   }
 }
 
 @media (max-width: 800px) {
-  .team {
+  .footer-team {
     gap: clamp(5px, 3vw, 20px); /* Further reduced gap for smaller screens */
     max-width: 90%; /* Uses more of the available width */
   }
 }
 
 @media (max-width: 600px) {
-  .team {
+  .footer-team {
     gap: clamp(5px, 2vw, 15px); /* Small gap for very small screens */
     max-width: 100%; /* Uses full width on very small screens */
     margin: 0 10px; /* Adds small margins to prevent content from touching edges */
