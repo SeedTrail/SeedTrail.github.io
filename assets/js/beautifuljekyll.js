@@ -205,4 +205,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+<script>
+  window.addEventListener('load', () => {
+    const flWrapper = document.getElementById('fl-layout-wrapper');
+    if (flWrapper) {
+      flWrapper.style.marginLeft = 'auto';
+      flWrapper.style.marginRight = 'auto';
+    }
+  });
+</script>
+
 
