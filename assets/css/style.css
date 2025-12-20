@@ -150,8 +150,8 @@
   margin-right: auto !important;
 }
 
-/*.events-spill > div {*/
-/*  margin: 0 !important;*/
-/*}*/
+.events-spill > div {
+  margin: auto !important;
+}
 
 
