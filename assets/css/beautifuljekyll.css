@@ -579,97 +579,107 @@ footer .footer-custom-content {
 
 /* --- Footer Team Section --- */
 
-footer .footer-team {
-  display: flex;
-  gap: clamp(10px, 5vw, 30px);
+/* --- Footer Team Section --- */
+.footer-team-container {
   width: 100%;
-  max-width: 50%;
-  margin: 2rem auto 0; /* Space above team section */
-  justify-content: center;
-  position: relative;
-  z-index: 2; /* Above footer background image */
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-footer .footer-team-member {
-  flex: 1 1 150px;
+.footer-title {
+  color: #00FFDD;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
+}
+
+.footer-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer-team-member {
+  flex: 0 0 calc(20% - 20px);
+  min-width: 150px;
   text-align: center;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 /* Names */
-footer .first-name {
-  color: #1dc2b1;
-  font-size: 18px;
-  font-family: 'LinLibCap';
+.footer-team-member .first-name {
+  color: #00FFDD;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'LinLibCap', sans-serif;
 }
 
-footer .last-name {
-  color: #28649C;
-  font-size: 18px;
-  font-family: 'LinLibCap';
+.footer-team-member .last-name {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'LinLibCap', sans-serif;
 }
 
 /* Contact Icons */
-footer .team-member .contact {
+.footer-team-member .contact {
   margin-top: 10px;
   display: flex;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
-footer .contact a {
-  margin: 0 5px;
+.footer-team-member .contact a {
+  margin: 0;
   text-decoration: none;
+  display: inline-block;
 }
 
-footer .contact a img {
-  max-width: 24px;
-  height: auto;
+.footer-team-member .contact img {
+  width: 24px;
+  height: 24px;
+  filter: invert(0.7);
+  transition: filter 0.3s ease;
 }
 
-footer .contact img {
-  width: 20px;
-  vertical-align: middle;
+.footer-team-member .contact img:hover {
+  filter: invert(0);
 }
 
-/* --- Responsive --- */
-
-@media (min-width: 768px) {
-  footer {
-    padding: 3.125rem 0;
-  }
-
-  footer .footer-links {
-    font-size: 1.125rem;
-  }
-
-  footer .copyright,
-  footer .footer-custom-content {
-    font-size: 1rem;
+/* Responsive adjustments for team section */
+@media (max-width: 1024px) {
+  .footer-team-member {
+    flex: 0 0 calc(25% - 20px);
   }
 }
 
-@media (max-width: 1200px) {
-  footer .footer-team {
-    gap: clamp(8px, 4vw, 25px);
-  }
-}
-
-@media (max-width: 800px) {
-  footer .footer-team {
-    gap: clamp(5px, 3vw, 20px);
-    max-width: 90%;
+@media (max-width: 768px) {
+  .footer-team-member {
+    flex: 0 0 calc(33.333% - 20px);
   }
 }
 
 @media (max-width: 600px) {
-  footer .footer-team {
-    gap: clamp(5px, 2vw, 15px);
-    max-width: 100%;
-    margin: 1.5rem 10px 0;
+  .footer-team-member {
+    flex: 0 0 calc(50% - 20px);
   }
 }
+
+@media (max-width: 400px) {
+  .footer-team-member {
+    flex: 0 0 100%;
+  }
+}
+
 
 /* ------------------------------------------------ */
 /* --- PERSONNAL ADDITIONS TO EXISTING TEMPLATE --- */
