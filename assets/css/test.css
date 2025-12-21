@@ -60,12 +60,13 @@ h2 {
 #politics-plot,
 #gaming-plot {
   width: 100%;
-  height: 450px;
+  height: 400px;
   margin-bottom: 25px;
   border-radius: 8px;
   background: rgba(10, 10, 10, 0.5);
   padding: 10px;
   border: 1px solid rgba(0, 255, 221, 0.2);
+  overflow: hidden; /* Prevent overflow */
 }
 
 /* Container for the Plotly plot inside #politics-plot and #gaming-plot */
@@ -143,6 +144,16 @@ h2 {
 }
 
 @media (max-width: 1024px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panels-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .panel {
     min-width: 100%;
     max-width: 100%;
@@ -150,6 +161,6 @@ h2 {
 
   #politics-plot,
   #gaming-plot {
-    height: 400px;
+    height: 350px;
   }
 }
