@@ -98,7 +98,7 @@ subtitle: CLICK TO START AUDIO
 <div class="card" data-effect="zoom" style="--border-image: url('/assets/img/frame.jpg');">
   <div class="card__inner">
     <figure class="card__image">
-      <img src="/assets/img/noise.gif" alt="Short description">
+      <img src="/assets/img/method.gif" alt="Short description">
     </figure>
     <div class="card__header"></div>
     <div class="card__body">
@@ -229,7 +229,7 @@ subtitle: CLICK TO START AUDIO
 <div class="card" data-effect="zoom" style="--border-image: url('/assets/img/frame.jpg');">
   <div class="card__inner">
     <figure class="card__image">
-      <img src="/assets/img/noise.gif" alt="Short description">
+      <img src="/assets/img/method.gif" alt="Short description">
     </figure>
     <div class="card__header"></div>
     <div class="card__body">
@@ -382,13 +382,47 @@ subtitle: CLICK TO START AUDIO
 <div class="card" data-effect="zoom" style="--border-image: url('/assets/img/frame.jpg');">
   <div class="card__inner">
     <figure class="card__image">
-      <img src="/assets/img/noise.gif" alt="Short description">
+      <img src="/assets/img/method.gif" alt="Short description">
     </figure>
     <div class="card__header"></div>
     <div class="card__body">
       <h3 class="card__name">A dive into methodology</h3>
       <p class="card__bio">
-        blahblah
+        <p>
+          I do not search for truth. I search for alignment. Every day on the platform contains millions of words, but most of them are noise: habitual phrases, recycled templates, the ritual language of “subscribe,” “watch,” “link in description.” An event is not the presence of words. An event is the sudden coordination of words across many independent creators.
+        </p>
+
+        <p>
+          To extract this coordination, I partition the archive into sectors. In practice, I treat Politics and Gaming as separate ecosystems, each with its own baseline behavior and its own forms of spam. Politics requires fewer aligned channels to matter; gaming requires more, because mass content production can mimic significance. Each sector becomes its own experiment. Then I compress the platform into daily snapshots. For each day, I gather all videos from the sector’s categories. For each channel, I merge titles and descriptions into a single text stream. Each channel receives one vote, regardless of how many videos it uploads. This is the first methodological constraint: I refuse to let high-output channels dominate the signal. I measure not volume, but consensus. From these channel-documents, I extract bigrams (pairs of words). Single words are too ambiguous, too easy to trigger accidentally. Two-word phrases are more stable: “democratic national,” “black ops,” “merry christmas.” They behave like small narrative atoms. The question becomes simple:
+        </p>
+
+        <p class="highlighted-question">
+          On a given day, how many distinct channels used the same bigram?
+        </p>
+      
+        <p>
+          I compute a daily score: For each bigram, I count how many channels contain it (binary presence, not frequency). I keep the top phrases of the day and define a single magnitude:
+        </p>
+      
+        <p class="formula">
+          Consensus % = (channels using the top bigram) / (total active channels that day).
+        </p>
+      
+        <p>
+          This percentage is the event’s fingerprint. Not meaning, not importance, just collective alignment.
+        </p>
+      
+        <p>
+          Finally, I mark candidate events by thresholding. Most days look normal. Some days rise far above their own baseline. I define an anomaly line using the sector’s distribution (mean + multiple standard deviations). When the consensus exceeds this threshold, I flag the day as a potential event.
+        </p>
+      
+        <p>
+          The interactive graph you see is therefore not a timeline of history. It is a timeline of agreement. Each point is a day. Each spike is a day when many independent creators converged on the same phrasing. Clicking a spike reveals the dominant phrases of that day, the trace left by the event, without the event’s name. Only then do I attempt reconstruction.
+        </p>
+      
+        <p class="conclusion">
+          Signal detected. Attribution withheld. Inference begins.
+        </p>
       
       </p>
     </div>
