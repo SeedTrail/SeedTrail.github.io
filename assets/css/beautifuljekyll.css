@@ -1086,7 +1086,7 @@ body {
 }
 .card__bio br {
   display: block;
-  margin: 1em 0; /* Adjust the value to control the space */
+  margin: 3em 0; /* Adjust the value to control the space */
 }
 
 .card__save i {
