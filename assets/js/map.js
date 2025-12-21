@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2016-11-08",
       coords: [37.0902, -95.7129], // Center of the US
       description: "Le Z-score montre une activité exceptionnelle sur YouTube pendant l'élection de 2016. La pénétration des mots-clés comme 'Trump' et 'Clinton' a été portée par les grands créateurs.",
-      popupText: "The US Election 2016 showed a significant spike in YouTube activity. This analysis reveals how major political events create synchronized narratives across multiple channels.",
       plotPaths: [
         "/assets/plots/us_election_2016_KeywordCreator.png",
         "/assets/plots/us_election_2016_ZScore.png"
