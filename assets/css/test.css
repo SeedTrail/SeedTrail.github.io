@@ -21,14 +21,17 @@ h2 {
 .panels-container {
   display: flex;
   justify-content: center;
+  gap: 30px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
+  flex-wrap: wrap;
 }
 
 /* Panel styling */
 .panel {
+  flex: 1;
   min-width: 500px;
-  max-width: 600px;
+  max-width: 700px;
   background: rgba(20, 20, 20, 0.8);
   padding: 25px;
   border-radius: 12px;
@@ -63,42 +66,12 @@ h2 {
   background: rgba(10, 10, 10, 0.5);
   padding: 10px;
   border: 1px solid rgba(0, 255, 221, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Container for the Plotly plot inside #politics-plot and #gaming-plot */
 .large-plot-container {
   width: 100% !important;
   height: 100% !important;
-}
-
-/* Additional content styling */
-.additional-content {
-  width: 100%;
-  max-width: 1200px;
-  background: rgba(20, 20, 20, 0.8);
-  padding: 25px;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 255, 221, 0.3);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  text-align: center;
-}
-
-.additional-content h2 {
-  color: #00FFDD;
-  margin-top: 0;
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
-}
-
-.additional-content p {
-  color: #ccc;
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 /* Keywords section */
@@ -158,19 +131,18 @@ h2 {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1200px) {
-  .panel {
-    min-width: 450px;
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .dashboard {
+@media (max-width: 1400px) {
+  .panels-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .panel {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
   .panel {
     min-width: 100%;
     max-width: 100%;
