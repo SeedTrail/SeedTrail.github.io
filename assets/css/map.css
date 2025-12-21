@@ -64,15 +64,20 @@
 }
 
 /* Pop-up description styling */
+
 #popup-event-description {
   margin-bottom: 20px;
   color: #ccc;
   line-height: 1.6;
-  padding: 10px;
+  padding: 15px;
   background: rgba(40, 40, 40, 0.5);
   border-radius: 8px;
   border-left: 3px solid rgba(0, 255, 221, 0.3);
+  font-size: 14px; /* Reduced font size */
+  max-height: 300px; /* Limit height */
+  overflow-y: auto; /* Enable scrolling if content is too long */
 }
+
 
 /* Container for plots and descriptions */
 #popup-plots {
