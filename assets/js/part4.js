@@ -69,10 +69,18 @@ fetch('assets/js/events_combined.json')
         }
       };
 
-      Plotly.newPlot(`${category}-plot`, [trace], layout);
+      // Create a container for the plot
+      const plotContainer = document.createElement('div');
+      plotContainer.className = 'large-plot-container';
+
+      // Replace the existing plot div with the new container
+      const plotDiv = document.getElementById(`${category}-plot`);
+      plotDiv.appendChild(plotContainer);
+
+      Plotly.newPlot(plotContainer, [trace], layout);
 
       // Add click event to the plot
-      document.getElementById(`${category}-plot`).on('plotly_click', function(plotData) {
+      plotContainer.on('plotly_click', function(plotData) {
         const point = plotData.points[0];
         const pointIndex = point.pointIndex;
         const clickedEvent = categoryData[pointIndex];
