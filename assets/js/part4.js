@@ -80,16 +80,12 @@ fetch('assets/js/events_combined.json')
           b: 60,
           t: 60,
           pad: 4
-        },
-        height: 450,  // Set a fixed height for the plot
-        width: 700   // Set a fixed width for the plot
+        }
       };
 
       // Create a container for the plot
       const plotContainer = document.createElement('div');
       plotContainer.className = 'large-plot-container';
-      plotContainer.style.width = '100%';
-      plotContainer.style.height = '100%';
 
       // Append the container to the plot div
       const plotDiv = document.getElementById(`${category}-plot`);
