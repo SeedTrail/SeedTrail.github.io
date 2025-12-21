@@ -36,16 +36,19 @@ fetch('assets/js/events_combined.json')
         title: {
           text: `${category.charAt(0).toUpperCase() + category.slice(1)} Event Detection`,
           font: {
-            color: 'white'
+            color: 'white',
+            size: 18
           }
         },
         xaxis: {
           title: 'Date',
           titlefont: {
-            color: 'white'
+            color: 'white',
+            size: 14
           },
           tickfont: {
-            color: 'white'
+            color: 'white',
+            size: 12
           },
           gridcolor: 'rgba(255, 255, 255, 0.2)',
           zerolinecolor: 'rgba(255, 255, 255, 0.2)'
@@ -53,10 +56,12 @@ fetch('assets/js/events_combined.json')
         yaxis: {
           title: '% of Channels Discussing Same Topic',
           titlefont: {
-            color: 'white'
+            color: 'white',
+            size: 14
           },
           tickfont: {
-            color: 'white'
+            color: 'white',
+            size: 12
           },
           gridcolor: 'rgba(255, 255, 255, 0.2)',
           zerolinecolor: 'rgba(255, 255, 255, 0.2)'
@@ -65,14 +70,15 @@ fetch('assets/js/events_combined.json')
         plot_bgcolor: 'black',
         paper_bgcolor: 'black',
         font: {
-          color: 'white'
+          color: 'white',
+          size: 12
         },
         autosize: true,
         margin: {
-          l: 50,
-          r: 50,
-          b: 50,
-          t: 50,
+          l: 60,
+          r: 20,
+          b: 60,
+          t: 60,
           pad: 4
         }
       };
@@ -80,13 +86,18 @@ fetch('assets/js/events_combined.json')
       // Create a container for the plot
       const plotContainer = document.createElement('div');
       plotContainer.className = 'large-plot-container';
+      plotContainer.style.width = '100%';
+      plotContainer.style.height = '100%';
 
       // Append the container to the plot div
       const plotDiv = document.getElementById(`${category}-plot`);
       plotDiv.innerHTML = '';
       plotDiv.appendChild(plotContainer);
 
-      Plotly.newPlot(plotContainer, [trace], layout);
+      Plotly.newPlot(plotContainer, [trace], layout).then(() => {
+        // Resize the plot to fit the container
+        Plotly.Plots.resize(plotContainer);
+      });
 
       // Add click event to the plot
       plotContainer.on('plotly_click', function(plotData) {
