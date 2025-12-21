@@ -1,5 +1,3 @@
-
-
 /* Dashboard title */
 h2 {
   color: #00FFDD;
@@ -58,6 +56,9 @@ h2 {
   background: rgba(10, 10, 10, 0.5);
   padding: 10px;
   border: 1px solid rgba(0, 255, 221, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Container for the Plotly plot inside #politics-plot and #gaming-plot */
