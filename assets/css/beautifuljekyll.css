@@ -580,41 +580,25 @@ footer .footer-custom-content {
 /* --- Footer Team Section --- */
 
 /* --- Footer Team Section --- */
-.footer-team-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-title {
-  color: #00FFDD;
-  font-size: 28px;
-  margin-bottom: 30px;
-  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
-}
-
 .footer-team {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
   justify-content: center;
-  padding: 20px;
+  margin: 2rem auto;
+  padding: 20px 0;
 }
 
-.footer-team-member {
-  flex: 0 0 calc(20% - 20px);
-  min-width: 150px;
+.team-member {
+  flex: 0 0 auto;
   text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
+  min-width: 120px;
+  max-width: 150px;
+  margin: 0 10px;
 }
 
-/* Names */
-.footer-team-member .first-name {
+.team-member .first-name {
   color: #00FFDD;
   font-size: 16px;
   font-weight: bold;
@@ -622,37 +606,41 @@ footer .footer-custom-content {
   font-family: 'LinLibCap', sans-serif;
 }
 
-.footer-team-member .last-name {
-  color: #ccc;
+.team-member .last-name {
+  color: #28649C;
   font-size: 14px;
   margin-bottom: 10px;
   font-family: 'LinLibCap', sans-serif;
 }
 
-/* Contact Icons */
-.footer-team-member .contact {
-  margin-top: 10px;
+.team-member .contact {
   display: flex;
-  gap: 10px;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
-.footer-team-member .contact a {
-  margin: 0;
+.team-member .contact a {
   text-decoration: none;
-  display: inline-block;
+  color: inherit;
 }
 
-.footer-team-member .contact img {
-  width: 24px;
-  height: 24px;
-  filter: invert(0.7);
-  transition: filter 0.3s ease;
+.fa-stack {
+  width: 2em;
+  height: 2em;
 }
 
-.footer-team-member .contact img:hover {
-  filter: invert(0);
+.fa-stack-2x {
+  font-size: 1em;
+}
+
+.fa-stack-1x {
+  font-size: 0.5em;
+  color: white;
+}
+
+.fas.fa-circle {
+  color: #00FFDD;
 }
 
 /* Responsive adjustments for team section */
