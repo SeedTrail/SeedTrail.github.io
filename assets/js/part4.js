@@ -80,7 +80,9 @@ fetch('assets/js/events_combined.json')
           b: 60,
           t: 60,
           pad: 4
-        }
+        },
+        height: 450,  // Set a fixed height for the plot
+        width: 700   // Set a fixed width for the plot
       };
 
       // Create a container for the plot
