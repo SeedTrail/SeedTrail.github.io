@@ -130,12 +130,16 @@ h1 {
   /*background: -webkit-linear-gradient(white, #0cf2db)*/
   /*-webkit-background-clip: text;*/
   -webkit-text-fill-color: #ffffff;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
 /*ADDED STUFFS*/
 }
 h2 {
   font-size: 1.875rem;
   font-size: var(--fontLarge);
   font-weight: var(--fontLight);
+  padding-bottom: 5px;
 }
 h3 {
   font-size: 1.5rem;
@@ -1011,7 +1015,7 @@ body {
   position: relative;
   overflow: visible; /* MUST be visible */
 
-  border: 25px solid transparent;
+  border: 22px solid transparent;
   border-image-source: var(--border-image);
   border-image-slice: 90;
   /*border-image-width: 28px;*/
