@@ -10,16 +10,23 @@ h2 {
 /* Dashboard layout */
 .dashboard {
   display: flex;
+  flex-direction: column;
   gap: 30px;
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  align-items: center;
   padding: 20px;
+}
+
+/* Panels container */
+.panels-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* Panel styling */
 .panel {
-  flex: 1;
   min-width: 500px;
   max-width: 600px;
   background: rgba(20, 20, 20, 0.8);
@@ -65,6 +72,33 @@ h2 {
 .large-plot-container {
   width: 100% !important;
   height: 100% !important;
+}
+
+/* Additional content styling */
+.additional-content {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.additional-content h2 {
+  color: #00FFDD;
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
+}
+
+.additional-content p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* Keywords section */
