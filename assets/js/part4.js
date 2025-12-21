@@ -66,6 +66,14 @@ fetch('assets/js/events_combined.json')
         paper_bgcolor: 'black',
         font: {
           color: 'white'
+        },
+        autosize: true,
+        margin: {
+          l: 50,
+          r: 50,
+          b: 50,
+          t: 50,
+          pad: 4
         }
       };
 
@@ -73,8 +81,9 @@ fetch('assets/js/events_combined.json')
       const plotContainer = document.createElement('div');
       plotContainer.className = 'large-plot-container';
 
-      // Replace the existing plot div with the new container
+      // Append the container to the plot div
       const plotDiv = document.getElementById(`${category}-plot`);
+      plotDiv.innerHTML = '';
       plotDiv.appendChild(plotContainer);
 
       Plotly.newPlot(plotContainer, [trace], layout);
@@ -93,6 +102,11 @@ fetch('assets/js/events_combined.json')
             ${clickedEvent.keywords.map(keywordObj => `<li>${keywordObj.term}</li>`).join('')}
           </ul>
         `;
+      });
+
+      // Resize the plot when the window is resized
+      window.addEventListener('resize', () => {
+        Plotly.Plots.resize(plotContainer);
       });
     };
 
