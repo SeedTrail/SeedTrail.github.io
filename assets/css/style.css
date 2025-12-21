@@ -66,11 +66,12 @@
 }
 
 /* Timeline slider background */
+/* Timeline slider background */
 .timeline-slider {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
   background: black;
   color: white;
 }
@@ -79,8 +80,8 @@
 .slider-container {
   display: flex;
   overflow-x: auto;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+  padding: 30px;
   width: 100%;
 }
 
@@ -90,67 +91,145 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  min-width: 120px;
+  min-width: 200px; /* Increased from 120px */
+  width: 200px; /* Added fixed width */
+  height: 250px; /* Added fixed height */
   background: #111;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 0 10px;
+  border-radius: 12px; /* Increased from 8px */
+  padding: 20px; /* Increased from 10px */
+  margin: 0 15px; /* Increased from 10px */
   transition: transform 0.2s;
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
 }
 
 .event-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1); /* Increased from 1.05 */
 }
 
 .event-card img {
-  width: 100px;
-  height: 100px;
+  width: 150px; /* Increased from 100px */
+  height: 150px; /* Increased from 100px */
   object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 8px;
-  border: 1px solid #333;
+  border-radius: 10px; /* Increased from 6px */
+  margin-bottom: 12px; /* Increased from 8px */
+  border: 2px solid #333; /* Increased border width */
 }
 
 .event-date {
-  font-size: 12px;
+  font-size: 14px; /* Increased from 12px */
   color: #aaa;
   text-align: center;
 }
 
+/* Plotly plot container */
+.plotly-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+/* Container for all plots and descriptions */
+.plots-and-descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Container for each plot and its description */
+.plot-and-description {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Plot container */
+.plot-container {
+  width: 600px; /* Fixed width for plot container */
+  background: #222;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+/* Plot images and Plotly plot */
+.plot-container img {
+  width: 100%;
+  height: auto;
+  background: #222;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+/* Plotly plot styling */
+#plotly-plot {
+  width: 100%;
+  height: 500px;
+  background: #222;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+/* Description bubble container */
+.description-bubble {
+  flex: 1;
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #0CF2DB;
+  max-height: 500px;
+  overflow-y: auto;
+  margin-left: 20px;
+}
+
+/* Description text */
+.plot-description,
+.plotly-description {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* Event details styling */
 .event-details {
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
   display: none;
   background: #111;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 30px;
+  border-radius: 12px;
   color: white;
+  min-width: 1000px; /* Ensure enough width for plots and descriptions */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
 .event-details h2 {
   margin-top: 0;
   color: white;
+  font-size: 28px;
 }
 
 .event-details p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #ccc;
+  font-size: 16px;
 }
 
 /* Scrollbar styling */
 .slider-container::-webkit-scrollbar {
-  height: 8px;
+  height: 10px;
 }
 
 .slider-container::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .plot-and-description {
     flex-direction: column;
   }
@@ -161,6 +240,21 @@
 
   .description-bubble {
     width: 100%;
-    max-height: none;
+    margin-left: 0;
+  }
+
+  .event-card {
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+  }
+
+  .event-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .event-details {
+    min-width: auto;
   }
 }
