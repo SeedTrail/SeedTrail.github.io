@@ -1,3 +1,10 @@
+/* Enlarge only the interactive Plotly plot container */
+.plotly-plot-container {
+  width: 800px !important; /* Adjust as needed */
+}
+
+
+
 /* Plotly plot container */
 .plotly-container {
   display: flex;
