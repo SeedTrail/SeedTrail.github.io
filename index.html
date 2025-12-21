@@ -152,24 +152,25 @@ subtitle: CLICK TO START AUDIO
   <link rel="stylesheet" href="/assets/css/map.css" /> <!-- New CSS -->
   <h2>Diving into historical events timeline</h2>
 
-<!-- Map container -->
 <div id="map"></div>
 
-<!-- Pop-up for plots and text (Lyra-7 theme) -->
+<!-- Pop-up for plots and text -->
 <div id="event-popup">
   <h2 id="popup-event-name"></h2>
+  <p id="popup-event-date" style="color: #aaa;"></p>
   <p id="popup-event-description"></p>
-  <p id="popup-event-text" class="popup-event-text"></p> <!-- New element for text under title -->
+
   <div id="popup-plots">
-    <div class="plot-container">
+    <div class="plot-with-description">
       <img id="popup-plot1" class="popup-plot">
-      <p id="popup-plot1-text" class="plot-text"></p> <!-- New element for text under plot 1 -->
+      <p id="popup-plot1-text" class="plot-text"></p>
     </div>
-    <div class="plot-container">
+    <div class="plot-with-description">
       <img id="popup-plot2" class="popup-plot">
-      <p id="popup-plot2-text" class="plot-text"></p> <!-- New element for text under plot 2 -->
+      <p id="popup-plot2-text" class="plot-text"></p>
     </div>
   </div>
+
   <button onclick="document.getElementById('event-popup').style.display = 'none'">Close</button>
 </div>
 
