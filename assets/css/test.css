@@ -1,67 +1,63 @@
-/* Enlarge only the interactive Plotly plots */
-.large-plot-container {
-  width: 100%;
-  height: 400px;
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Dashboard title */
+h2 {
+  color: #0CF2DB;
+  text-align: center;
   margin-bottom: 20px;
 }
 
-/* Ensure the plot div takes full width */
-#politics-plot,
-#gaming-plot {
-  width: 100%;
-}
-
-
+/* Dashboard layout */
 .dashboard {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 
+/* Panel styling */
 .panel {
   flex: 1;
-  min-width: 400px;
+  min-width: 450px;
+  max-width: 600px;
   background: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Panel title */
+.panel h2 {
+  color: #0CF2DB;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Container for Plotly plots */
 #politics-plot,
 #gaming-plot {
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin-bottom: 20px;
 }
 
+/* Container for the Plotly plot inside #politics-plot and #gaming-plot */
+.large-plot-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Keywords section */
 #politics-keywords,
 #gaming-keywords {
   background: #2a2a2a;
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #0CF2DB;
-  margin-bottom: 10px;
-}
-
-#politics-keywords h3,
-#gaming-keywords h3 {
-  color: #0CF2DB;
-  margin-top: 0;
-}
-
-#politics-keywords ul,
-#gaming-keywords ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#politics-keywords li,
-#gaming-keywords li {
-  background: #3a3a3a;
-  margin: 5px 0;
-  padding: 8px;
-  border-radius: 4px;
-  border-left: 3px solid #0CF2DB;
-  font-size: 16px;
-  color: white;
-}
+  padding: 15
