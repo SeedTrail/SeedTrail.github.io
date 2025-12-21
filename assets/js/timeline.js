@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2016-11-08",
       image: "/assets/img/icon1.avif",
       description: "Let’s dive into my first result ! I am truly excited to already make some exciting observations. Taking the three analyses, I clearly identify the 2012 US presidential election as a highly salient and transient event in YouTube activity. The strong DiD divergence, the ITS discontinuity, and the extreme placebo result consistently point to a short-lived surge in attention tied closely to the election date. Analysis terminated.",
-      plotJson: "/assets/js/us_election_2016.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/us_election_2016.json",
       plotlyDescription: "I am forced to observe a well-timed spike in the treated topic at the event date, standing out from the control category. Prior to the election, both series display similar cyclical behavior, suggesting that the parallel trends assumption is reasonably satisfied. The divergence at the event date is sharp but short-lived, with the treated series quickly reverting toward pre-event levels which confirms my overall feeling.",
       plotPaths: [
-        "/assets/plots/us_election_2016_ITS.png", // Static image for the second plot
-        "/assets/plots/us_election_2016_Placebo.png"  // Static image for the third plot
+        "/assets/plots/us_election_2016_ITS.png",
+        "/assets/plots/us_election_2016_Placebo.png"
       ],
       plotDescriptions: [
-      "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. To me, this pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.",
-      "I notice that the estimated effect for the actual election date is far in the extreme right tail of the distribution with regards to the placebo test. Effects of comparable magnitude are virtually absent under random-date assignments, strongly suggesting that the observed spike is not attributable to background variability."
+        "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. To me, this pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.",
+        "I notice that the estimated effect for the actual election date is far in the extreme right tail of the distribution with regards to the placebo test. Effects of comparable magnitude are virtually absent under random-date assignments, strongly suggesting that the observed spike is not attributable to background variability."
       ]
     },
     {
@@ -25,15 +25,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2016-06-23",
       image: "/assets/img/brexit.jpg",
       description: "I might say that Brexit truly stands out as a clear and well-identified shock in YouTube activity. The consistency between the DiD divergence, the ITS structural break, and the extremeness of the placebo estimate supports the interpretation of a genuine, event-driven impact. Unlike more gradual or anticipatory phenomena, Brexit appears in the data as a discrete moment that left a strong and traceable digital footprint. It is so crazy for me to make such a discovery ! Analysis terminated.",
-      plotJson: "/assets/js/brexit.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/brexit.json",
       plotlyDescription: "I observe a pronounced and sharp spike in the treated topic at the event date, clearly exceeding the contemporaneous movement of the control category. Before the event, both series follow comparable cyclical patterns, supporting the parallel trends assumption. At the intervention point, the divergence is immediate and large, suggesting a strong short-term treatment effect associated with the Brexit referendum.",
       plotPaths: [
-        "/assets/plots/brexit_ITS.png", // Static image for the second plot
-        "/assets/plots/brexit_Placebo.png"  // Static image for the third plot
+        "/assets/plots/brexit_ITS.png",
+        "/assets/plots/brexit_Placebo.png"
       ],
       plotDescriptions: [
-      "I have now to take a closer look at the ITS analysis. It shows a clear structural break at the event date. I observe an abrupt level increase that interrupts the pre-existing upward trend, followed by a gradual decline in the post-event period. This pattern is consistent with a sudden surge in attention triggered by the event, rather than a continuation of prior dynamics. I finally observe that the magnitude and timing of the change provide strong visual evidence of an event-driven effect.", // Add placeholder if no description
-      "The placebo test indicates that the estimated effect at the actual event date lies far in the right tail of the placebo distribution. Effects of similar magnitude are rarely generated by random dates, suggesting that the observed signal is unlikely to be due to chance alone. This strongly strengthens to me the credibility of the detected effect."  // Add placeholder if no description
+        "I have now to take a closer look at the ITS analysis. It shows a clear structural break at the event date. I observe an abrupt level increase that interrupts the pre-existing upward trend, followed by a gradual decline in the post-event period. This pattern is consistent with a sudden surge in attention triggered by the event, rather than a continuation of prior dynamics. I finally observe that the magnitude and timing of the change provide strong visual evidence of an event-driven effect.",
+        "The placebo test indicates that the estimated effect at the actual event date lies far in the right tail of the placebo distribution. Effects of similar magnitude are rarely generated by random dates, suggesting that the observed signal is unlikely to be due to chance alone. This strongly strengthens to me the credibility of the detected effect."
       ]
     },
     {
@@ -41,15 +41,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2015-11-13",
       image: "/assets/img/paris.jpg",
       description: "Here comes another very interesting event although a very terrible one. The Paris attacks is a clear example of a discrete attention shock in the dataset. The alignment of a dramatic DiD spike, a sharp ITS discontinuity, and an extreme placebo result provides strong and consistent evidence of an immediate but short-lived impact on YouTube activity, leaving a clear yet transient digital trace. Analysis terminated.",
-      plotJson: "/assets/js/paris_attacks.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/paris_attacks.json",
       plotlyDescription: "A very sharp and immediate spike in the treated topic at the event date, exceeds from far the contemporaneous movement of the control category. Prior to the event, I observed that both series exhibit similar cyclical behavior, supporting the validity of the comparison. The magnitude and abruptness of the divergence point to a strong short-term reaction clearly associated with the attacks.",
       plotPaths: [
-        "/assets/plots/paris_attacks_ITS.png", // Static image for the second plot
-        "/assets/plots/paris_attacks_Placebo.png"  // Static image for the third plot
+        "/assets/plots/paris_attacks_ITS.png",
+        "/assets/plots/paris_attacks_Placebo.png"
       ],
       plotDescriptions: [
-      "The ITS analysis shows a pronounced level jump exactly at the event date, followed by a steep downward trend in the post-event period. The pattern I am able to observe is characteristic of a shock response: a sudden surge in attention that dissipates over time. There is no evidence of a sustained post-event elevation (unfortunately), suggesting that the effect is intense but transient.", // Add placeholder if no description
-      "The placebo distribution indicates that the estimated effect at the true event date lies far in the extreme right tail, well outside the range typically generated by random dates. Such a large effect is highly unlikely to occur by chance, strongly reinforcing the interpretation of a genuine event-driven signal. This sounds to me like great news !"  // Add placeholder if no description
+        "The ITS analysis shows a pronounced level jump exactly at the event date, followed by a steep downward trend in the post-event period. The pattern I am able to observe is characteristic of a shock response: a sudden surge in attention that dissipates over time. There is no evidence of a sustained post-event elevation (unfortunately), suggesting that the effect is intense but transient.",
+        "The placebo distribution indicates that the estimated effect at the true event date lies far in the extreme right tail, well outside the range typically generated by random dates. Such a large effect is highly unlikely to occur by chance, strongly reinforcing the interpretation of a genuine event-driven signal. This sounds to me like great news !"
       ]
     },
     {
@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2019-08-12",
       image: "/assets/img/hong-kong.webp",
       description: "Hong Kong protests produced a noticeable but short-lived spike in YouTube activity. The signal I am able to observe is visible across DiD and ITS as a sharp peak, yet its moderate placement within the placebo distribution cautions against overinterpreting its strength. This event appears in the data as an intense moment of attention rather than a long-lasting structural change. Well, history is made of big and smaller resonating events right ? Analysis terminated.",
-      plotJson: "/assets/js/hong_kong_protests_peak.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/hong_kong_protests_peak.json",
       plotlyDescription: "I notice that the treated topic closely follows the control category prior to the event, with strong cyclical patterns shared by both series. At the event date, there is a clear and sharp spike in the treated series that is not mirrored by the control, indicating a short-term divergence consistent with a peak in attention. However, I observe the effect to be transient, as the series quickly re-aligns with the control afterward, suggesting a burst rather than a sustained shift.",
       plotPaths: [
-        "/assets/plots/hong_kong_protests_peak_ITS.png", // Static image for the second plot
-        "/assets/plots/hong_kong_protests_peak_Placebo.png"  // Static image for the third plot
+        "/assets/plots/hong_kong_protests_peak_ITS.png",
+        "/assets/plots/hong_kong_protests_peak_Placebo.png"
       ],
       plotDescriptions: [
-      "Diving into the ITS analysis it reveals to me a distinct level increase at the event date, interrupting a relatively stable pre-event trend. This jump is followed by a gradual decline in the post-event period, consistent with a peak-and-decay dynamic. The timing and abruptness of the change point toward a genuine event-related surge in activity, though the absence of a lasting post-event elevation suggests the effect is concentrated around the peak.", // Add placeholder if no description
-      "The placebo distribution shows that the estimated effect at the true event date lies toward the upper tail of the distribution but not in an extreme position. This indicates to me that while the observed effect is larger than most random-date effects, similar magnitudes can occasionally occur by chance. "  // Add placeholder if no description
+        "Diving into the ITS analysis it reveals to me a distinct level increase at the event date, interrupting a relatively stable pre-event trend. This jump is followed by a gradual decline in the post-event period, consistent with a peak-and-decay dynamic. The timing and abruptness of the change point toward a genuine event-related surge in activity, though the absence of a lasting post-event elevation suggests the effect is concentrated around the peak.",
+        "The placebo test shows that the estimated effect at the true event date lies toward the upper tail of the distribution but not in an extreme position. This indicates to me that while the observed effect is larger than most random-date effects, similar magnitudes can occasionally occur by chance."
       ]
     },
     {
@@ -73,15 +73,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2012-11-06",
       image: "/assets/img/2012.jpg",
       description: "Together, the three analyses identify the 2012 US presidential election as a highly salient but transient event in YouTube activity. The strong DiD divergence, the ITS discontinuity, and the extreme placebo result consistently point to a short-lived surge in attention tied closely to the election date.",
-      plotJson: "/assets/js/us_election_2012.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/us_election_2012.json",
       plotlyDescription: "I observe a clear and well-timed spike in the treated topic at the event date, standing out from the control category. Prior to the election, both series display similar cyclical behavior, suggesting that the parallel trends assumption is reasonably satisfied. The divergence at the event date is sharp but short-lived, with the treated series quickly reverting toward pre-event levels.",
       plotPaths: [
-        "/assets/plots/us_election_2012_ITS.png", // Static image for the second plot
-        "/assets/plots/us_election_2012_Placebo.png"  // Static image for the third plot
+        "/assets/plots/us_election_2012_ITS.png",
+        "/assets/plots/us_election_2012_Placebo.png"
       ],
       plotDescriptions: [
-      "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. This pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.", // Add placeholder if no description
-      "The placebo test places the estimated effect for the actual election date far in the extreme right tail of the distribution. Effects of comparable magnitude are virtually absent under random-date assignments, strongly suggesting that the observed spike is not attributable to background variability."  // Add placeholder if no description
+        "The ITS analysis shows a little pronounced level increase at the election date, followed by a sustained downward trend in the post-event period. This pattern is characteristic of an attention peak centered on election day, after which interest rapidly decays. There is no evidence of a persistent post-election elevation, indicating that the effect is primarily concentrated around the event itself.",
+        "The placebo test places the estimated effect for the actual election date far in the extreme right tail of the distribution. Effects of comparable magnitude are virtually absent under random-date assignments, strongly suggesting that the observed spike is not attributable to background variability."
       ]
     },
     {
@@ -89,15 +89,15 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2017-10-01",
       image: "/assets/img/MeToo.jpg",
       description: "Taken together, the analyses point to #MeToo as a structurally transformative event in YouTube activity, which is captivating ! The consistent post-event divergence in DiD, the sustained level and trend change in ITS, and the distinct placebo positioning all suggest to me a lasting shift in attention. Unlike short-lived peaks tied to discrete moments, #MeToo appears in the data as a durable reconfiguration of the platform’s thematic landscape, but not as a sharp peak event. Analysis terminated.",
-      plotJson: "/assets/js/metoo.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/metoo.json",
       plotlyDescription: "Before the event date, the treated topic and the control category evolve in a broadly similar way, with shared cyclical patterns. However, I observe that after the event, the treated series shows a sustained upward shift relative to the control, rather than a single sharp spike. This divergence suggests a medium-term increase in attention associated with #MeToo, consistent with a movement that reshapes discourse over time rather than producing a one-day shock.",
       plotPaths: [
-        "/assets/plots/metoo_ITS.png", // Static image for the second plot
-        "/assets/plots/metoo_Placebo.png"  // Static image for the third plot
+        "/assets/plots/metoo_ITS.png",
+        "/assets/plots/metoo_Placebo.png"
       ],
       plotDescriptions: [
-      "The following result indicate a clear level change at the event date, followed by a steeper positive trend in the post-event period. I am surprised to notice that unlike events characterized by peak-and-decay dynamics, the post-intervention trajectory remains elevated and continues to grow. This pattern supports the interpretation of a structural change in attention rather than a transient response. What for a discovery !", // Add placeholder if no description
-      "The placebo distribution shows that the estimated effect at the true event date lies in the left tail of the distribution, outside the central mass of random-date effects. I conclude that such values are relatively rare under placebo assignments, suggesting that the observed change is unlikely to be explained by background variability alone."  // Add placeholder if no description
+        "The following result indicate a clear level change at the event date, followed by a steeper positive trend in the post-event period. I am surprised to notice that unlike events characterized by peak-and-decay dynamics, the post-intervention trajectory remains elevated and continues to grow. This pattern supports the interpretation of a structural change in attention rather than a transient response. What for a discovery !",
+        "The placebo distribution shows that the estimated effect at the true event date lies in the left tail of the distribution, outside the central mass of random-date effects. I conclude that such values are relatively rare under placebo assignments, suggesting that the observed change is unlikely to be explained by background variability alone."
       ]
     },
     {
@@ -105,131 +105,131 @@ document.addEventListener('DOMContentLoaded', function() {
       date: "2013-07-13",
       image: "/assets/img/blm.png",
       description: "While Black Lives Matter–related content exhibits temporal variation, there is no robust or statistically distinctive impact detectable in this first-level analysis, to my biggest surprise. Notably, I notice the presence of several spikes before the event date in the ITS hints at an anticipatory build-up of attention, suggesting that the movement may have been gaining visibility prior to the identified event rather than being initiated by it. Analysis terminated.",
-      plotJson: "/assets/js/black_lives_matter.json", // Plotly JSON for the first plot
+      plotJson: "/assets/js/black_lives_matter.json",
       plotlyDescription: "Black Lives Matter topic and the control category follow broadly similar temporal patterns before and after the event date. While there are short-lived spikes around mid-July, these fluctuations are not clearly distinguishable from the regular oscillations already present in both series. Overall, the DiD plot does not provide strong visual evidence of a sustained differential effect attributable to the event.",
       plotPaths: [
-        "/assets/plots/black_lives_matter_ITS.png", // Static image for the second plot
-        "/assets/plots/black_lives_matter_Placebo.png"  // Static image for the third plot
+        "/assets/plots/black_lives_matter_ITS.png",
+        "/assets/plots/black_lives_matter_Placebo.png"
       ],
       plotDescriptions: [
-      "Diving into ITS analysis, I note a gradual increase in activity leading up to the event date, followed by a visible decline afterward. The change appears smooth rather than abrupt, suggesting a continuation of an existing trend rather than a clear structural break. The event coincides with a local maximum, but the post-event decrease alone does not strongly support a causal interpretation. Well… To be honest I find it quite disappointing.", // Add placeholder if no description
-      "The placebo distribution shows that the estimated effect at the actual event date lies well within the range of effects obtained from random dates. This indicates that the observed signal is not exceptional relative to background variability. I therefore interpret this as weak evidence against the null, as similar effects frequently arise even in the absence of a true event."  // Add placeholder if no description
+        "Diving into ITS analysis, I note a gradual increase in activity leading up to the event date, followed by a visible decline afterward. The change appears smooth rather than abrupt, suggesting a continuation of an existing trend rather than a clear structural break. The event coincides with a local maximum, but the post-event decrease alone does not strongly support a causal interpretation. Well… To be honest I find it quite disappointing.",
+        "The placebo distribution shows that the estimated effect at the actual event date lies well within the range of effects obtained from random dates. This indicates that the observed signal is not exceptional relative to background variability. I therefore interpret this as weak evidence against the null, as similar effects frequently arise even in the absence of a true event."
       ]
     },
     {
       name: "Pokémon GO",
       date: "2016-07-06",
       image: "/assets/img/pokemon.jpg",
-      description: " I would say that the Pokémon GO launch reveals discrete attention shock in this dataset. I could infer that YouTube activity seems to have already been high and volatile in the surrounding period, absorbing the launch without producing a clearly identifiable breakpoint. This points to a case where massive offline popularity does not necessarily translate into a sharp, measurable disruption in aggregate platform-level signals. Analysis terminated.",
-      plotJson: "/assets/js/pokemon_go.json", // Plotly JSON for the first plot
-      plotlyDescription: " I observe that the treated topic and the control category track each other closely both before and after the launch date, with strong shared weekly oscillations. There is no clear or abrupt divergence at the event date: the treated series does not display a distinct spike relative to the control. This suggests that, at this temporal resolution, the launch does not register as a sharp deviation from broader gaming-related activity.",
+      description: "I would say that the Pokémon GO launch reveals discrete attention shock in this dataset. I could infer that YouTube activity seems to have already been high and volatile in the surrounding period, absorbing the launch without producing a clearly identifiable breakpoint. This points to a case where massive offline popularity does not necessarily translate into a sharp, measurable disruption in aggregate platform-level signals. Analysis terminated.",
+      plotJson: "/assets/js/pokemon_go.json",
+      plotlyDescription: "I observe that the treated topic and the control category track each other closely both before and after the launch date, with strong shared weekly oscillations. There is no clear or abrupt divergence at the event date: the treated series does not display a distinct spike relative to the control. This suggests that, at this temporal resolution, the launch does not register as a sharp deviation from broader gaming-related activity.",
       plotPaths: [
-        "/assets/plots/pokemon_go_ITS.png", // Static image for the second plot
-        "/assets/plots/pokemon_go_Placebo.png"  // Static image for the third plot
+        "/assets/plots/pokemon_go_ITS.png",
+        "/assets/plots/pokemon_go_Placebo.png"
       ],
       plotDescriptions: [
-      " The ITS analysis reveals a small level increase at the event date, followed by a largely flat post-event trajectory. I notice the pre-event trend to be already slightly increasing, and the launch appears to coincide with a modest stabilization rather than a dramatic shift. There is no clear structural break or pronounced change in slope, pointing to a smooth transition rather than an attention shock.", // Add placeholder if no description
-      " Looking at the placebo test, I estimated the effect at the true event date lies close to the center of the placebo distribution. Effects of similar magnitude are common under random date assignments, indicating that the observed change is not statistically distinctive."  // Add placeholder if no description
+        "The ITS analysis reveals a small level increase at the event date, followed by a largely flat post-event trajectory. I notice the pre-event trend to be already slightly increasing, and the launch appears to coincide with a modest stabilization rather than a dramatic shift. There is no clear structural break or pronounced change in slope, pointing to a smooth transition rather than an attention shock.",
+        "Looking at the placebo test, I estimated the effect at the true event date lies close to the center of the placebo distribution. Effects of similar magnitude are common under random date assignments, indicating that the observed change is not statistically distinctive."
       ]
     },
     {
       name: "E3 2016",
       date: "2016-06-14",
       image: "/assets/img/e3.webp",
-      description: " E3 is to me a textbook example of a predictable, event-driven attention shock for my greatest pleasure. The alignment of a sharp DiD spike, a clear ITS discontinuity, and an extreme placebo result confirms that E3 leaves a strong but ephemeral digital footprint. I notice an intense visibility concentrated around the event window, followed by a rapid return to normal levels. This is so exciting ! Analysis terminated.",
-      plotJson: "/assets/js/e3.json", // Plotly JSON for the first plot
-      plotlyDescription: " A very sharp and isolated spike in the treated topic exactly at the event date is observable, clearly separated from both the control category and the surrounding periods. Before and after the event, the treated and control series follow similar cyclical patterns, with no sustained divergence. Without any doubt, I confirm a strong but highly localized treatment effect concentrated at the time of E3.",
+      description: "E3 is to me a textbook example of a predictable, event-driven attention shock for my greatest pleasure. The alignment of a sharp DiD spike, a clear ITS discontinuity, and an extreme placebo result confirms that E3 leaves a strong but ephemeral digital footprint. I notice an intense visibility concentrated around the event window, followed by a rapid return to normal levels. This is so exciting ! Analysis terminated.",
+      plotJson: "/assets/js/e3.json",
+      plotlyDescription: "A very sharp and isolated spike in the treated topic exactly at the event date is observable, clearly separated from both the control category and the surrounding periods. Before and after the event, the treated and control series follow similar cyclical patterns, with no sustained divergence. Without any doubt, I confirm a strong but highly localized treatment effect concentrated at the time of E3.",
       plotPaths: [
-        "/assets/plots/e3_ITS.png", // Static image for the second plot
-        "/assets/plots/e3_Placebo.png"  // Static image for the third plot
+        "/assets/plots/e3_ITS.png",
+        "/assets/plots/e3_Placebo.png"
       ],
       plotDescriptions: [
-      " The ITS analysis shows a pronounced level jump at the event date, interrupting a moderately increasing pre-event trend. Immediately after the peak, the series returns toward baseline levels, followed by a mild downward trend. To me, this pattern is characteristic of a scheduled media event that generates intense but short-lived attention rather than a lasting shift in interest.", // Add placeholder if no description
-      "I estimate the effect of the actual event to be far in the extreme right tail of the distribution regarding the placebo test. Effects of comparable magnitude are not observed under random date assignments, suggesting that the spike is highly unlikely to be driven by chance alone."  // Add placeholder if no description
+        "The ITS analysis shows a pronounced level jump at the event date, interrupting a moderately increasing pre-event trend. Immediately after the peak, the series returns toward baseline levels, followed by a mild downward trend. To me, this pattern is characteristic of a scheduled media event that generates intense but short-lived attention rather than a lasting shift in interest.",
+        "I estimate the effect of the actual event to be far in the extreme right tail of the distribution regarding the placebo test. Effects of comparable magnitude are not observed under random date assignments, suggesting that the spike is highly unlikely to be driven by chance alone."
       ]
     },
     {
       name: "FIFA 17 Launch",
       date: "2016-09-27",
       image: "/assets/img/fifa.webp",
-      description: " It appears that my analyses suggest that the FIFA 17 launch is characterized by gradual buildup and normalization rather than a sharp event-driven shock. Attention is absorbed smoothly into ongoing platform dynamics, reflecting the predictable and highly anticipated nature of major game releases rather than a disruptive moment in YouTube activity. Analysis terminated.",
-      plotJson: "/assets/js/fifa_17_launch.json", // Plotly JSON for the first plot
-      plotlyDescription: " The topic and the control category follow very similar trajectories both before and after the release date, with strong shared seasonal oscillations. I cannot observe any sharp divergence at the event date: the treated series does not exhibit a distinct spike or sustained shift relative to the control. This suggests to me that the launch does not stand out as a discrete attention shock when compared to overall gaming-related activity.",
+      description: "It appears that my analyses suggest that the FIFA 17 launch is characterized by gradual buildup and normalization rather than a sharp event-driven shock. Attention is absorbed smoothly into ongoing platform dynamics, reflecting the predictable and highly anticipated nature of major game releases rather than a disruptive moment in YouTube activity. Analysis terminated.",
+      plotJson: "/assets/js/fifa_17_launch.json",
+      plotlyDescription: "The topic and the control category follow very similar trajectories both before and after the release date, with strong shared seasonal oscillations. I cannot observe any sharp divergence at the event date: the treated series does not exhibit a distinct spike or sustained shift relative to the control. This suggests to me that the launch does not stand out as a discrete attention shock when compared to overall gaming-related activity.",
       plotPaths: [
-        "/assets/plots/fifa_17_launch_ITS.png", // Static image for the second plot
-        "/assets/plots/fifa_17_launch_Placebo.png"  // Static image for the third plot
+        "/assets/plots/fifa_17_launch_ITS.png",
+        "/assets/plots/fifa_17_launch_Placebo.png"
       ],
       plotDescriptions: [
-      " When looking at the ITS analysis, it clearly shows an upward trend leading up to the release, followed by a flattening of the trajectory after the event date. Rather than a sudden jump (which would have been more exciting to observe), the event appears to coincide with a saturation point where attention stabilizes at a high level. This pattern is consistent with anticipation-driven interest that accumulates before launch and then plateaus.", // Add placeholder if no description
-      " In the placebo test, I notice the estimated effect at the true event date to lie close to the center of the placebo distribution. Effects of similar magnitude frequently occur under random date assignments, indicating that the observed change is not statistically distinctive."  // Add placeholder if no description
+        "When looking at the ITS analysis, it clearly shows an upward trend leading up to the release, followed by a flattening of the trajectory after the event date. Rather than a sudden jump (which would have been more exciting to observe), the event appears to coincide with a saturation point where attention stabilizes at a high level. This pattern is consistent with anticipation-driven interest that accumulates before launch and then plateaus.",
+        "In the placebo test, I notice the estimated effect at the true event date to lie close to the center of the placebo distribution. Effects of similar magnitude frequently occur under random date assignments, indicating that the observed change is not statistically distinctive."
       ]
     },
     {
       name: "Star Wars Battlefront II",
       date: "2017-11-01",
       image: "/assets/img/starwars.jpeg",
-      description: " Combined, the analyses suggest that the release of Star Wars Battlefront II does not register as a strong or distinct attention shock in the dataset. To my great disappointment, despite the franchise’s prominence, the event blends into ongoing platform dynamics, producing at most a modest and statistically unremarkable signal rather than a clear digital rupture. Analysis terminated.",
-      plotJson: "/assets/js/star_wars_battlefront_ii.json", // Plotly JSON for the first plot
+      description: "Combined, the analyses suggest that the release of Star Wars Battlefront II does not register as a strong or distinct attention shock in the dataset. To my great disappointment, despite the franchise’s prominence, the event blends into ongoing platform dynamics, producing at most a modest and statistically unremarkable signal rather than a clear digital rupture. Analysis terminated.",
+      plotJson: "/assets/js/star_wars_battlefront_ii.json",
       plotlyDescription: "I observe that the treated topic closely follows the control category both before and after the release date, with strong shared weekly oscillations. There is no clear or isolated spike at the event date, nor a sustained post-event divergence. Any small deviations around the release appear comparable to regular fluctuations observed elsewhere in the series, suggesting a weak or diffuse treatment effect; confirming my overall prior feeling.",
       plotPaths: [
-        "/assets/plots/star_wars_battlefront_ii_ITS.png", // Static image for the second plot
-        "/assets/plots/star_wars_battlefront_ii_Placebo.png"  // Static image for the third plot
+        "/assets/plots/star_wars_battlefront_ii_ITS.png",
+        "/assets/plots/star_wars_battlefront_ii_Placebo.png"
       ],
       plotDescriptions: [
-      " I am now diving into the ITS analysis that shows a modest level increase at the event date, followed by a gradual downward trend. The change is smooth rather than abrupt, indicating the absence of a sharp structural break. This pattern is consistent with a release that generates moderate attention but does not fundamentally alter the trajectory of activity.", // Add placeholder if no description
-      "The placebo distribution places the estimated effect at the actual event date near the center of the distribution. I have to say that effects of similar magnitude occur frequently under random date assignments, providing little evidence that the observed change is exceptional."  // Add placeholder if no description
+        "I am now diving into the ITS analysis that shows a modest level increase at the event date, followed by a gradual downward trend. The change is smooth rather than abrupt, indicating the absence of a sharp structural break. This pattern is consistent with a release that generates moderate attention but does not fundamentally alter the trajectory of activity.",
+        "The placebo distribution places the estimated effect at the actual event date near the center of the distribution. I have to say that effects of similar magnitude occur frequently under random date assignments, providing little evidence that the observed change is exceptional."
       ]
     },
     {
       name: "Zelda: Breath of the Wild",
       date: "2017-03-03",
       image: "/assets/img/zelda.webp",
-      description: " I am so excited ! I got something truly impressive: The Legend of Zelda: Breath of the Wild is a real textbook example of a high-impact game release. The strong DiD divergence, the sharp ITS discontinuity, and the extreme placebo result consistently point to an intense but transient surge in YouTube attention, leaving a clear and well-localized digital footprint centered on the release date. Analysis terminated.",
-      plotJson: "/assets/js/zelda_breath_of_the_wild.json", // Plotly JSON for the first plot
-      plotlyDescription: " A very clear sharp and immediate spike in the treated topic is observable exactly at the release date of the game, which I can then separate from the control category. Prior to the event, the treated series remains at a much lower baseline, while the release produces a sudden and substantial divergence. After the peak, I can notice a gradual decay in attention, eventually converging back toward the control trajectory. This pattern indicates a strong, release-driven attention shock.",
+      description: "I am so excited ! I got something truly impressive: The Legend of Zelda: Breath of the Wild is a real textbook example of a high-impact game release. The strong DiD divergence, the sharp ITS discontinuity, and the extreme placebo result consistently point to an intense but transient surge in YouTube attention, leaving a clear and well-localized digital footprint centered on the release date. Analysis terminated.",
+      plotJson: "/assets/js/zelda_breath_of_the_wild.json",
+      plotlyDescription: "A very clear sharp and immediate spike in the treated topic is observable exactly at the release date of the game, which I can then separate from the control category. Prior to the event, the treated series remains at a much lower baseline, while the release produces a sudden and substantial divergence which is rare to be seen. After the peak, I can notice a gradual decay in attention, eventually converging back toward the control trajectory. This pattern indicates a strong, release-driven attention shock.",
       plotPaths: [
-        "/assets/plots/zelda_breath_of_the_wild_ITS.png", // Static image for the second plot
-        "/assets/plots/zelda_breath_of_the_wild_Placebo.png"  // Static image for the third plot
+        "/assets/plots/zelda_breath_of_the_wild_ITS.png",
+        "/assets/plots/zelda_breath_of_the_wild_Placebo.png"
       ],
       plotDescriptions: [
-      " The ITS analysis shows a pronounced level jump at the event date, interrupting a gently increasing pre-release trend. The post-event period is characterized by a clear downward slope, reflecting a rapid but smooth decay of attention after the initial surge. The magnitude and timing of the discontinuity provide strong evidence of an event-centered effect, which is of great surprise to me.", // Add placeholder if no description
-      " The placebo test places the estimated effect for the actual release far beyond the extreme right tail of the distribution. I might say that comparable effects are essentially absent under random date assignments, making it highly unlikely that the observed spike is due to chance."  // Add placeholder if no description
+        "The ITS analysis shows a pronounced level jump at the event date, interrupting a gently increasing pre-release trend. The post-event period is characterized by a clear downward slope, reflecting a rapid but smooth decay of attention after the initial surge. The magnitude and timing of the discontinuity provide strong evidence of an event-centered effect, which is of great surprise to me.",
+        "The placebo test places the estimated effect for the actual release far beyond the extreme right tail of the distribution. I might say that comparable effects are essentially absent under random date assignments, making it highly unlikely that the observed spike is due to chance."
       ]
     },
     {
       name: "Worlds LoL 2016",
       date: "2016-10-29",
       image: "/assets/img/lol.jpg",
-      description: " Taken together, the analyses indicate that the League of Legends World Championship does not manifest as a single, well-defined attention shock at its start date (which to be honest, is a bit disappointing). Instead, I observed its digital footprint to appear temporally diffuse, with attention building and peaking later in the competition. I strongly believe that this highlights a limitation of single-date interventions for multi-stage events, where impact is distributed across time rather than concentrated at one moment. Analysis terminated.",
-      plotJson: "/assets/js/worlds_lol.json", // Plotly JSON for the first plot
-      plotlyDescription: " I can notice that the treated topic and the control category follow similar patterns around the event date, with no clear or immediate divergence at the start of the tournament. A large spike appears later in the period, but it is temporally displaced from the designated intervention point and therefore cannot be attributed to the event date used in the analysis. I suspect a direct treatment effect at the chosen breakpoint to be involved.",
+      description: "Taken together, the analyses indicate that the League of Legends World Championship does not manifest as a single, well-defined attention shock at its start date (which to be honest, is a bit disappointing). Instead, I observed its digital footprint to appear temporally diffuse, with attention building and peaking later in the competition. I strongly believe that this highlights a limitation of single-date interventions for multi-stage events, where impact is distributed across time rather than concentrated at one moment. Analysis terminated.",
+      plotJson: "/assets/js/worlds_lol.json",
+      plotlyDescription: "I can notice that the treated topic and the control category follow similar patterns around the event date, with no clear or immediate divergence at the start of the tournament. A large spike appears later in the period, but it is temporally displaced from the designated intervention point and therefore cannot be attributed to the event date used in the analysis. I suspect a direct treatment effect at the chosen breakpoint to be involved.",
       plotPaths: [
-        "/assets/plots/worlds_lol_ITS.png", // Static image for the second plot
-        "/assets/plots/worlds_lol_Placebo.png"  // Static image for the third plot
+        "/assets/plots/worlds_lol_ITS.png",
+        "/assets/plots/worlds_lol_Placebo.png"
       ],
       plotDescriptions: [
-      " The ITS analysis shows us a smooth and gradual upward trend that continues through the event date, without a clear level shift or change in slope. I am forced to observe that the event does not coincide with a structural break; instead, activity increases progressively over time. The later surge in counts likely reflects downstream stages of the tournament rather than its opening moment.", // Add placeholder if no description
-      " In the placebo test, the estimated effect at the actual event date lies well within the central mass of the placebo distribution. Similar effects are common under random date assignments, suggesting that the observed change is not statistically distinctive. It is frustrating to not be able to extract anything meaningful ! "  // Add placeholder if no description
+        "The ITS analysis shows us a smooth and gradual upward trend that continues through the event date, without a clear level shift or change in slope. I am forced to observe that the event does not coincide with a structural break; instead, activity increases progressively over time. The later surge in counts likely reflects downstream stages of the tournament rather than its opening moment.",
+        "In the placebo test, the estimated effect at the actual event date lies well within the central mass of the placebo distribution. Similar effects are common under random date assignments, suggesting that the observed change is not statistically distinctive. It is frustrating to not be able to extract anything meaningful !"
       ]
     },
     {
       name: "GTA V Release",
       date: "2013-09-17",
       image: "/assets/img/gta.jpg",
-      description: " I am very amazed by the release of GTA. V It really stands out as one of the most extreme attention shocks in the dataset and so across all three analyses I have performed. The convergence of a dramatic DiD spike, a sharp ITS discontinuity, and an extreme placebo result indicates a highly salient but transient digital event, which is personally speaking, very interesting to analyse. An intense burst of interest driven by release-day dynamics, followed by a predictable decay. Analysis terminated.",
-      plotJson: "/assets/js/gta_release.json", // Plotly JSON for the first plot
-      plotlyDescription: "I notice an immediate and very large spike in the treated topic exactly at the release date, clearly separating it from the control category. Prior to the event, the treated series evolves at a lower level than the control, but the release produces a sudden and overwhelming divergence which is rare to be seen. After the peak, attention decays gradually, eventually converging back toward the control trajectory. This pattern points to a strong, release-driven shock. ",
+      description: "I am very amazed by the release of GTA V. It really stands out as one of the most extreme attention shocks in the dataset and so across all three analyses I have performed. The convergence of a dramatic DiD spike, a sharp ITS discontinuity, and an extreme placebo result indicates a highly salient but transient digital event, which is personally speaking, very interesting to analyse. An intense burst of interest driven by release-day dynamics, followed by a predictable decay. Analysis terminated.",
+      plotJson: "/assets/js/gta_release.json",
+      plotlyDescription: "I notice an immediate and very large spike in the treated topic exactly at the release date, clearly separating it from the control category. Prior to the event, the treated series evolves at a lower level than the control, but the release produces a sudden and overwhelming divergence which is rare to be seen. After the peak, attention decays gradually, eventually converging back toward the control trajectory. This pattern points to a strong, release-driven shock.",
       plotPaths: [
-        "/assets/plots/gta_release_ITS.png", // Static image for the second plot
-        "/assets/plots/gta_release_Placebo.png"  // Static image for the third plot
+        "/assets/plots/gta_release_ITS.png",
+        "/assets/plots/gta_release_Placebo.png"
       ],
       plotDescriptions: [
-      " The ITS analysis shows a pronounced level jump at the event date, interrupting a steadily increasing pre-release trend. I also can observe that the post-event period is characterized by a clear downward slope, indicating a gradual loss of attention after the initial surge. The magnitude and timing of the discontinuity strongly support an event-centered interpretation.", // Add placeholder if no description
-      " The placebo test places the estimated effect of the actual release far beyond the extreme right tail of the distribution. I have not found any comparable effects under random date assignments, making it highly unlikely that this spike is due to randomness. I obtained such interesting results !"  // Add placeholder if no description
+        "The ITS analysis shows a pronounced level jump at the event date, interrupting a steadily increasing pre-release trend. I also can observe that the post-event period is characterized by a clear downward slope, indicating a gradual loss of attention after the initial surge. The magnitude and timing of the discontinuity strongly support an event-centered interpretation.",
+        "The placebo test places the estimated effect of the actual release far beyond the extreme right tail of the distribution. I have not found any comparable effects under random date assignments, making it highly unlikely that this spike is due to randomness. I obtained such interesting results !"
       ]
     }
   ];
-  
+
   events.forEach((event, index) => {
     const cardDiv = document.createElement('div');
     cardDiv.className = 'event-card';
@@ -243,11 +243,11 @@ document.addEventListener('DOMContentLoaded', function() {
         eventDetails.style.display = 'none';
       } else {
         eventDetails.style.display = 'block';
-    
+
         // Plotly plot and description
         const plotlyHTML = `
           <div class="plot-and-description">
-            <div class="plot-container">
+            <div class="plot-container plotly-plot-container">
               <div id="plotly-plot"></div>
             </div>
             <div class="description-bubble">
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           </div>
         `;
-    
+
         // Static plots and descriptions
         const plotsHTML = event.plotPaths.map((path, index) => `
           <div class="plot-and-description">
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
           </div>
         `).join('');
-    
+
         eventDetails.innerHTML = `
           <h2>${event.name} <span style="font-size: 16px; color: #aaa;">(${event.date})</span></h2>
           <p>${event.description}</p>
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ${plotsHTML}
           </div>
         `;
-    
+
         try {
           const response = await fetch(event.plotJson);
           if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -288,8 +288,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
-
-
 
     sliderContainer.appendChild(cardDiv);
   });
