@@ -1,3 +1,15 @@
+/* Add this to your map.css file */
+#map {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+}
+
+
+
 /* Map description text */
 .map-description {
   color: #ccc;
