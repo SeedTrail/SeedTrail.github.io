@@ -1,14 +1,14 @@
-/* Add this to your map.css file */
+/* Map container */
 #map {
   height: 600px;
   width: 100%;
   margin-bottom: 20px;
-  border-radius: 8px;
-  border: 1px solid #333;
-  background: #111;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  background: rgba(20, 20, 20, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
 }
-
-
 
 /* Map description text */
 .map-description {
@@ -18,41 +18,48 @@
   margin: 0 auto 20px;
   max-width: 800px;
   line-height: 1.6;
+  background: rgba(30, 30, 30, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  box-shadow: inset 0 0 10px rgba(0, 255, 221, 0.1);
 }
 
 /* Pop-up styling */
 #event-popup {
   display: none;
   position: fixed;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  background: rgba(30, 30, 30, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
   z-index: 1000;
   max-width: 90%;
   max-height: 80vh;
   overflow-y: auto;
   color: #fff;
-  border: 1px solid #0CF2DB;
-  width: 800px; /* Fixed width for better layout */
+  border: 1px solid rgba(0, 255, 221, 0.4);
+  width: 800px;
+  backdrop-filter: blur(8px);
 }
 
 /* Pop-up title styling */
 #event-popup h2 {
   margin-top: 10px;
-  color: #0CF2DB;
+  color: #00FFDD;
   font-size: 24px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgba(0, 255, 221, 0.3);
   padding-bottom: 10px;
+  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
 }
 
 /* Pop-up date styling */
 #popup-event-date {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #aaa;
 }
 
@@ -61,12 +68,16 @@
   margin-bottom: 20px;
   color: #ccc;
   line-height: 1.6;
+  padding: 10px;
+  background: rgba(40, 40, 40, 0.5);
+  border-radius: 8px;
+  border-left: 3px solid rgba(0, 255, 221, 0.3);
 }
 
 /* Container for plots and descriptions */
 #popup-plots {
   display: flex;
-  flex-direction: column; /* Stack plots vertically */
+  flex-direction: column;
   gap: 20px;
   margin: 20px 0;
 }
@@ -74,19 +85,24 @@
 /* Container for each plot and its description */
 .plot-with-description {
   display: flex;
-  flex-direction: column; /* Stack plot and description vertically */
+  flex-direction: column;
   align-items: center;
+  background: rgba(40, 40, 40, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(0, 255, 221, 0.2);
 }
 
 /* Plot styling */
 .popup-plot {
   max-width: 100%;
   max-height: 300px;
-  border: 1px solid #0CF2DB;
-  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  border-radius: 8px;
   object-fit: contain;
-  background: #111;
+  background: rgba(20, 20, 20, 0.7);
   margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Text under plots */
@@ -97,24 +113,27 @@
   text-align: center;
   max-width: 100%;
   padding: 10px;
-  background: #222;
-  border-radius: 4px;
-  border: 1px solid #0CF2DB;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 255, 221, 0.1);
 }
 
 /* Close button styling */
 #event-popup button {
-  margin: 15px auto 5px;
-  padding: 10px 20px;
-  background: #0CF2DB;
+  margin: 20px auto 5px;
+  padding: 10px 25px;
+  background: rgba(0, 255, 221, 0.9);
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   display: block;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #event-popup button:hover {
-  background: #00B8A9;
+  background: rgba(0, 221, 190, 0.9);
+  transform: scale(1.05);
 }
