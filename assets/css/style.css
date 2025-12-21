@@ -1,33 +1,37 @@
 /* Plotly plot container */
 .plotly-container {
   display: flex;
-  gap: 10px; /* Reduced from 20px */
-  margin-top: 10px; /* Reduced from 20px */
+  gap: 10px;
+  margin-top: 10px;
   align-items: flex-start;
+  width: 100%; /* Ensure it takes full width */
 }
 
 /* Container for all plots and descriptions */
 .plots-and-descriptions {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Reduced from 20px */
-  margin-top: 15px; /* Reduced from 20px */
+  gap: 15px;
+  margin-top: 15px;
+  width: 100%; /* Ensure it takes full width */
 }
 
 /* Container for each plot and its description */
 .plot-and-description {
   display: flex;
-  gap: 15px; /* Reduced from 20px */
+  gap: 15px;
   align-items: flex-start;
-  margin-bottom: 15px; /* Reduced from 20px */
+  margin-bottom: 15px;
+  width: 100%; /* Ensure it takes full width */
 }
 
 /* Plot container */
 .plot-container {
-  width: 650px; /* Increased from 600px to take more space */
+  flex: 1; /* Allow it to grow and take available space */
+  min-width: 0; /* Prevent flex item overflow */
   background: #222;
-  padding: 5px; /* Reduced from 10px */
-  border-radius: 4px; /* Reduced from 6px */
+  padding: 5px;
+  border-radius: 4px;
   border: 1px solid #333;
 }
 
@@ -36,93 +40,29 @@
   width: 100%;
   height: auto;
   background: #222;
-  border-radius: 2px; /* Reduced from 4px */
+  border-radius: 2px;
   border: 1px solid #333;
 }
 
 /* Plotly plot styling */
 #plotly-plot {
-  width: 100%;
+  width: 100% !important; /* Ensure it takes full width */
   height: 500px;
   background: #222;
-  border-radius: 2px; /* Reduced from 4px */
+  border-radius: 2px;
   border: 1px solid #333;
 }
 
 /* Description bubble container */
 .description-bubble {
-  width: 300px; /* Fixed width instead of flex: 1 to control size */
+  width: 300px;
   background: #1a1a1a;
-  padding: 10px; /* Reduced from 15px */
-  border-radius: 4px; /* Reduced from 6px */
+  padding: 10px;
+  border-radius: 4px;
   border: 1px solid #0CF2DB;
   max-height: 500px;
   overflow-y: auto;
-  margin-left: 10px; /* Reduced from 20px */
-}
-
-/* Description text */
-.plot-description,
-.plotly-description {
-  color: #ccc;
-  font-size: 14px;
-  line-height: 1.4; /* Reduced from 1.5 */
-}
-
-/* Timeline slider background */
-.timeline-slider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background: black;
-  color: white;
-}
-
-/* Slider container */
-.slider-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-}
-
-/* Event card styling */
-.event-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  min-width: 200px;
-  width: 200px;
-  height: 250px;
-  background: #111;
-  border-radius: 12px;
-  padding: 20px;
-  margin: 0 15px;
-  transition: transform 0.2s;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.event-card:hover {
-  transform: scale(1.1);
-}
-
-.event-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  border: 2px solid #333;
-}
-
-.event-date {
-  font-size: 14px;
-  color: #aaa;
-  text-align: center;
+  margin-left: 10px;
 }
 
 /* Event details styling */
@@ -134,30 +74,9 @@
   padding: 30px;
   border-radius: 12px;
   color: white;
-  min-width: 1000px;
-  overflow-x: auto;
-}
-
-.event-details h2 {
-  margin-top: 0;
-  color: white;
-  font-size: 28px;
-}
-
-.event-details p {
-  margin-bottom: 25px;
-  color: #ccc;
-  font-size: 16px;
-}
-
-/* Scrollbar styling */
-.slider-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.slider-container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
+  width: 100%; /* Ensure it takes full width */
+  max-width: 100%; /* Ensure it doesn't exceed container width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Responsive adjustments */
@@ -173,16 +92,5 @@
   .description-bubble {
     width: 100%;
     margin-left: 0;
-  }
-
-  .event-card {
-    min-width: 150px;
-    width: 150px;
-    height: 200px;
-  }
-
-  .event-card img {
-    width: 100px;
-    height: 100px;
   }
 }
