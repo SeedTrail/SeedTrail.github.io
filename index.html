@@ -505,22 +505,35 @@ subtitle: CLICK TO START AUDIO
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Event Detection Dashboard</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <link rel="stylesheet" href="assets/css/test.css">
-  <h2>Event Detection Dashboard</2>
-  <div class="dashboard">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<link rel="stylesheet" href="assets/css/test.css">
+<h2>Event Detection Dashboard</h2>
+<div class="dashboard">
+  <div class="panels-container">
     <div class="panel">
       <h2>Politics Events</h2>
       <div id="politics-plot"></div>
       <div id="politics-keywords"></div>
     </div>
+  </div>
+
+  <!-- Additional content container -->
+  <div class="additional-content">
+    <!-- Your additional content goes here -->
+    <h2>Additional Analysis</h2>
+    <p>This space can be used for additional analysis, explanations, or any other content you want to include between the two graphs.</p>
+  </div>
+
+  <div class="panels-container">
     <div class="panel">
       <h2>Gaming Events</h2>
       <div id="gaming-plot"></div>
       <div id="gaming-keywords"></div>
     </div>
   </div>
-  <script src="assets/js/part4.js"></script>
+</div>
+<script src="assets/js/part4.js"></script>
+
 
   <!-- BEGIN: card -->
   <div class="card" data-effect="zoom" style="--border-image: url('/assets/img/frame.jpg');">
