@@ -2,12 +2,12 @@
   <div class="container-md beautiful-jekyll-footer">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-      {% include social-networks-links.html %}
+        {% include social-networks-links.html %}
 
         <h2>Meet the Lyra-7 supporting team</h2>
-        <!-- ===== TEAM PRESENTATION (added) ===== -->
+        <!-- ===== TEAM PRESENTATION ===== -->
         <div class="footer-team">
-          <div class="footer-team-member team-member">
+          <div class="team-member">
             <div class="first-name">Candice</div>
             <div class="last-name">Guilbaud</div>
             <div class="contact">
@@ -17,9 +17,10 @@
                   <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
+            </div>
           </div>
 
-          <div class="footer-team-member team-member">
+          <div class="team-member">
             <div class="first-name">Olivia</div>
             <div class="last-name">Robles</div>
             <div class="contact">
@@ -31,7 +32,7 @@
               </a>
             </div>
           </div>
-
+          
           <div class="footer-team-member team-member">
             <div class="first-name">Marc-André Mauron</div>
             <div class="last-name">Dupont</div>
@@ -44,7 +45,7 @@
               </a>
             </div>
           </div>
-          
+            
           <div class="footer-team-member team-member">
             <div class="first-name">William</div>
             <div class="last-name">Robert</div>
@@ -71,47 +72,25 @@
             </div>
           </div>
         </div>
+
         <!-- ===== END TEAM ===== -->
-        
-      {% if page.footer-extra %}
-        <div class="footer-custom-content">
-          {% for file in page.footer-extra %}
-            {% include {{ file }} %}
-          {% endfor %}
-        </div>
-      {% endif %}
-      <p class="copyright text-muted">
-      {% if site.author %}
-        {{ site.author }}
-        &nbsp;&bull;&nbsp;
-      {% endif %}
-      {{ site.time | date: '%Y' }}
 
-      {% if site.url-pretty %}
-        &nbsp;&bull;&nbsp;
-        <span class="author-site">
-          <a href="{% if site.url-canonical %}{{ site.url-canonical }}{% else %}{{ '/' | absolute_url }}{% endif %}">{{ site.url-pretty }}</a>
-        </span>
-      {% endif %}
-
-      {% if site.matomo %}
-        {% if site.matomo.opt-out %}
-          &nbsp;&bull;&nbsp;
-          <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
+        {% if page.footer-extra %}
+          <div class="footer-custom-content">
+            {% for file in page.footer-extra %}
+              {% include {{ file }} %}
+            {% endfor %}
+          </div>
         {% endif %}
-      {% endif%}
-
-      {% if site.edit_page_button and site.github.repository_url %}
-        &nbsp;&bull;&nbsp;
-        <a title="Edit this page on GitHub" href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}" class="text_muted">Edit page</a>
-       {% endif%}
-
-      </p>
-      {% unless site.remove-ads %}<p class="theme-by text-muted">
-        Powered by
-        <a href="https://beautifuljekyll.com">Beautiful Jekyll</a>
-      </p>{% endunless %}
+        <!-- Rest of your footer content -->
       </div>
     </div>
   </div>
 </footer>
+
+
+
+
+
+
+
