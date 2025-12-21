@@ -1,45 +1,51 @@
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
-  margin: 0;
-  padding: 20px;
-}
+
 
 /* Dashboard title */
 h2 {
-  color: #0CF2DB;
+  color: #00FFDD;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 28px;
+  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
 }
 
 /* Dashboard layout */
 .dashboard {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  padding: 20px;
 }
 
 /* Panel styling */
 .panel {
   flex: 1;
-  min-width: 450px;
+  min-width: 500px;
   max-width: 600px;
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #333;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background: rgba(20, 20, 20, 0.8);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 255, 221, 0.2);
 }
 
 /* Panel title */
 .panel h2 {
-  color: #0CF2DB;
+  color: #00FFDD;
   margin-top: 0;
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
 }
 
 /* Container for Plotly plots */
@@ -47,7 +53,11 @@ h2 {
 #gaming-plot {
   width: 100%;
   height: 450px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  background: rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  border: 1px solid rgba(0, 255, 221, 0.2);
 }
 
 /* Container for the Plotly plot inside #politics-plot and #gaming-plot */
@@ -59,5 +69,80 @@ h2 {
 /* Keywords section */
 #politics-keywords,
 #gaming-keywords {
-  background: #2a2a2a;
-  padding: 15
+  background: rgba(30, 30, 30, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 221, 0.4);
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 255, 221, 0.1);
+}
+
+/* Keywords header */
+#politics-keywords h3,
+#gaming-keywords h3 {
+  color: #00FFDD;
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 255, 221, 0.3);
+  border-bottom: 1px solid rgba(0, 255, 221, 0.3);
+  padding-bottom: 10px;
+}
+
+/* Keywords list */
+#politics-keywords ul,
+#gaming-keywords ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Keywords list items */
+#politics-keywords li,
+#gaming-keywords li {
+  background: rgba(40, 40, 40, 0.7);
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 221, 0.3);
+  font-size: 14px;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#politics-keywords li:hover,
+#gaming-keywords li:hover {
+  background: rgba(0, 255, 221, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 255, 221, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .panel {
+    min-width: 450px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panel {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  #politics-plot,
+  #gaming-plot {
+    height: 400px;
+  }
+}
