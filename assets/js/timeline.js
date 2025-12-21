@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
               <img src="${path}" alt="Plot ${index + 1}" class="plot-image">
             </div>
             <div class="description-bubble">
-              <p class="plot-description">${event.plotDescriptions ? event.plotDescriptions[index] : ''}</p>
+              <p class="plot-description">${event.plotDescriptions && event.plotDescriptions[index] ? event.plotDescriptions[index] : ''}</p>
             </div>
           </div>
         `).join('');
@@ -288,6 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
+
 
 
     sliderContainer.appendChild(cardDiv);
